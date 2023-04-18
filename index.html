@@ -33,14 +33,30 @@
     <main class="main">
         <h1 class="h1">MOTO ROMA</h1>
         <section class="seccion-slider1">
-            <div class="sombra"></div>
-            <img src="img/home/home-slider-vintage-motorcycle-cafe-racer-style.png" alt="">
+
+            <div id="contenedor">
+                <div class="sombra"></div>
+                <div id="galeria">
+                     <div class="item">
+                        <img src="img/home/home-slider-vintage-motorcycle-cafe-racer-style.png" alt="">
+                    </div>
+
+                    <div class="item">
+                        <img src="img/home/home-slider-vintage-motorcycle-cafe-racer-style.png" alt="">
+                    </div>
+
+                    <div class="item">
+                        <img src="img/home/home-slider-vintage-motorcycle-cafe-racer-style.png" alt="">
+                    </div>
+                </div>
+            </div>
+
             <div class="seccion-slider1__marcadores" >
-                <ul class="flex">
-                    <li><div class="seccion-slider1__marcador seccion-slider1__marcador-activo"></div></li>
+                <ul class="flex" id="slider1__dots">
+                    <!-- <li><div class="seccion-slider1__marcador seccion-slider1__marcador-activo"></div></li>
                     <li><div class="seccion-slider1__marcador "></div></li>
                     <li><div class="seccion-slider1__marcador"></div></li>
-                    <li><div class="seccion-slider1__marcador"></div></li>
+                    <li><div class="seccion-slider1__marcador"></div></li> -->
                 </ul>
             </div>
         </section>
@@ -84,17 +100,17 @@
         <section class="seccion-marcas">
             <h2 class="titulo-seccion">¿Qué marca <span class="resaltado">sos?</span></h2>
             <div class="seccion-marcas__contenedor-marcas">
-                <img src="img/home/logo-honda.png" alt="">
-                <img src="img/home/logo-yamaha.png" alt="">
-                <img src="img/home/logo-bajaj.png" alt="">
-                <img src="img/home/logo-zanella.png" alt="">
-                <img src="img/home/logo-gilera.png" alt="">
-                <img src="img/home/logo-motomel.png" alt="">
-                <img src="img/home/logo-corven.png" alt="">
-                <img src="img/home/logo-mondial.png" alt="">
-                <img src="img/home/logo-keller.png" alt="">
-                <img src="img/home/logo-jawa.png" alt="">
-                <img src="img/home/logo-kimco.png" alt="">
+                <img src="img/home/logo-honda.png" alt="" width="150" height="150">
+                <img src="img/home/logo-yamaha.png" alt="" width="150" height="150">
+                <img src="img/home/logo-bajaj.png" alt="" width="150" height="150">
+                <img src="img/home/logo-zanella.png" alt="" width="150" height="150">
+                <img src="img/home/logo-gilera.png" alt="" width="150" height="150">
+                <img src="img/home/logo-motomel.png" alt="" width="150" height="150">
+                <img src="img/home/logo-corven.png" alt="" width="150" height="150">
+                <img src="img/home/logo-mondial.png" alt="" width="150" height="150">
+                <img src="img/home/logo-keller.png" alt="" width="150" height="150">
+                <img src="img/home/logo-jawa.png" alt="" width="150" height="150">
+                <img src="img/home/logo-kimco.png" alt="" width="150" height="150">
             </div>
         </section>
 
@@ -203,6 +219,8 @@
         });
 
     </script>
+
+    <script type="text/javascript" src="js/slider.js"></script>
     
 </body>
 </html>

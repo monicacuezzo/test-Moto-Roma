@@ -105,7 +105,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 .blog-subtitulo{font-weight:600;font-size:1.6vw;padding-bottom: 0.8rem;}
 .blog-texto{font-weight:400;font-size:1vw;padding-bottom: 1rem;}
 
-.marcadores-slide{text-align:center;margin: auto;display: flex; width: max-content;padding: 2rem;}.marcador{display:inline-block;margin:0.7vw;background-color:#999999;width:13px;height:13px;border-radius:50%}.marcador-activo{background-color:#111111} 
+.marcadores-slide{text-align:center;margin: auto;display: flex; width: max-content;padding: 2rem;}.marcador{display:inline-block;margin:8px;background-color:#999999;width:14px;height:14px;border-radius:50%}.marcador-activo{background-color:#111111} 
 
 
 .resaltado{color: #FF0501;}

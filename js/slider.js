@@ -1,6 +1,6 @@
-window.onload = function () {
 
 var iniciar_destination;
+var detener_slider1;
 
 function generar(width,dots,contenido,li,li_nombre,indice,galeria,cantidad,desplaza) {
         // if (width <= 0 || isNaN(width)) {
@@ -85,6 +85,11 @@ function configurar_slider1() {
             slider1_indice = desplazar_galeria(slider1_galeria,slider1_indice,slider1_width,slider1_margen,slider1_contenido,slider1_desplaza);
         }
     },3000);
+
+    detener_slider1 = () => {
+        console.log("detener")
+        clearInterval(desplazar_slider1);
+    };
 }
 
 
@@ -128,7 +133,7 @@ function configurar_slider1() {
             }
         },2000);
     };
-    const detener_home_cards = () => {
+    detener_home_cards = () => {
         console.log("detener")
         clearInterval(desplazar_home_cards);
     };
@@ -418,6 +423,8 @@ function configurar_sliders() {
 
     }
 
+window.onload = function () {
+
     // configurar_home_cards();
     // configurar_destination();
     // configurar_sliders();
@@ -464,3 +471,9 @@ function configurar_sliders() {
 
 
 }
+
+window.addEventListener('resize', function() {
+    console.log("resize")
+    detener_slider1();
+    configurar_slider1();
+});

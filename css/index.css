@@ -27,10 +27,12 @@ ul{list-style: none;margin: 0;padding: 0;}
 .header__principal{display: flex;justify-content: space-between;align-items: center;}
 .header__nav{display:flex; justify-content: space-between;width: 60%; max-width: 700px;min-width: 500px;}
 .header__nav-link{color: #fff;font-weight:500;font-size: 1vw;line-height: 1.7vw;/*display: flex;*/}
+.header__nav-link:hover{color: #FF0501;}
 .header__nav-contacto{display: block;color: #111111;background-color: #fff;border-radius: 50px;font-weight:500;font-size: 1.05vw;width: 6.2vw;text-align: center;padding: 3px 3px 4px;}
+.header__nav-contacto:hover{color: #FF0501;background-color: rgba(255, 255, 255, 0.6);}
 .header__principal-ico-menu{display: none;}
 
-.logo{width: 17.5vw!important; max-width: 250px!important;min-width: 180px!important; height: 3vw!important; max-height: 44px!important; min-height: 35px!important;}
+.logo{width: 17.5vw!important; max-width: 250px!important;min-width: 165px!important; height: 3vw!important; max-height: 44px!important; min-height: 29px!important;}
 
 
 .h1{width: 0;height: 0;}
@@ -47,13 +49,21 @@ ul{list-style: none;margin: 0;padding: 0;}
 .seccion-slider1 img,.section-banner img{width: 100%;display: block;}
 .seccion-slider1__marcadores{position: absolute;z-index: 20;left: 0; bottom: 1.1vw;width: 100%;text-align: center;}
 .seccion-slider1__marcadores ul{width: max-content;margin: auto;}
-.seccion-slider1__marcador{display:inline-block;margin:0.7vw;background-color:#fff;width:0.9vw;height:0.9vw;border-radius:50%}.seccion-slider1__marcador-activo{background-color:#FF0501} 
+.seccion-slider1__marcador, .seccion-slider1__marcadores ul li{display:inline-block;margin:10px;background-color:#fff;width:0.9vw;min-width: 8px; height:0.9vw;min-height: 8px;border-radius:50%}
+.li_slider{cursor: pointer;}
+.seccion-slider1__marcador-activo{background-color:#FF0501!important} 
+
+/* renombrar esto */
+#contenedor{width: 100%;overflow: hidden;}
+#galeria{display: flex;width: max-content;}
+.item img{width: 100%;}
 
 .seccion-estilos{background-color: #fff;text-align: center;padding-bottom: 3.85vw;}
 .seccion-estilos__estilos{display: flex;flex-direction: row; flex-wrap: wrap;justify-content: center;}
 .contenedor-img{position: relative;width: 39%;margin: 0.7vw 0.35vw;}
 .contenedor-img .sombra{border-radius: 2.3vw; mix-blend-mode: hard-light;}
 .seccion-estilos__estilos-img{width: 100%;}
+.contenedor-img:hover .seccion-estilos__estilos-img{opacity: 0.6;}
 .estilos-nombre{position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 20; font-weight: 700;font-size:6.2vw /* 90px*/;text-align: center;color: #D9D9D9;mix-blend-mode: hard-light;opacity: 0.75;display: flex;align-items: center;justify-content: center;}
 
 .section-banner__texto{position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 20; font-weight: 500;font-size: 3.5vw;padding-left:calc(50% + 2vw) ;color: #fff; padding-top: 3.5vw;}
@@ -63,12 +73,13 @@ ul{list-style: none;margin: 0;padding: 0;}
 
 .seccion-marcas{background-color: #fff;text-align: center;}
 .seccion-marcas__contenedor-marcas{display: flex;flex-direction: row; flex-wrap: wrap;justify-content: center;width: 90%; max-width: 1018px;margin: auto;}
-.seccion-marcas__contenedor-marcas img{width: 12vw;max-width: 150px;min-width: 79px;margin: 3px;}
+.seccion-marcas__contenedor-marcas img{width: 12vw;max-width: 150px;min-width: 79px;height: auto;margin: 3px;}
 
 .seccion-accesorios{background-color: #fff;text-align: center;}
 .seccion-accesorios__contenedor-img{position: relative;width: 80%;margin: auto;border-radius: 2.3vw;}
 .seccion-accesorios__contenedor-img .sombra{border-radius: 2.3vw;background:  linear-gradient(rgba(0, 0, 0, 0.8) 10%, rgba(217, 217, 217, 0) 56%)}
 .seccion-accesorios__contenedor-img img{width: 100%;border-radius: 2.3vw;}
+.seccion-accesorios__contenedor-img:hover img{opacity: 0.6;}
 .seccion-accesorios__contenedor-img .estilos-nombre{font-size: 10vw;opacity: 0.8;}
 
 .seccion-consejos{background-color: #fff;text-align: center;padding-bottom: 5rem;}
@@ -109,7 +120,7 @@ hr{margin: 1.5rem 0;}
 
 
 @media (max-width: 1179.98px){
-    .header{display: block;padding-top: 8px;height: max-content; }
+    .header{display: block;padding-top: 10px;height: max-content; }
     .header__principal{margin-bottom: 10px;}
     .header__principal-ico-menu{display: block;}
     .header__principal-logo{height: max-content;}
@@ -125,25 +136,37 @@ hr{margin: 1.5rem 0;}
 @media (max-width: 767.98px){
     .logo{margin: 2vw auto 2vw auto;}
     .main{margin-top: 57px;}
-    .footer{text-align: center;font-size: 11px;padding: 30px 0 20px 0;}
-    .footer__contenido{flex-direction: column;}
-    .footer__contenido-info-titulo {font-size: 14px;margin-bottom: 10px;}
-    .footer__contenido-info{margin-top: 16px;}
-    .contenido {font-size: 10px;}
-    .blog-titulo{font-size:12px;padding-bottom: 0.8rem;}
-    .blog-subtitulo{font-size:14px;padding-bottom: 0.8rem;}
-    .blog-texto{font-size:10px;padding-bottom: 1rem;}
+    .seccion-slider1__marcador, .seccion-slider1__marcadores ul li{display:inline-block;margin:8px;}
+    .h3{font-size: 14px;}
+    .titulo-seccion{font-size: 20px;}
+    .contenido {font-size: 12px;}
+    .seccion-consejos__consejos-boton {font-size: 12px;width: 98px;height: 23px;padding-top: 4px;border-radius: 15px;}
+    .seccion-consejos__consejos-boton img {width: 15px;margin-right: 3px;}
+    .blog-titulo{font-size:14px;padding-bottom: 0.8rem;}
+    .blog-subtitulo{font-size:16px;padding-bottom: 0.8rem;}
+    .blog-texto{font-size:12px;padding-bottom: 1rem;}
     .blog-contenido {padding: 1rem 2rem 1rem 2rem;}
+    .flecha{height: 14px;}
+    .flecha-slider-izq{left: -14px;padding-right: 8px;}
+    .flecha-slider-der{right: -14px;margin-left: 8px;}
+    .footer{text-align: center;font-size: 10px;padding: 30px 0 20px 0;}
+    .footer__contenido{flex-direction: column;}
+    .footer__contenido-info-titulo {font-size: 12px;margin-bottom: 10px;}
+    .footer__contenido-info{margin-top: 16px;}
 }
 @media (max-width: 519.98px){
     /* .seccion-estilos__estilos{flex-direction: column;} */
     /* .contenedor-img {width: 60%; margin: 0.7vw auto;}  */
-    .seccion-consejos__consejos-texto {width: 100%;}
+    .section-banner__texto-boton {font-size: 8px;width: 75px;height: 16px;padding-top: 3px;}
+    .section-banner__texto-boton img {width: 8px;}
+    .seccion-consejos__consejos-texto {width: 100%;padding: 1.2rem 1rem 1.2rem 1rem;}
     .seccion-consejos__consejos-img{width: 100%;border-top-right-radius: 2.3vw;border-top-left-radius: 2.3vw;}
     .seccion-consejos__consejos-img img {height: 35vw;object-fit: cover;border-top-right-radius: 2.3vw;border-top-left-radius: 2.3vw;}
-    .h3{font-size: 12px;}
+    .h3{font-size: 14px;}
     .titulo-seccion{font-size: 20px;}
     .seccion-consejos__slider-blog{width: 100%;}
+    .marcador {margin: 5px;width: 12px;height: 12px;}
+    .blog-contenido {padding: 1rem;}
 
     /* cambiar esto */
     .seccion-consejos__slider-blog:nth-child(2){display: none;}

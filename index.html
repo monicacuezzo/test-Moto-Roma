@@ -35,7 +35,7 @@
         <section class="seccion-slider1">
 
             <div id="contenedor">
-                <div class="sombra"></div>
+                <div id="slider1__sombra" class="sombra"></div>
                 <div id="galeria">
                      <div class="item">
                         <img src="img/home/home-slider-vintage-motorcycle-cafe-racer-style.png" alt="">
@@ -90,7 +90,7 @@
             <img src="img/home/simular-credito.png" alt="">
             <div class="section-banner__texto">
                 <p>Simula un crédito <span>con tu DNI</span></p>
-                    <a href="" class="section-banner__texto-boton">
+                    <a href="https://wa.me/+5491124846478" class="section-banner__texto-boton">
                     <img src="img/compartidos/icono-wa.png" alt="Icono Whatsapp">
                     CONSULTAR
                 </a>
@@ -139,41 +139,63 @@
             </div>
             <div class="seccion-consejos__blog">
                     <div class="seccion-consejos__slider">
-                        <div class="flecha-slider-izq">
-                            <img class="flecha" src="img/compartidos/flecha-izq.png" alt="">
+                        <div id="flecha-slider-izq" class="flecha-slider-izq">
+                            <img class="flecha" src="img/compartidos/flecha-izq.png" alt="Avanzar slider">
                         </div>
 
-                        <div class="otro" >
-                            <div class="seccion-consejos__slider-contenedor">
-                                <div class="seccion-consejos__slider-blog">
-                                    <img src="img/home/blog1.png" alt="">
-                                    <div class="blog-contenido">
-                                        <p class="blog-titulo resaltado">MOTO ROMA BLOG</p>
-                                        <p class="blog-subtitulo">Cómo secar correctamente nuestro equipamiento luego de un día de lluvia </p>
-                                        <p class="blog-texto">Llegar a casa empapado después de una tormenta es algo que puede sucederle a cualquiera. Te damos algunos consejos para secar correctamente tu equipación...</p>
+                        <div id="blog__contenedor" class="blog__contenedor">
+                            <div id="blog__galeria" class="blog__galeria" >
+                                <!-- <div class="seccion-consejos__slider-contenedor"> -->
+                                    <div class="seccion-consejos__slider-blog">
+                                        <img src="img/home/blog1.png" alt="">
+                                        <div class="blog-contenido">
+                                            <p class="blog-titulo resaltado">MOTO ROMA BLOG</p>
+                                            <p class="blog-subtitulo">Cómo secar correctamente nuestro equipamiento luego de un día de lluvia </p>
+                                            <p class="blog-texto">Llegar a casa empapado después de una tormenta es algo que puede sucederle a cualquiera. Te damos algunos consejos para secar correctamente tu equipación...</p>
+                                        </div>
                                     </div>
-                                </div>
-            
-                                <div class="seccion-consejos__slider-blog">
-                                    <img src="img/home/blog2.png" alt="">
-                                    <div class="blog-contenido">
-                                        <p class="blog-titulo resaltado">MOTO ROMA BLOG</p>
-                                        <p class="blog-subtitulo">5 consejos para iniciar a tu hijo en el motocross con total seguridad </p>
-                                        <p class="blog-texto">La nostalgia de tu primera toma de contacto con el motocross y el deseo de transmitir esa pasión a tu hijo o hija ¡Te entendemos perfectamente! Sin embargo....</p>
+                
+                                    <div class="seccion-consejos__slider-blog">
+                                        <img src="img/home/blog2.png" alt="">
+                                        <div class="blog-contenido">
+                                            <p class="blog-titulo resaltado">MOTO ROMA BLOG</p>
+                                            <p class="blog-subtitulo">5 consejos para iniciar a tu hijo en el motocross con total seguridad </p>
+                                            <p class="blog-texto">La nostalgia de tu primera toma de contacto con el motocross y el deseo de transmitir esa pasión a tu hijo o hija ¡Te entendemos perfectamente! Sin embargo....</p>
+                                        </div>
                                     </div>
-                                </div>
+    
+                                    <div class="seccion-consejos__slider-blog">
+                                        <img src="img/home/blog1.png" alt="">
+                                        <div class="blog-contenido">
+                                            <p class="blog-titulo resaltado">MOTO ROMA BLOG</p>
+                                            <p class="blog-subtitulo">Cómo secar correctamente nuestro equipamiento luego de un día de lluvia </p>
+                                            <p class="blog-texto">Llegar a casa empapado después de una tormenta es algo que puede sucederle a cualquiera. Te damos algunos consejos para secar correctamente tu equipación...</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="seccion-consejos__slider-blog">
+                                        <img src="img/home/blog2.png" alt="">
+                                        <div class="blog-contenido">
+                                            <p class="blog-titulo resaltado">MOTO ROMA BLOG</p>
+                                            <p class="blog-subtitulo">5 consejos para iniciar a tu hijo en el motocross con total seguridad </p>
+                                            <p class="blog-texto">La nostalgia de tu primera toma de contacto con el motocross y el deseo de transmitir esa pasión a tu hijo o hija ¡Te entendemos perfectamente! Sin embargo....</p>
+                                        </div>
+                                    </div>
+                                <!-- </div> -->
                             </div>
                         </div>
-                        <div class="flecha-slider-der">
-                            <img class="flecha" src="img/compartidos/flecha-der.png" alt="">
+                        <div id="flecha-slider-der" class="flecha-slider-der">
+                            <img class="flecha" src="img/compartidos/flecha-der.png" alt="Retroceder slider">
                         </div>
                     </div>
      
-                    <ul class="marcadores-slide" >
-                        <li><div class="marcador marcador-activo"></div></li>
+                    <!-- <div class="seccion-slider1__marcadores" > -->
+                    <!-- <ul class="flex" id="slider1__dots"> -->
+                    <ul id="blog__marcadores-slide" class="blog__marcadores-slide" >
+                        <!-- <li><div class="marcador blog__marcador-activo"></div></li>
                         <li><div class="marcador "></div></li>
                         <li><div class="marcador"></div></li>
-                        <li><div class="marcador"></div></li>
+                        <li><div class="marcador"></div></li> -->
                     </ul>
             </div>
     </section>
@@ -220,6 +242,7 @@
 
     </script>
 
+    <script type="text/javascript" src="js/jQuery3.6.4.js"></script>
     <script type="text/javascript" src="js/slider.js"></script>
     
 </body>

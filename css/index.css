@@ -49,7 +49,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 .seccion-slider1 img,.section-banner img{width: 100%;display: block;}
 .seccion-slider1__marcadores{position: absolute;z-index: 20;left: 0; bottom: 1.1vw;width: 100%;text-align: center;}
 .seccion-slider1__marcadores ul{width: max-content;margin: auto;}
-.seccion-slider1__marcador, .seccion-slider1__marcadores ul li{display:inline-block;margin:10px;background-color:#fff;width:0.9vw;min-width: 8px; height:0.9vw;min-height: 8px;border-radius:50%}
+.seccion-slider1__marcador, .seccion-slider1__marcadores ul li{display:inline-block;margin:10px;background-color:#fff;width:0.9vw;min-width: 10px; height:0.9vw;min-height: 10px;border-radius:50%}
 .li_slider{cursor: pointer;}
 .li_slider a{height: 100%;}
 .seccion-slider1__marcador-activo{background-color:#FF0501!important} 
@@ -140,7 +140,7 @@ hr{margin: 1.5rem 0;}
 @media (max-width: 767.98px){
     .logo{margin: 2vw auto 2vw auto;}
     .main{margin-top: 57px;}
-    .seccion-slider1__marcador, .seccion-slider1__marcadores ul li{display:inline-block;margin:8px;}
+    .seccion-slider1__marcador, .seccion-slider1__marcadores ul li{display:inline-block;margin:10px;}
     .h3{font-size: 14px;}
     .contenido {font-size: 12px;}
     .seccion-consejos__consejos-boton {font-size: 12px;width: 98px;height: 23px;padding-top: 4px;border-radius: 15px;}
@@ -158,8 +158,6 @@ hr{margin: 1.5rem 0;}
     .footer__contenido-info{margin-top: 16px;}
 }
 @media (max-width: 519.98px){
-    /* .seccion-estilos__estilos{flex-direction: column;} */
-    /* .contenedor-img {width: 60%; margin: 0.7vw auto;}  */
     .section-banner__texto-boton {font-size: 8px;width: 75px;height: 16px;padding-top: 3px;}
     .section-banner__texto-boton img {width: 8px;}
     .seccion-consejos__consejos-texto {width: 100%;padding: 1.2rem 1rem 1.2rem 1rem;}
@@ -172,10 +170,7 @@ hr{margin: 1.5rem 0;}
     .marcador {margin: 5px;width: 12px;height: 12px;}
     .blog-contenido {padding: 1rem;}
 
-    /* cambiar esto */
-    /* .seccion-consejos__slider-blog:nth-child(2){display: none;} */
 }
-/* ojo tamaño botones y TODAS las fuentes */
 
 .d-block{display: block;}
 

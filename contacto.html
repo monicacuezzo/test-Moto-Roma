@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1">
+	<meta name="description" content="Moto Roma, desde 1958 vendiendo motos.">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="robots" content="index,follow">
+
+    <link rel="stylesheet" type="text/css" href="css/contacto.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+    <link rel="preload" href="img/contacto.webp" as="image" />
+
+    <title>Moto Roma - Contacto</title>
+</head>
+<body class="body">
+
+    <header id="header-pagina" class="header-pagina flex"></header>
+
+    <main class="main">
+        <h1 class="h1">MOTO ROMA - Contacto</h1>
+        <section class="seccion-imagen"></section>
+        <section class="seccion-link">
+            <a href="index.html" class="seccion-link__a">Home </a><span> >> Contacto</span>
+        </section>
+
+        <section class="seccion-telefonos">
+            <p class="seccion-telefonos__parrafo">
+                <span>
+                    Teléfono: 
+                    <a href="tel:+5401152637662" class="seccion-telefonos__parrafo-link">(011) 5263-7662</a>
+                </span>
+            </p>
+
+            <p class="seccion-telefonos__parrafo">
+                <span>
+                    Whatsapp - Venta de motos: 
+                    <a href="tel:+5401124846478" class="seccion-telefonos__parrafo-link">(011) 24846478</a>
+                </span>                
+                <a href="https://wa.me/+5491124846478" class="seccion-telefonos__boton-wa">
+                    <img src="img/compartidos/icono-wa.webp" alt="Icono Whatsapp">
+                    CONSULTAR
+                </a>
+            </p>
+
+            <p class="seccion-telefonos__parrafo">
+                <span>
+                    Whatsapp - Venta de accesorios - Repuestos: 
+                    <a href="tel:+5401124846478" class="seccion-telefonos__parrafo-link">(011) 24846478</a>
+                </span>                
+                <a href="https://wa.me/+5491124846478" class="seccion-telefonos__boton-wa">
+                    <img src="img/compartidos/icono-wa.webp" alt="Icono Whatsapp">
+                    CONSULTAR
+                </a>
+            </p>
+
+            <p class="seccion-telefonos__parrafo">
+                <span>
+                    Whatsapp - Patentes: 
+                    <a href="tel:+5401165529369" class="seccion-telefonos__parrafo-link">(011) 65529369</a>
+                </span>
+                <button class="seccion-telefonos__boton">VERIFICAR ESTADO</button>                
+                <a href="https://wa.me/+5491124846478" class="seccion-telefonos__boton-wa-2">
+                    <img src="img/compartidos/icono-wa.webp" alt="Icono Whatsapp">
+                    CONSULTAR
+                </a>
+            </p>
+
+            <p class="seccion-telefonos__parrafo">
+                <span>
+                    Whatsapp - Servicio Técnico: 
+                    <a href="tel:+5401130718502" class="seccion-telefonos__parrafo-link">(011) 30718502</a>
+                </span>
+                <button class="seccion-telefonos__boton">VERIFICAR ESTADO</button>                
+                <a href="https://wa.me/+5491124846478" class="seccion-telefonos__boton-wa-2">
+                    <img src="img/compartidos/icono-wa.webp" alt="Icono Whatsapp">
+                    CONSULTAR
+                </a>
+            </p>
+
+            <p class="seccion-telefonos__parrafo">
+                <span>
+                    Whatsapp - Seguros: 
+                    <a href="tel:+5401126903989" class="seccion-telefonos__parrafo-link">(011) 26903989</a>
+                </span>
+                <a href="https://wa.me/+5491124846478" class="seccion-telefonos__boton-wa">
+                    <img src="img/compartidos/icono-wa.webp" alt="Icono Whatsapp">
+                    CONSULTAR
+                </a>
+            </p>
+        </section>
+    </main>
+
+    <footer id="footer-pagina" class="footer-pagina"></footer>
+
+
+    <script type="text/javascript" src="js/jQuery3.6.4.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+
+    <script>
+        window.onload = function () {
+
+            generar_header();
+            var ico_menu = document.getElementById("ico-menu");
+            ico_menu.onclick = () => {
+                var nav_bar = document.getElementsByClassName("header__nav")[0];
+                nav_bar.classList.toggle('d-block');
+            };
+            generar_footer();
+
+            window.addEventListener('resize', function() {
+                document.getElementsByClassName("header__nav")[0].classList.remove('d-block');
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>

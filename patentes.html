@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1">
+	<meta name="description" content="Moto Roma, desde 1958 vendiendo motos.">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="robots" content="index,follow">
+
+    <link rel="stylesheet" type="text/css" href="css/patentes.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+    <link rel="preload" href="img/patentes.webp" as="image" />
+
+    <title>Moto Roma - Patentes</title>
+</head>
+<body class="body">
+
+    <header id="header-pagina" class="header-pagina flex"></header>
+
+    <main class="main">
+        <h1 class="h1">MOTO ROMA - Patentes</h1>
+
+        <section class="seccion-imagen"></section>
+
+        <section class="seccion-link">
+            <a href="index.html" class="seccion-link__a">Home </a><span> >> Patentes</span>
+        </section>
+
+        <section class="seccion-patentamiento">
+            <p class="parrafo">
+                <strong>Patentamiento: </strong> Consultas por WhatsApp o telefonicamente al <strong>5263-7662 </strong> (Opción 4) <strong class="resaltado">de 10 a 14 y de 15 a 19 Hs.</strong> 
+            </p>
+        </section>
+
+        <section class="seccion-informacion">
+            <p class="parrafo">
+                <strong>Informamos: </strong> La entrega de patentamientos se encuentra demorada por los protocolos implementados en los registros de propiedad automotor por el <strong>COVID-19</strong>. Moto Roma no solo no es responsable por dichas demoras sino que ademas tiene que pagar una multa por cada tramite presentado debido a las demoras generadas por los registros.
+            </p>
+        </section>
+
+        <section class="seccion-wapp">
+            <a href="https://wa.me/+5491124846478" class="seccion-telefonos__boton-wa" target="_blank">
+                <img src="img/compartidos/icono-wa.webp" alt="Icono Whatsapp">
+                CONSULTAR
+            </a>
+        </section>
+
+        <section class="seccion-contenido">
+            <!-- INSERTAR AQUÏ EL CONTENIDO -->
+        </section>
+
+       
+</main>
+
+    <footer id="footer-pagina" class="footer-pagina"></footer>
+
+
+    <script type="text/javascript" src="js/jQuery3.6.4.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+
+    <script>
+        window.onload = function () {
+
+            generar_header();
+            var ico_menu = document.getElementById("ico-menu");
+            ico_menu.onclick = () => {
+                var nav_bar = document.getElementsByClassName("header__nav")[0];
+                nav_bar.classList.toggle('d-block');
+            };
+            generar_footer();
+
+            window.addEventListener('resize', function() {
+                document.getElementsByClassName("header__nav")[0].classList.remove('d-block');
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>

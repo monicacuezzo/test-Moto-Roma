@@ -62,6 +62,7 @@ function blog_retroceder1(galeria,indice,width,margen,contenido,desplaza,clase_a
     li[indice].classList.add(clase_activo);
     return indice;
 }
+
 function desplazar1(galeria,indice,width,margen,contenido,desplaza,clase_activo,cantidad,li_nombre) {
     if (cantidad == 1) {
         galeria.style.transform = "translate("+(-((width+(margen))*desplaza))+"px)";
@@ -155,7 +156,7 @@ var blog_desplaza;
 var desplazar_blog;
 
 function configurar_blog() {
-    console.log("entra en configurar_blog")
+    // console.log("entra en configurar_blog")
     blog_contenedor = document.getElementById('blog__contenedor');
     blog_galeria = document.getElementById('blog__galeria');
     blog_contenido = document.getElementsByClassName('seccion-consejos__slider-blog');
@@ -163,12 +164,11 @@ function configurar_blog() {
     // blog_li = document.getElementsByClassName("blog_li");
     blog_margen = (screen.width < 520) ? 20 : (blog_contenedor.getBoundingClientRect().width * 0.01)+3;
     console.log("blog-margen"+blog_margen)
-    // blog_cantidad = 2;
     blog_cantidad = (screen.width < 520) ? 1 : 2;
     // blog_width = Math.floor(document.getElementById('contenedor').clientWidth / blog_cantidad) - blog_margen;
     // var ancho_contenedor = document.getElementById('contenedor').clientWidth;
     // document.getElementById('contenedor').style.width = ancho_contenedor+"px!important";
-    blog_width = (screen.width < 520) ? ((document.getElementById('blog__contenedor').getBoundingClientRect().width / blog_cantidad) - blog_margen) : (document.getElementById('blog__contenedor').getBoundingClientRect().width / blog_cantidad); //- blog_margen     OJO
+    blog_width = (screen.width < 520) ? ((document.getElementById('blog__contenedor').getBoundingClientRect().width / blog_cantidad) - blog_margen) : (document.getElementById('blog__contenedor').getBoundingClientRect().width / blog_cantidad);  
 
     console.log("blog-width / cantidad"+blog_width+" / "+blog_cantidad)
 
@@ -201,6 +201,12 @@ function configurar_blog() {
     };
 }
 
+function blog_avanzar1(){
+    console.log("blog_avanzar1")
+    detener_blog();
+    blog_indice = desplazar1(blog_galeria,blog_indice,blog_width,blog_margen,blog_contenido,blog_desplaza,"blog__marcador-activo",blog_cantidad,"li_blog");
+    avanzar_blog();
+}; 
 
 
 function configurar_sliders() {
@@ -223,9 +229,8 @@ window.onload = function () {
     });
 
     $('.li_slider a').click(function(target){
-        // alert($(target))
-        var li_slider = document.getElementsByClassName('li_slider');
         target.preventDefault();
+        var li_slider = document.getElementsByClassName('li_slider');
         detener_slider1();
         for (let index = 0; index < slider1_contenido.length; index++) {
             if (slider1_contenido[0].getAttribute("id") == $(this).attr('href')) {
@@ -254,9 +259,8 @@ window.onload = function () {
     });
 
     $('.li_blog a').click(function(target){
-        // alert($(target))
-        var li_blog = document.getElementsByClassName('li_blog');
         target.preventDefault();
+        var li_blog = document.getElementsByClassName('li_blog');
         detener_blog();
         for (let index = 0; index < blog_contenido.length; index++) {
             if (blog_contenido[0].getAttribute("id") == $(this).attr('href')) {
@@ -273,14 +277,6 @@ window.onload = function () {
         avanzar_blog();
     }); 
 
-    function blog_avanzar1(){
-        console.log("blog_avanzar1")
-        detener_blog();
-        blog_indice = desplazar1(blog_galeria,blog_indice,blog_width,blog_margen,blog_contenido,blog_desplaza,"blog__marcador-activo",blog_cantidad,"li_blog");
-        // setTimeout(() => {
-            avanzar_blog();
-        // }, 2000);
-    }; 
     
     document.getElementById('flecha-slider-der').addEventListener("click", function() {
         blog_avanzar1();

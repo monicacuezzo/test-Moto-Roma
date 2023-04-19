@@ -1,0 +1,25 @@
+.header-pagina{position: fixed;left: 7.5%;top: 0px;z-index: 1000; width: 85%; height: 75px;background-color: rgba(51,51,51,.8);-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;padding: 0 8.8vw;}
+.header__principal{display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+.header__nav{display:-webkit-box;display:-ms-flexbox;display:flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;width: 60%; max-width: 700px;min-width: 500px;}
+.header__nav-link{color: #fff;font-weight:500;font-size: 1vw;line-height: 1.7vw;}
+.header__nav-link:hover{color: #FF0501;}
+.header__nav-contacto{display: block;color: #111111;background-color: #fff;border-radius: 50px;font-weight:500;font-size: 1.05vw;width: 6.2vw;text-align: center;padding: 3px 3px 4px;}
+.header__nav-contacto:hover{color: #FF0501;background-color: rgba(255, 255, 255, 0.6);}
+.header__principal-ico-menu{display: none;}
+.logo{width: 17.5vw!important; max-width: 250px!important;min-width: 165px!important; height: 3vw!important; max-height: 44px!important; min-height: 29px!important;}
+
+@media (max-width: 1179.98px){
+    .header-pagina{display: block;padding-top: 10px;height: -webkit-max-content;height: -moz-max-content;height: max-content; }
+    .header__principal{margin-bottom: 10px;}
+    .header__principal-ico-menu{display: block;}
+    .header__principal-logo{height: -webkit-max-content;height: -moz-max-content;height: max-content;}
+    .header__principal .logo{margin: 2px auto ;}
+    .header__nav{display: none;width: 100%;min-width: 0;border-bottom: 1px solid grey;    margin-top: 15px;}
+    .header__nav-link {padding: 10px 0;font-size: 12px;line-height: 12px;border-top: 1px solid grey;}
+    .header__nav-contacto{margin: 5px 0;font-size: 12px;line-height: 12px;border-top: 1px solid grey;width: 70px;padding: 3px 3px 2px 3px;}
+}
+@media (max-width: 991px){
+    .header-pagina{width: 95%;left: 2.5%;}
+}
+
+@media (max-width: 767.98px){.logo{margin: 2vw auto 2vw auto;}}

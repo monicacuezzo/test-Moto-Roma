@@ -19,7 +19,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 .seccion-link{width: 100%;font-size: 12px;font-weight: 500;color: #111111;padding: 10px 0 0 6vw;}
 .seccion-link__a{display: inline-block;color: #FF0501;}
 
-.seccion-patentamiento, .seccion-informacion{margin: 6vw 10vw 0vw 10vw;border: 2px #FF0501 solid;padding: 2rem 3rem;font-size: 20px;font-weight: 400;line-height: 34px;letter-spacing: 0.6px;}
+.seccion-patentamiento, .seccion-informacion{margin: 6vw 10vw 0vw 10vw;border: 2px #FF0501 solid;padding: 2rem 3rem;font-size: 20px;font-weight: 400;line-height: 34px;letter-spacing: 0.6px;border-radius: 6px;}
 .seccion-informacion{margin: 2rem 10vw 2rem 10vw;}
 
 .parrafo{width: 100%;}

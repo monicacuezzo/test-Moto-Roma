@@ -19,7 +19,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 .seccion-link{width: 100%;font-size: 12px;font-weight: 500;color: #111111;padding: 10px 0 0 6vw;}
 .seccion-link__a{display: inline-block;color: #FF0501;}
 
-.seccion-horario{margin: 3vw 10vw 0vw 10vw;border: 3px #FF0501 solid;padding: 1.5rem 2.5rem;font-size: 22px;font-weight: 400;line-height: 34px;letter-spacing: 0.6px;border-radius: 6px;}
+.seccion-horario{margin: 3vw 10vw 0vw 10vw;border: 3px #FF0501 solid;padding: 1.5rem 2.5rem;font-size: 22px;font-weight: 400;line-height: 28px;letter-spacing: 0.6px;border-radius: 6px;}
 .parrafo{width: 100%;}
 .seccion-mapa{margin: 2rem 10vw 4vw 10vw;}
 .seccion-mapa iframe{width: 100%;}
@@ -31,9 +31,9 @@ ul{list-style: none;margin: 0;padding: 0;}
     .main{width: 95%;}
 }
 @media (max-width: 767.98px){
-    .seccion-horario{padding: 1rem 2rem;font-size: 16px;letter-spacing: 0;line-height: 28px;}
+    .seccion-horario{padding: 1rem 2rem;font-size: 16px;letter-spacing: 0;line-height: 22px;}
 }
 @media (max-width: 519.98px){
-    .seccion-horario{padding: 1rem;font-size: 14px;line-height: 22px;}
+    .seccion-horario{padding: 1rem;font-size: 14px;line-height: 20px;}
 }
  

@@ -95,7 +95,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 
 .flecha-slider-izq{position: absolute; top: 0;left: -2.5vw;z-index: 30;display: flex;justify-content: center;align-items: center;height: 100%;padding-right: 1vw;}
 .flecha-slider-der{position: absolute; top: 0;right: -2.5vw;height: 100%;margin-left: 1vw;display: flex;justify-content: center;align-items: center;}
-.flecha{height: 2.5vw;}
+.flecha{height: 2.5vw;cursor: pointer;}
 .seccion-consejos__slider{/*width:calc(80% + 6px)*/  width: 82%; margin: auto;display: flex;position: relative;}
 .seccion-consejos__slider-contenedor{width: 100%;display: flex;justify-content: space-between;}
 .blog__contenedor{padding: 1rem 0 1rem 0;overflow: hidden;width:100%;}

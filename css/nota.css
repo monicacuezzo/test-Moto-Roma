@@ -27,34 +27,24 @@ ul{list-style: none;margin: 0;padding: 0;}
 
 .seccion-contenido__imagen{width: 100%;height: 34vw; background: url('../img/notas/notas2.webp') no-repeat; background-size: cover;background-position: center center;margin-top: 2rem;}
 
-.titulo-seccion{font-weight: 600;font-size:30px /*55px*/;color: #111111;padding: 2rem 0;}
+.titulo-seccion{font-weight: 600;font-size:30px;color: #111111;padding: 2rem 0;}
 
 .seccion-consejos{background-color: #fff;text-align: center;padding: 0 11vw;}
-.seccion-consejos__consejos{width: 80%;margin: auto;display: flex;flex-wrap: wrap; box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.5);border-radius: 2vw;}
-.seccion-consejos__consejos-img{width: 50%;overflow: hidden;border-top-left-radius: 2vw;border-bottom-left-radius: 2vw;}
-.seccion-consejos__consejos-img img{width: 100%;height: 100%;object-fit: cover;border-top-left-radius: 2vw;border-bottom-left-radius: 2vw; }
-.seccion-consejos__consejos-texto {width: 50%;padding: 6vw 2.5vw 3vw 3vw;text-align: left;}
-.h3{font-weight: 500;font-size: 2.1vw;padding-bottom: 2.2vw;}
-.contenido{font-weight: 400;font-size: 1.4vw;}
-.seccion-consejos__consejos-boton{color: #fff;background-color: #FF0501;border-radius: /*33px*/ 2vw;font-weight:500;font-size:1.3vw;width:12vw;height:3.1vw; text-align: center;padding-top:0.75vw;margin: 2.8vw 0 0 auto;}
-.seccion-consejos__consejos-boton img{width: 2.1vw;vertical-align: middle;margin-right: 0.3vw;display: inline!important;}
 
 .flecha-slider-izq{position: absolute; top: 0;left: -2.5vw;z-index: 30;display: flex;justify-content: center;align-items: center;height: 100%;padding-right: 1vw;}
 .flecha-slider-der{position: absolute; top: 0;right: -2.5vw;height: 100%;margin-left: 1vw;display: flex;justify-content: center;align-items: center;}
-.flecha{height: 2.5vw;}
-.seccion-consejos__slider{/*width:calc(80% + 6px)*/  width: 102%; margin: auto;display: flex;position: relative;}
-.seccion-consejos__slider-contenedor{width: 100%;display: flex;justify-content: space-between;}
+.flecha{height: 2.5vw;cursor: pointer;}
+.seccion-consejos__slider{width: 102%; margin: auto;display: flex;position: relative;}
 .blog__contenedor{padding: 1rem 0 1rem 0;overflow: hidden;width:100%;}
 .blog__galeria{display: flex;width: max-content;}
-.seccion-consejos__slider-blog{/*width:49%;*/ box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.5);border-radius: 2.3vw;text-align: left;margin: 0 0.5%;}
+.seccion-consejos__slider-blog{box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.5);border-radius: 2.3vw;text-align: left;margin: 0 0.5%;}
 .seccion-consejos__slider-blog img{width: 100%;}
 .blog-contenido{padding: 1rem 2rem 2rem 2rem;}
 .blog-titulo{font-weight:600;font-size:1.1vw;padding-bottom: 0.8rem;}
 .blog-subtitulo{font-weight:600;font-size:1.6vw;padding-bottom: 0.8rem;}
 .blog-texto{font-weight:400;font-size:1vw;padding-bottom: 1rem;}
-
 .blog__marcadores-slide{text-align:center;margin: auto;display: flex; width: max-content;padding: 2rem;}
-.li_blog_a{display:inline-block;margin:8px;background-color:#999999;width:14px;height:14px;border-radius:50%}
+.li_blog_a, .cuadro_a{display:inline-block;margin:8px;background-color:#999999;width:14px;height:14px;border-radius:50%}
 .blog__marcador-activo a{background-color:#111111} 
 
 
@@ -69,17 +59,6 @@ ul{list-style: none;margin: 0;padding: 0;}
     .seccion-link{font-size: 10px;}
     .parrafo{font-size: 13px;}
     .titulo-seccion{font-size: 20px;padding: 2rem 0;}
-}
-@media (max-width: 519.98px){
-    .seccion-contenido__h2{font-size: 16px;}
-    .parrafo{font-size: 12px;}
-}
-
-@media (max-width: 767.98px){
-    
-    .h3{font-size: 14px;}
-    .contenido {font-size: 12px;}
-     
     .blog-titulo{font-size:14px;padding-bottom: 0.8rem;}
     .blog-subtitulo{font-size:16px;padding-bottom: 0.8rem;}
     .blog-texto{font-size:12px;padding-bottom: 1rem;}
@@ -87,17 +66,15 @@ ul{list-style: none;margin: 0;padding: 0;}
     .flecha{height: 14px;}
     .flecha-slider-izq{left: -14px;padding-right: 8px;}
     .flecha-slider-der{right: -14px;margin-left: 8px;}
-    
 }
 @media (max-width: 519.98px){
-    
-    .h3{font-size: 14px;}
+    .seccion-contenido__h2{font-size: 16px;}
+    .parrafo{font-size: 12px;}
     .seccion-consejos__slider{width: calc(80% + 20px);}
-    .seccion-consejos__slider-blog{/*width: calc(100% - 20px);*/ margin:0 10px;}
-    .marcador {margin: 5px;width: 12px;height: 12px;}
+    .seccion-consejos__slider-blog{margin:0 10px;}
     .blog-contenido {padding: 1rem;}
-
 }
+
 
 .d-block{display: block;}
 

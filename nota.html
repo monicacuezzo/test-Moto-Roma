@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/footer.css">
 
     <link rel="preload" href="img/notas/notas.webp" as="image" />
+    <link rel="preload" href="js/header.js" as="script" />
 
     <title>Moto Roma - Notas</title>
 </head>
@@ -50,7 +51,7 @@
             </p>
         </section>
 
-        <section class="seccion-slider seccion-consejos">
+        <section class="seccion-consejos">
             <h2 class="titulo-seccion">Otras notas que pueden <span class="resaltado">interesarte</span></h2>
             <div class="seccion-consejos__blog">
                     <div class="seccion-consejos__slider">
@@ -60,13 +61,12 @@
 
                         <div id="blog__contenedor" class="blog__contenedor">
                             <div id="blog__galeria" class="blog__galeria" >
-                                <!-- <div class="seccion-consejos__slider-contenedor"> -->
                                     <div class="seccion-consejos__slider-blog">
                                         <img src="img/notas/blog3.webp" alt="Blog">
                                         <div class="blog-contenido">
                                             <p class="blog-titulo resaltado">MOTO ROMA BLOG</p>
                                             <p class="blog-subtitulo">Guía completa sobre las herramientas que deberías tener </p>
-                                            <p class="blog-texto">Llegar a casa empapado después de una tormenta es algo que puede sucederle a cualquiera. Te damos algunos consejos para secar correctamente tu equipación...</p>
+                                            <p class="blog-texto">Ahorrar dinero, tener (un poco más) de control de la moto, ser capaz de lidiar con una avería en la ruta... Hay muchas buenas razones para iniciarse en la mecánica de motos...</p>
                                         </div>
                                     </div>
                 
@@ -75,7 +75,7 @@
                                         <div class="blog-contenido">
                                             <p class="blog-titulo resaltado">MOTO ROMA BLOG</p>
                                             <p class="blog-subtitulo">5 consejos para iniciar a tu hijo en el motocross con total seguridad </p>
-                                            <p class="blog-texto">La nostalgia de tu primera toma de contacto con el motocross y el deseo de transmitir esa pasión a tu hijo o hija ¡Te entendemos perfectamente! Sin embargo....</p>
+                                            <p class="blog-texto">La nostalgia de tu primera toma de contacto con el motocross y el deseo de transmitir esa pasión a tu hijo o hija ¡Te entendemos perfectamente! Sin embargo...</p>
                                         </div>
                                     </div>
     
@@ -84,7 +84,7 @@
                                         <div class="blog-contenido">
                                             <p class="blog-titulo resaltado">MOTO ROMA BLOG</p>
                                             <p class="blog-subtitulo">Guía completa sobre las herramientas que deberías tener</p>
-                                            <p class="blog-texto">Ahorrar dinero, tener (un poco más) de control de la moto, ser capaz de lidiar con una avería en la ruta… Hay muchas buenas razones para iniciarse en la mecánica de motos...</p>
+                                            <p class="blog-texto">Ahorrar dinero, tener (un poco más) de control de la moto, ser capaz de lidiar con una avería en la ruta... Hay muchas buenas razones para iniciarse en la mecánica de motos...</p>
                                         </div>
                                     </div>
                 
@@ -93,10 +93,9 @@
                                         <div class="blog-contenido">
                                             <p class="blog-titulo resaltado">MOTO ROMA BLOG</p>
                                             <p class="blog-subtitulo">5 consejos para iniciar a tu hijo en el motocross con total seguridad </p>
-                                            <p class="blog-texto">La nostalgia de tu primera toma de contacto con el motocross y el deseo de transmitir esa pasión a tu hijo o hija ¡Te entendemos perfectamente! Sin embargo....</p>
+                                            <p class="blog-texto">La nostalgia de tu primera toma de contacto con el motocross y el deseo de transmitir esa pasión a tu hijo o hija ¡Te entendemos perfectamente! Sin embargo...</p>
                                         </div>
                                     </div>
-                                <!-- </div> -->
                             </div>
                         </div>
                         <div id="flecha-slider-der" class="flecha-slider-der">
@@ -116,8 +115,8 @@
 
     <script type="text/javascript" src="js/jQuery3.6.4.js"></script>
     <script type="text/javascript" src="js/header.js"></script>
-    <script type="text/javascript" src="js/footer.js"></script>
     <script type="text/javascript" src="js/slider-notas.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
 
 
     <script>
@@ -136,10 +135,10 @@
             blog_contenedor.addEventListener("mouseout", avanzar_blog);
 
             
-            $('.li_blog a').click(function(target){
+            $('.cuadro a').click(function(target){
                 target.preventDefault();
-                link_blog()
-                var li_blog = document.getElementsByClassName('li_blog');
+                // link_blog();
+                var li_blog = document.getElementsByClassName('cuadro');
                 detener_blog();
                 for (let index = 0; index < blog_contenido.length; index++) {
                     if (blog_contenido[0].getAttribute("id") == $(this).attr('href')) {
@@ -160,7 +159,7 @@
             document.getElementById('flecha-slider-der').addEventListener("click",blog_avanzar1);
             document.getElementById('flecha-slider-izq').addEventListener("click", function() {
                 detener_blog();
-                blog_indice = blog_retroceder1(blog_galeria,blog_indice,blog_width,blog_margen,blog_contenido,blog_desplaza,"blog__marcador-activo",blog_cantidad,"li_blog");
+                blog_indice = blog_retroceder1(blog_galeria,blog_indice,blog_width,blog_margen,blog_contenido,blog_desplaza,"blog__marcador-activo",blog_cantidad,"cuadro");
                 avanzar_blog();
             });
 

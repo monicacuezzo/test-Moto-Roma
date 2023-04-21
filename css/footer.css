@@ -4,7 +4,7 @@ a{-webkit-appearance: none;-moz-appearance: none;appearance: none;background:tra
 .footer__titulo-columna {font-size: 14px;font-weight: 700;margin-bottom: 15px;}
 hr{margin: 1.5rem 0;}
 .footer__contenido a{color: #FFFFFF;}
-.footer__contenido a:hover{color:#f98b3c;}
+.footer__contenido a:hover{color: rgba(255,255,255, 0.7);}
 .footer__footer{padding: 0 1rem;}
 
 @media (max-width: 991px){

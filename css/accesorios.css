@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{margin: 0;padding: 0;-webkit-box-sizing: border-box;box-sizing: border-box;}
+html{-webkit-box-sizing:border-box;box-sizing:border-box;margin: 0;padding: 0;scroll-behavior:smooth}
+body,section,div,nav,p,h1,h2,h3,h4,h5,h6,button,a,select,input{font-family:Roboto,sans-serif;}
+select, a, button, input{-webkit-appearance: none;-moz-appearance: none;appearance: none;border: 0;text-transform: uppercase; font-family:Roboto,sans-serif;}
+a{-webkit-appearance: none;-moz-appearance: none;appearance: none; background:transparent;border:none;outline:0;-webkit-box-shadow:none;box-shadow:none;-webkit-box-sizing: border-box;box-sizing: border-box;cursor: pointer;text-decoration: none;text-transform: none;display: block;}
+button{-webkit-appearance: none;-moz-appearance: none;appearance: none; border: none; background: transparent;outline: 0;-webkit-box-shadow: none;box-shadow: none;}
+img{display: block;}
+.flex{display: -webkit-box;display: -ms-flexbox;display: flex;}
+.body{width: 100vw; background-color: #1E1E1E;color:#111111;overflow:overlay}
+ul{list-style: none;margin: 0;padding: 0;}
+.h1{width: 0;height: 0;font-size: 1px;color: transparent;}
+ 
+.main{width: 85%;margin:0 auto;position: relative;background-color: #fff;padding-bottom: 4rem;margin-top: 75px; }
+.resaltado{color: #FF0501;letter-spacing: 0}
+
+.seccion-imagen{width: 100%;height: 41.5vw; background: url('../img/accesorios/accesorios.webp') no-repeat; background-size: cover;background-position: center center;}
+.seccion-link{width: 100%;font-size: 12px;font-weight: 500;color: #111111;padding: 10px 0 0 6vw;}
+.seccion-link__a{display: inline-block;color: #FF0501;}
+
+.seccion-accesorios{margin: 6vw 10vw 0vw 10vw;display: flex;justify-content: space-between; flex-wrap: wrap;text-align: center;}
+.seccion-accesorios__accesorio{width: 48%;height: max-content;background: #FFFFFF;box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.5);border-radius: 2.3vw;margin-bottom: 2rem; text-align: center;font-weight: 700;font-size: 24px;color: #111111;padding-bottom: 2rem;}
+.seccion-accesorios__accesorio__img{height: 20vw;margin: 0 auto;}
+
+
+@media (max-width: 1179.98px){
+    .main{margin-top: 53px;}
+}
+@media (max-width: 991px){
+    .main{width: 95%;}
+}
+@media (max-width: 767.98px){
+    .main{padding-bottom: 1rem;}
+    .seccion-accesorios__accesorio{font-size: 20px;}
+}
+@media (max-width: 519.98px){
+    .seccion-accesorios__accesorio{font-size: 16px;padding-bottom: 1rem;}
+}
+ 

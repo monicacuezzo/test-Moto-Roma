@@ -22,7 +22,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 .seccion-ordenar{width: 100%;text-align: end;padding: 2rem 10vw 3rem 10vw;}
 .seccion-ordenar__boton{color: #fff;background-color: #FF0501;width: 165px;height: 35px; border-radius: 25px;font-size: 13px;}
 .seccion-ordenar__boton>*{display: inline-block;}
-.seccion-ordenar__boton img{width: 8px;}
+.seccion-ordenar__boton img{width: 16px;}
 
 .seccion-cascos{margin: 0vw 10vw 0vw 10vw;display: flex;justify-content: space-between; flex-wrap: wrap;text-align: center;}
 .seccion-cascos__casco{width: 48%;height: max-content;background: #FFFFFF;box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.5);border-radius: 2.3vw;margin-bottom: 2rem; text-align: center;font-weight: 700;font-size: 24px;color: #111111;padding: 1rem;}

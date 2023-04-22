@@ -23,7 +23,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 .seccion-contenido{width: 100%;padding: 2rem 11vw;}
 .seccion-contenido__h2{font-size: 24px;font-weight: 600;max-width: 600px;}
 .seccion-contenido__span{white-space: nowrap;}
-.parrafo{width: 100%;margin-top: 2rem;font-size: 14px;}
+.parrafo{width: 100%;margin-top: 2rem;font-size: 16px;line-height: 22px;}
 
 .seccion-contenido__imagen{width: 100%;height: 34vw; background: url('../img/notas/notas2.webp') no-repeat; background-size: cover;background-position: center center;margin-top: 2rem;}
 
@@ -57,7 +57,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 @media (max-width: 767.98px){
     .seccion-contenido__h2{font-size: 18px;}
     .seccion-link{font-size: 10px;}
-    .parrafo{font-size: 13px;}
+    .parrafo{font-size: 14px;line-height: 20px;}
     .titulo-seccion{font-size: 20px;padding: 2rem 0;}
     .blog-titulo{font-size:14px;padding-bottom: 0.8rem;}
     .blog-subtitulo{font-size:16px;padding-bottom: 0.8rem;}
@@ -68,8 +68,8 @@ ul{list-style: none;margin: 0;padding: 0;}
     .flecha-slider-der{right: -14px;margin-left: 8px;}
 }
 @media (max-width: 519.98px){
-    .seccion-contenido__h2{font-size: 16px;}
-    .parrafo{font-size: 12px;}
+    .seccion-contenido__h2{font-size: 17px;}
+    /* .parrafo{font-size: 12px;} */
     .seccion-consejos__slider{width: calc(80% + 20px);}
     .seccion-consejos__slider-blog{margin:0 10px;}
     .blog-contenido {padding: 1rem;}

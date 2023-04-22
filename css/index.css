@@ -166,7 +166,7 @@ hr{margin: 1.5rem 0;}
     .seccion-consejos__consejos-img{width: 100%;border-top-right-radius: 2.3vw;border-top-left-radius: 2.3vw;border-bottom-left-radius: 0}
     .seccion-consejos__consejos-img img {height: 35vw;object-fit: cover;border-top-right-radius: 2.3vw;border-top-left-radius: 2.3vw;border-bottom-left-radius: 0;}
     .section-banner__texto{font-size: 12px;padding-top: 3vw;}
-    .h3{font-size: 14px;}
+    .h3{font-size: 16px;font-weight: 600;}
     .titulo-seccion{font-size: 20px;}
     .seccion-consejos__slider{width: calc(80% + 20px);}
     .seccion-consejos__slider-blog{/*width: calc(100% - 20px);*/ margin:0 10px;}

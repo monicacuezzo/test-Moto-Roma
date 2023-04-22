@@ -7,12 +7,12 @@ hr{margin: 1.5rem 0;}
 .footer__contenido a:hover{color: rgba(255,255,255, 0.7);}
 .footer__footer{padding: 0 1rem;}
 
-@media (max-width: 991px){
+@media (max-width: 991.98px){
     .footer-pagina{width: 95%;}
 }
 @media (max-width: 767.98px){
     .logo{margin: 2vw auto 2vw auto;}
-    .footer-pagina{text-align: center;/*font-size: 10px;*/padding: 30px 0 20px 0;}
+    .footer-pagina{text-align: center;/*font-size: 10px;*/padding: 30px 0 20px 0;line-height: 24px;}
     .footer__contenido{-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
     /* .footer__titulo-columna {font-size: 12px;margin-bottom: 10px;} */
     .footer__contenido-info,.footer__contenido-conoce{margin-top: 16px;}

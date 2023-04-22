@@ -259,8 +259,8 @@ window.onload = function () {
         avanzar_blog()
     });
 
-    $('.li_blog a').click(function(target){
-        target.preventDefault();
+    $('.li_blog a').click(function(event){
+        event.preventDefault();
         var li_blog = document.getElementsByClassName('li_blog');
         detener_blog();
         for (let index = 0; index < blog_contenido.length; index++) {

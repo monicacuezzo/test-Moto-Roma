@@ -119,18 +119,18 @@ function configurar_slider1() {
 
     // console.log("width item:"+slider1_width+" cant items:"+slider1_contenido.length+" contenedor:"+document.getElementById('contenedor').clientWidth)
 
-    generar(slider1_width,slider1_dots,slider1_contenido,slider1_li,"li_slider",slider1_indice,slider1_galeria,slider1_cantidad, slider1_desplaza,"seccion-slider1__marcador-activo");
+    generar(slider1_width,slider1_dots,slider1_contenido,slider1_li,"imagen_slider",slider1_indice,slider1_galeria,slider1_cantidad, slider1_desplaza,"seccion-slider1__marcador-activo");
 
     desplazar_slider1 = setInterval(function(){
         if (slider1_galeria.clientWidth > document.getElementById('contenedor').clientWidth) {
-            slider1_indice = desplazar_galeria(slider1_galeria,slider1_indice,slider1_width,slider1_margen,slider1_contenido,slider1_desplaza,"seccion-slider1__marcador-activo",slider1_cantidad,"li_slider");
+            slider1_indice = desplazar_galeria(slider1_galeria,slider1_indice,slider1_width,slider1_margen,slider1_contenido,slider1_desplaza,"seccion-slider1__marcador-activo",slider1_cantidad,"imagen_slider");
         }
     },3000);
 
     avanzar_slider1 = () => {
         desplazar_slider1 = setInterval(function(){
             if (slider1_galeria.clientWidth > document.getElementById('contenedor').clientWidth) {
-                slider1_indice = desplazar_galeria(slider1_galeria,slider1_indice,slider1_width,slider1_margen,slider1_contenido,slider1_desplaza,"seccion-slider1__marcador-activo",slider1_cantidad,"li_slider");
+                slider1_indice = desplazar_galeria(slider1_galeria,slider1_indice,slider1_width,slider1_margen,slider1_contenido,slider1_desplaza,"seccion-slider1__marcador-activo",slider1_cantidad,"imagen_slider");
             }
         },3000);
     };
@@ -216,6 +216,7 @@ function configurar_sliders() {
 window.onload = function () {
 
     configurar_slider1();
+    slider1_contenedor.style.height = slider1_galeria.style.height;
     configurar_blog();
    
    
@@ -228,9 +229,9 @@ window.onload = function () {
         avanzar_slider1()
     });
 
-    $('.li_slider a').click(function(target){
+    $('.imagen_slider a').click(function(target){
         target.preventDefault();
-        var li_slider = document.getElementsByClassName('li_slider');
+        var li_slider = document.getElementsByClassName('imagen_slider');
         detener_slider1();
         for (let index = 0; index < slider1_contenido.length; index++) {
             if (slider1_contenido[0].getAttribute("id") == $(this).attr('href')) {

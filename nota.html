@@ -9,17 +9,23 @@
 	<meta name="HandheldFriendly" content="true">
 	<meta name="robots" content="index,follow">
 
+    <link rel="preload" href="js/header.js" as="script" />
+    <link rel="preload" href="js/header.css" as="style" />
+    <link rel="preload" href="img/notas/notas.webp" as="image" />
+    
     <link rel="icon" type="image/png" href="img/compartidos/faviconMR.png" sizes="32x32"/>
     <link rel="stylesheet" type="text/css" href="css/nota.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
 
-    <link rel="preload" href="js/header.js" as="script" />
-    <link rel="preload" href="img/notas/notas.webp" as="image" />
-    
     <title>Moto Roma - Notas</title>
 </head>
 <body class="body">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            generar_header();
+        })
+    </script>
 
     <header id="header-pagina" class="header-pagina flex"></header>
 
@@ -122,7 +128,7 @@
     <script>
         window.onload = function () {
 
-            generar_header();
+            // generar_header();
             var ico_menu = document.getElementById("ico-menu");
             ico_menu.onclick = () => {
                 var nav_bar = document.getElementsByClassName("header__nav")[0];
@@ -135,10 +141,10 @@
             blog_contenedor.addEventListener("mouseout", avanzar_blog);
 
             
-            $('.cuadro a').click(function(target){
+            $('.ver-imagen a').click(function(target){
                 target.preventDefault();
                 // link_blog();
-                var li_blog = document.getElementsByClassName('cuadro');
+                var li_blog = document.getElementsByClassName('ver-imagen');
                 detener_blog();
                 for (let index = 0; index < blog_contenido.length; index++) {
                     if (blog_contenido[0].getAttribute("id") == $(this).attr('href')) {
@@ -159,7 +165,7 @@
             document.getElementById('flecha-slider-der').addEventListener("click",blog_avanzar1);
             document.getElementById('flecha-slider-izq').addEventListener("click", function() {
                 detener_blog();
-                blog_indice = blog_retroceder1(blog_galeria,blog_indice,blog_width,blog_margen,blog_contenido,blog_desplaza,"blog__marcador-activo",blog_cantidad,"cuadro");
+                blog_indice = blog_retroceder1(blog_galeria,blog_indice,blog_width,blog_margen,blog_contenido,blog_desplaza,"blog__marcador-activo",blog_cantidad,"ver-imagen");
                 avanzar_blog();
             });
 

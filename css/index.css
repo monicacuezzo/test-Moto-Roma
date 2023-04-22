@@ -25,7 +25,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 
 .header{position: fixed;left: 7.5%;top: 0px;z-index: 1000; width: 85%; /*max-width: 1492px;*/height: 75px;background-color: rgba(51,51,51,.8);align-items: center;justify-content: space-between;padding: 0 8.8vw;/*mix-blend-mode: multiply;*/}
 .header__principal{display: flex;justify-content: space-between;align-items: center;}
-.header__nav{display:flex; justify-content: space-between;width: 60%; max-width: 700px;min-width: 500px;}
+.header__nav{display:flex; justify-content: space-between;width: 60%; max-width: 700px;min-width: 500px;    align-items: center;}
 .header__nav-link{color: #fff;font-weight:500;font-size: 1vw;line-height: 1.7vw;/*display: flex;*/}
 .header__nav-link:hover{color: #FF0501;}
 .header__nav-contacto{display: block;color: #111111;background-color: #fff;border-radius: 50px;font-weight:500;font-size: 1.05vw;width: 6.2vw;text-align: center;padding: 3px 3px 4px;}
@@ -50,12 +50,12 @@ ul{list-style: none;margin: 0;padding: 0;}
 .seccion-slider1__marcadores{position: absolute;z-index: 20;left: 0; bottom: 1.1vw;width: 100%;text-align: center;}
 .seccion-slider1__marcadores ul{width: max-content;margin: auto;}
 .seccion-slider1__marcador, .seccion-slider1__marcadores ul li{display:inline-block;margin:10px;background-color:#fff;width:0.9vw;min-width: 10px; height:0.9vw;min-height: 10px;border-radius:50%}
-.li_slider{cursor: pointer;}
-.li_slider a{height: 100%;}
+.imagen_slider{cursor: pointer;}
+.imagen_slider a{height: 100%;}
 .seccion-slider1__marcador-activo{background-color:#FF0501!important} 
 
 /* renombrar esto */
-#contenedor{position: relative; width: 100%;overflow: hidden;}
+#contenedor{position: relative; width: 100%;overflow: hidden;height: auto;}
 #galeria{display: flex;width: max-content;}
 .item img{width: 100%;}
 
@@ -105,7 +105,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 .blog-contenido{padding: 1rem 2rem 2rem 2rem;}
 .blog-titulo{font-weight:600;font-size:1.1vw;padding-bottom: 0.8rem;}
 .blog-subtitulo{font-weight:600;font-size:1.6vw;padding-bottom: 0.8rem;}
-.blog-texto{font-weight:400;font-size:1vw;padding-bottom: 1rem;}
+.blog-texto{font-weight:400;font-size: 14px;line-height: 18px;padding-bottom: 1rem;}
 
 .blog__marcadores-slide{text-align:center;margin: auto;display: flex; width: max-content;padding: 2rem;}
 .li_blog_a{display:inline-block;margin:8px;background-color:#999999;width:14px;height:14px;border-radius:50%}
@@ -114,12 +114,12 @@ ul{list-style: none;margin: 0;padding: 0;}
 
 .resaltado{color: #FF0501;}
 
-
-.footer{width: 85%; /*max-width: 1492px;*/margin: auto; background-color: #111111;align-items: center; padding: 3vw 6vw;font-size: 12px;line-height: 16px;color: #FFFFFF;font-weight: 400}
+/* 
+.footer{width: 85%; margin: auto; background-color: #111111;align-items: center; padding: 3vw 6vw;font-size: 12px;line-height: 16px;color: #FFFFFF;font-weight: 400}
 .footer__contenido{display: flex;justify-content: space-between;padding: 0 4.5vw;}
 .footer__contenido-info-titulo {font-size: 14px;font-weight: 700;margin-bottom: 15px;}
 hr{margin: 1.5rem 0;}
-.footer__footer{padding: 0 1rem;}
+.footer__footer{padding: 0 1rem;} */
 
 
 
@@ -130,39 +130,42 @@ hr{margin: 1.5rem 0;}
     .header__principal-logo{height: max-content;}
     .header__principal .logo{margin: 2px auto ;}
     .header__nav{display: none;width: 100%;min-width: 0;border-bottom: 1px solid grey;    margin-top: 15px;}
-    .header__nav-link {padding: 10px 0;font-size: 12px;line-height: 12px;border-top: 1px solid grey;}
+    .header__nav-link {padding: 10px 0;font-size: 14px;line-height: 14px;border-top: 1px solid grey;}
     .header__nav-contacto{margin: 5px 0;font-size: 12px;line-height: 12px;border-top: 1px solid grey;width: 70px;padding: 3px 3px 2px 3px;}
 }
 @media (max-width: 991px){
-    .header,.main,.footer{width: 95%;}
+    .header,.main{width: 95%;}
+    /* ,.footer */
     .header{left: 2.5%;}
+    .contenido,.blog-texto {font-size: 14px;line-height: 18px;}
 }
 @media (max-width: 767.98px){
     .logo{margin: 2vw auto 2vw auto;}
     .main{margin-top: 57px;}
     .seccion-slider1__marcador, .seccion-slider1__marcadores ul li{display:inline-block;margin:10px;}
     .h3{font-size: 14px;}
-    .contenido {font-size: 12px;}
+    .contenido {font-size: 13px;line-height: 18px;}
+    .section-banner__texto-boton {font-size: 10px;width: 90px;height: 20px;padding-top: 4px;border-radius: 25px;}
+    .section-banner__texto-boton img {width: 11px;}
     .seccion-consejos__consejos-boton {font-size: 12px;width: 98px;height: 23px;padding-top: 4px;border-radius: 15px;}
     .seccion-consejos__consejos-boton img {width: 15px;margin-right: 3px;}
     .blog-titulo{font-size:14px;padding-bottom: 0.8rem;}
     .blog-subtitulo{font-size:16px;padding-bottom: 0.8rem;}
-    .blog-texto{font-size:12px;padding-bottom: 1rem;}
+    .blog-texto{font-size:13px;line-height: 18px; padding-bottom: 1rem;}
     .blog-contenido {padding: 1rem 2rem 1rem 2rem;}
-    .flecha{height: 14px;}
+    .flecha{height: 16px;}
     .flecha-slider-izq{left: -14px;padding-right: 8px;}
     .flecha-slider-der{right: -14px;margin-left: 8px;}
-    .footer{text-align: center;font-size: 10px;padding: 30px 0 20px 0;}
+    /* .footer{text-align: center;font-size: 10px;padding: 30px 0 20px 0;}
     .footer__contenido{flex-direction: column;}
     .footer__contenido-info-titulo {font-size: 12px;margin-bottom: 10px;}
-    .footer__contenido-info{margin-top: 16px;}
+    .footer__contenido-info{margin-top: 16px;} */
 }
 @media (max-width: 519.98px){
-    .section-banner__texto-boton {font-size: 8px;width: 75px;height: 16px;padding-top: 3px;}
-    .section-banner__texto-boton img {width: 8px;}
     .seccion-consejos__consejos-texto {width: 100%;padding: 1.2rem 1rem 1.2rem 1rem;}
     .seccion-consejos__consejos-img{width: 100%;border-top-right-radius: 2.3vw;border-top-left-radius: 2.3vw;border-bottom-left-radius: 0}
     .seccion-consejos__consejos-img img {height: 35vw;object-fit: cover;border-top-right-radius: 2.3vw;border-top-left-radius: 2.3vw;border-bottom-left-radius: 0;}
+    .section-banner__texto{font-size: 12px;padding-top: 3vw;}
     .h3{font-size: 14px;}
     .titulo-seccion{font-size: 20px;}
     .seccion-consejos__slider{width: calc(80% + 20px);}

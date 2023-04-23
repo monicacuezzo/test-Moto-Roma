@@ -15,7 +15,7 @@ function generar(width,dots,contenido,li,li_nombre,indice,galeria,cantidad,despl
         
         dots.innerHTML = "";
         for (let index = 0; index < (contenido.length / desplaza); index++) {
-            dots.innerHTML = dots.innerHTML + '<li class="'+li_nombre+'"><a class="'+li_nombre+'_a" href="'+li_nombre+(index * desplaza)+'"><div class="dot"></div></a></li>';
+            dots.innerHTML = dots.innerHTML + '<li class="'+li_nombre+'"><div class="'+li_nombre+'_a" id="'+li_nombre+(index * desplaza)+'"><div class="dot"></div></div></li>';
         }
         li = document.getElementsByClassName(li_nombre);
         li[indice].classList.add(clase_activo);
@@ -229,12 +229,13 @@ window.onload = function () {
         avanzar_slider1()
     });
 
-    $('.imagen_slider a').click(function(target){
-        target.preventDefault();
+    $('.imagen_slider_a').click(function(target){
+        console.log("CLICK DOT slider1")
+        // target.preventDefault();
         var li_slider = document.getElementsByClassName('imagen_slider');
         detener_slider1();
         for (let index = 0; index < slider1_contenido.length; index++) {
-            if (slider1_contenido[0].getAttribute("id") == $(this).attr('href')) {
+            if (slider1_contenido[0].getAttribute("id") == $(this).attr('id')) {
                 li_slider[slider1_indice].classList.remove("seccion-slider1__marcador-activo");
                 var id = slider1_contenido[0].getAttribute("id").match(/\d/g);
                 id = id.join("");
@@ -259,12 +260,13 @@ window.onload = function () {
         avanzar_blog()
     });
 
-    $('.li_blog a').click(function(event){
-        event.preventDefault();
+    $('.li_blog_a').click(function(event){
+        // event.preventDefault();
+        console.log("CLICK DOT BLOG")
         var li_blog = document.getElementsByClassName('li_blog');
         detener_blog();
         for (let index = 0; index < blog_contenido.length; index++) {
-            if (blog_contenido[0].getAttribute("id") == $(this).attr('href')) {
+            if (blog_contenido[0].getAttribute("id") == $(this).attr('id')) {
                 li_blog[blog_indice].classList.remove("blog__marcador-activo");
                 var id = blog_contenido[0].getAttribute("id").match(/\d/g);
                 id = id.join("");

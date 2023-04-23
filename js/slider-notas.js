@@ -11,7 +11,7 @@ function generar(width,dots,contenido,li,li_nombre,indice,galeria,cantidad,despl
         
         dots.innerHTML = "";
         for (let index = 0; index < (contenido.length / desplaza); index++) {
-            dots.innerHTML = dots.innerHTML + '<li class="'+li_nombre+'"><a class="'+li_nombre+'_a" href="'+li_nombre+(index * desplaza)+'"><div class="dot"></div></a></li>';
+            dots.innerHTML = dots.innerHTML + '<li class="'+li_nombre+'"><div class="'+li_nombre+'_a" id="'+li_nombre+(index * desplaza)+'"><div class="dot"></div></div></li>';
         }
         li = document.getElementsByClassName(li_nombre);
         li[indice].classList.add(clase_activo);

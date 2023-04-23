@@ -26,7 +26,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 
 .seccion-wapp{text-align: end;margin:0 10vw 2rem 10vw ;}
 
-.seccion-telefonos__boton-wa{color: #fff;background-color: #25D366;border-radius: 2.3vw;font-weight:500;font-size:17px;width:170px;height:40px; text-align: center;padding-top:11px;display: inline-block;}
+.seccion-telefonos__boton-wa{color: #fff;background-color: #25D366;border-radius: 2.3vw;font-weight:600;font-size:17px;width:170px;height:40px; text-align: center;padding-top:11px;display: inline-block;}
 .seccion-telefonos__boton-wa img{display: inline!important;width:1.6vw;min-width: 16px; vertical-align: top;width: 20px;margin-right: 5px;}
 
 
@@ -41,7 +41,7 @@ ul{list-style: none;margin: 0;padding: 0;}
     .seccion-telefonos__boton-wa {border-radius: 20px;}
 }
 @media (max-width: 519.98px){
-    .seccion-patentamiento, .seccion-informacion{padding: 1rem;font-size: 14px;line-height: 20px;}
+    .seccion-patentamiento, .seccion-informacion{padding: 1rem;font-size: 15px;line-height: 20px;}
     .seccion-telefonos__boton-wa {font-size: 14px;width: 145px;height: 35px;padding-top: 9px;}
     .seccion-telefonos__boton-wa img {width: 16px;margin-right: 2px;}
 }

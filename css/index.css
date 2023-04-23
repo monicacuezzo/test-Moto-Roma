@@ -36,7 +36,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 .seccion-slider1__marcadores ul{width: -webkit-max-content;width: -moz-max-content;width: max-content;margin: auto;}
 .seccion-slider1__marcador, .seccion-slider1__marcadores ul li{display:inline-block;margin:10px;background-color:#fff;width:0.9vw;min-width: 12px; height:0.9vw;min-height: 12px;border-radius:50%}
 .imagen_slider{cursor: pointer;}
-.imagen_slider a{height: 100%;}
+.imagen_slider_a{height: 100%;}
 .seccion-slider1__marcador-activo{background-color:#FF0501!important} 
 
 /* renombrar estas clases */
@@ -94,7 +94,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 
 .blog__marcadores-slide{text-align:center;margin: auto;display: -webkit-box;display: -ms-flexbox;display: flex; width: -webkit-max-content; width: -moz-max-content; width: max-content;padding: 2rem;}
 .li_blog_a{display:inline-block;margin:8px;background-color:#999999;width:14px;height:14px;border-radius:50%}
-.blog__marcador-activo a{background-color:#111111} 
+.blog__marcador-activo .li_blog_a{background-color:#111111} 
 
 .resaltado{color: #FF0501;}
 

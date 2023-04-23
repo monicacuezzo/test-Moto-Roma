@@ -31,19 +31,19 @@ ul{list-style: none;margin: 0;padding: 0;}
 
 .seccion-consejos{background-color: #fff;text-align: center;padding: 0 11vw;}
 
-.flecha-slider-izq{position: absolute; top: 0;left: -2.5vw;z-index: 30;display: flex;justify-content: center;align-items: center;height: 100%;padding-right: 1vw;}
-.flecha-slider-der{position: absolute; top: 0;right: -2.5vw;height: 100%;margin-left: 1vw;display: flex;justify-content: center;align-items: center;}
+.flecha-slider-izq{position: absolute; top: 0;left: -2.5vw;z-index: 30;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;height: 100%;padding-right: 1vw;}
+.flecha-slider-der{position: absolute; top: 0;right: -2.5vw;height: 100%;margin-left: 1vw;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
 .flecha{height: 2.5vw;cursor: pointer;}
-.seccion-consejos__slider{width: 102%; margin: auto;display: flex;position: relative;}
+.seccion-consejos__slider{width: 102%; margin: auto;display: -webkit-box;display: -ms-flexbox;display: flex;position: relative;}
 .blog__contenedor{padding: 1rem 0 1rem 0;overflow: hidden;width:100%;}
-.blog__galeria{display: flex;width: max-content;}
-.seccion-consejos__slider-blog{box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.5);border-radius: 2.3vw;text-align: left;margin: 0 0.5%;}
+.blog__galeria{display: -webkit-box;display: -ms-flexbox;display: flex;width: -webkit-max-content;width: -moz-max-content;width: max-content;}
+.seccion-consejos__slider-blog{-webkit-box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.5);box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.5);border-radius: 2.3vw;text-align: left;margin: 0 0.5%;}
 .seccion-consejos__slider-blog img{width: 100%;}
 .blog-contenido{padding: 1rem 2rem 2rem 2rem;}
 .blog-titulo{font-weight:600;font-size:1.1vw;padding-bottom: 0.8rem;}
 .blog-subtitulo{font-weight:600;font-size:1.6vw;padding-bottom: 0.8rem;}
 .blog-texto{font-weight:400;font-size:1vw;padding-bottom: 1rem;}
-.blog__marcadores-slide{text-align:center;margin: auto;display: flex; width: max-content;padding: 2rem;}
+.blog__marcadores-slide{text-align:center;margin: auto;display: -webkit-box;display: -ms-flexbox;display: flex; width: -webkit-max-content; width: -moz-max-content; width: max-content;padding: 2rem;}
 .li_blog_a, .ver-imagen_a{display:inline-block;margin:8px;background-color:#999999;width:14px;height:14px;border-radius:50%}
 .blog__marcador-activo a{background-color:#111111} 
 
@@ -64,13 +64,12 @@ ul{list-style: none;margin: 0;padding: 0;}
     .blog-subtitulo{font-size:16px;padding-bottom: 0.8rem;}
     .blog-texto{padding-bottom: 1rem;}
     .blog-contenido {padding: 1rem 2rem 1rem 2rem;}
-    .flecha{height: 14px;}
+    .flecha{height: 16px;}
     .flecha-slider-izq{left: -14px;padding-right: 8px;}
     .flecha-slider-der{right: -14px;margin-left: 8px;}
 }
 @media (max-width: 519.98px){
     .seccion-contenido__h2{font-size: 17px;}
-    /* .parrafo{font-size: 12px;} */
     .seccion-consejos__slider{width: calc(80% + 20px);}
     .seccion-consejos__slider-blog{margin:0 10px;}
     .blog-contenido {padding: 1rem;}
@@ -78,5 +77,4 @@ ul{list-style: none;margin: 0;padding: 0;}
 
 
 .d-block{display: block;}
-
  

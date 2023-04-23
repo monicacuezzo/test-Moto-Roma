@@ -141,13 +141,13 @@
             blog_contenedor.addEventListener("mouseout", avanzar_blog);
 
             
-            $('.ver-imagen a').click(function(target){
-                target.preventDefault();
+            $('.ver-imagen_a').click(function(target){
+                // target.preventDefault();
                 // link_blog();
                 var li_blog = document.getElementsByClassName('ver-imagen');
                 detener_blog();
                 for (let index = 0; index < blog_contenido.length; index++) {
-                    if (blog_contenido[0].getAttribute("id") == $(this).attr('href')) {
+                    if (blog_contenido[0].getAttribute("id") == $(this).attr('id')) {
                         li_blog[blog_indice].classList.remove("blog__marcador-activo");
                         var id = blog_contenido[0].getAttribute("id").match(/\d/g);
                         id = id.join("");

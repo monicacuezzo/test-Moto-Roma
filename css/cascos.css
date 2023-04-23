@@ -17,7 +17,6 @@ ul{list-style: none;margin: 0;padding: 0;}
 
 .seccion-imagen{width: 100%;height: 41.5vw; /* background: url('../img/accesorios/accesorios.webp') no-repeat; background-size: cover;background-position: center center;*/ }
 .seccion-imagen picture, .seccion-imagen picture source, .seccion-imagen picture img{width: 100%;height: 100%;}
-/* .seccion-imagen picture{width: 100%;} */
 .seccion-link{width: 100%;font-size: 12px;font-weight: 500;color: #111111;padding: 10px 0 0 6vw;}
 .seccion-link__a{display: inline-block;color: #FF0501;}
 

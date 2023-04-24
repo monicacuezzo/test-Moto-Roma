@@ -31,12 +31,11 @@ ul{list-style: none;margin: 0;padding: 0;}
 .seccion-cascos__casco-descripcion{font-size: 20px;}
 
 /* CASCO XX */
-.seccion-casco{margin: 10vw 0; padding:2rem;
-    /* display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; */
-    border-top: #FF0501 solid 2px;border-bottom: #FF0501 solid 2px;text-align: center;}
+.seccion-casco{margin: 10vw 0; padding:2rem;border-top: #FF0501 solid 2px;border-bottom: #FF0501 solid 2px;text-align: center;}
 .seccion-casco__contenido{margin: auto;width: max-content;}
 .seccion-casco__img{width: 30vw;min-width: 200px;margin: 0 ;}
 .seccion-casco__info{max-width: 50vw; font-weight: 700;font-size: 2vw;text-align: left;margin-top: 1rem;}
+.seccion-casco__info-precio{margin: 1rem 0;}
 .seccion-casco__info-boton-wa{color: #fff;background-color: #25D366;border-radius: 30px;font-weight:600;font-size:22px;width:200px;height:45px; text-align: center;padding-top:8px;display: inline-block;}
 .seccion-casco__info-boton-wa img{display: inline!important; vertical-align: text-top;width: 25px;margin-right: 5px;}
 

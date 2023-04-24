@@ -47,14 +47,25 @@ ul{list-style: none;margin: 0;padding: 0;}
 }
 @media (max-width: 991px){
     .main{width: 95%;}
+    .seccion-cascos__casco{font-size: 20px;}
+    .seccion-cascos__casco-descripcion{font-size: 18px;}
+
     .seccion-casco__info-boton-wa{font-size: 18px;width: 170px;height: 35px;}
     .seccion-casco__info-boton-wa img{width: 20px;}
 }
 @media (max-width: 767.98px){
     .main{padding-bottom: 1rem;}
+    .seccion-ordenar__boton{width: 145px;height: 30px; font-size: 12px;}
+    .seccion-cascos__casco{font-size: 18px;}
+    .seccion-cascos__casco-descripcion{font-size: 16px;}
+
     .seccion-casco__info{font-size: 20px;}
 }
 @media (max-width: 519.98px){
+    .seccion-ordenar{padding: 1rem 10vw 2rem 10vw;}
+    .seccion-cascos__casco{font-size: 16px;padding-bottom: 1rem;width: 100%;}
+    .seccion-cascos__casco-descripcion{font-size: 14px;}
+
     .seccion-casco__contenido{flex-direction: column;}
     .seccion-casco__info{width: 100%;font-size: 18px;}
 }

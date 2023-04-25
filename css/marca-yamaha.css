@@ -26,54 +26,47 @@ ul{list-style: none;margin: 0;padding: 0;}
 .seccion-ordenar__boton img{width: 16px;}
 .orden_lista{-webkit-appearance: none;-moz-appearance: none;appearance: none;background-image: url(../img/compartidos/down-selector.png);background-size: 13px 8px; background-repeat: no-repeat;background-position: right 0 center;font-family:Roboto,sans-serif;border: none; color: #fff;background-color: #FF0501;font-size: 13px;padding: 2px 20px 3px 10px; }
 .orden_lista:focus{color: #fff; outline: none;}
-.orden_lista option{font-family:Roboto,sans-serif;background-color: grey;}
-
-.seccion-cascos{margin: 0vw 10vw 0vw 10vw;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap;text-align: center;}
-.seccion-cascos__casco{width: 48%;height: -webkit-max-content;height: -moz-max-content;height: max-content;background: #FFFFFF;-webkit-box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.5);box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.5);border-radius: 2.3vw;margin-bottom: 2rem; text-align: center;font-weight: 700;font-size: 24px;color: #111111;padding: 1rem;}
-.seccion-cascos__casco-img{height: 11vw;min-height: 100px;margin: 0 auto;}
-.seccion-cascos__casco-descripcion{font-size: 20px;}
-.seccion-cascos__casco:hover{-webkit-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.9);box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.9);}
-
-/* CASCO-ficha */
-.seccion-casco{margin: 10vw 0; padding:2rem;border-top: #FF0501 solid 2px;border-bottom: #FF0501 solid 2px;text-align: center;}
-.seccion-casco__contenido{margin: auto;width: -webkit-max-content;width: -moz-max-content;width: max-content;}
-.seccion-casco__img{width: 30vw;min-width: 200px;margin: 0 ;}
-.seccion-casco__info{max-width: 50vw; font-weight: 700;font-size: 2vw;text-align: left;margin-top: 1rem;margin-left: 2vw;}
-.seccion-casco__info-precio{margin: 1rem 0;}
-.seccion-casco__info-boton-wa{color: #fff;background-color: #25D366;border-radius: 30px;font-weight:600;font-size:22px;width:200px;height:45px; text-align: center;padding-top:8px;display: inline-block;}
-.seccion-casco__info-boton-wa img{display: inline!important; vertical-align: text-top;width: 25px;margin-right: 5px;}
+.orden_lista option{font-family:Roboto,sans-serif;background-color: grey;padding: 5px;}
 
 
+
+.seccion-motos{margin: 0vw 10vw 0vw 10vw;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap;text-align: center;}
+.seccion-motos__moto{width: 48%;height: -webkit-max-content;height: -moz-max-content;height: max-content;background: #FFFFFF;-webkit-box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.5);box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.5);border-radius: 2.3vw;margin-bottom: 2rem; text-align: center;font-weight: 700;font-size: 24px;color: #111111;padding: 1rem;}
+.seccion-motos__moto:hover{-webkit-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.9);box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.9);}
+.seccion-motos__moto-img{height: 15vw;min-height: 100px;margin: 0 auto;}
+.seccion-motos__moto-descripcion{font-size: 20px;}
 
 @media (max-width: 1179.98px){
     .main{margin-top: 53px;}
 }
 @media (max-width: 991px){
     .main{width: 95%;}
-    .seccion-cascos__casco{font-size: 20px;}
-    .seccion-cascos__casco-descripcion{font-size: 18px;}
-
-    .seccion-casco__info-boton-wa{font-size: 18px;width: 170px;height: 35px;}
-    .seccion-casco__info-boton-wa img{width: 20px;}
+    .seccion-motos__moto{font-size: 20px;}
+    .seccion-motos__moto-descripcion{font-size: 18px;}
+    .seccion-moto__info-boton-wa{font-size: 18px;width: 170px;height: 35px;}
+    .seccion-moto__info-boton-wa img{width: 20px;}
 }
 @media (max-width: 767.98px){
     .main{padding-bottom: 1rem;}
-    .seccion-ordenar__boton{ font-size: 12px;}
-    .seccion-cascos__casco{font-size: 18px;}
-    .seccion-cascos__casco-descripcion{font-size: 16px;}
-
-    .seccion-casco__info{font-size: 20px;}
+    .seccion-ordenar__boton{font-size: 12px;}
+    .seccion-motos__moto{font-size: 18px;}
+    .seccion-motos__moto-descripcion{font-size: 16px;}
+    .seccion-moto__info{font-size: 20px;}
 }
 @media (max-width: 519.98px){
     .seccion-ordenar{padding: 1rem 10vw 2rem 10vw;}
-    .seccion-cascos__casco{font-size: 16px;padding-bottom: 1rem;width: 100%;}
-    .seccion-cascos__casco-descripcion{font-size: 14px;}
-
-    .seccion-casco__contenido{-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
-    .seccion-casco__info{width: 100%;font-size: 18px;}
+    .seccion-motos__moto{font-size: 16px;padding: 1rem 0;width: 100%;}
+    .seccion-motos__moto p{padding:0 1rem}
+    .seccion-motos__moto-descripcion{font-size: 14px;}
+    .seccion-motos__moto-img{height: 150px;}
+    .seccion-moto__contenido{flex-direction: column;}
+    .seccion-moto__info{width: 100%;font-size: 18px;}
 }
 
 @media (max-width: 379.98px){
-.seccion-ordenar {
-    padding: 2rem 0;
-}}
+    .seccion-ordenar {
+        padding: 2rem 0;
+    }
+}
+ 
+ 

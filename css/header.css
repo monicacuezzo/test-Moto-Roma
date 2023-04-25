@@ -16,7 +16,7 @@
     .header__principal .logo{margin: 2px auto ;}
     .header__nav{display: none;width: 100%;min-width: 0;border-bottom: 1px solid grey;    margin-top: 15px;}
     .header__nav-link {padding: 10px 0;font-size: 14px;line-height: 14px;border-top: 1px solid grey;}
-    .header__nav-contacto{margin: 5px 0;font-size: 12px;line-height: 12px;border-top: 1px solid grey;width: 70px;padding: 3px 3px 2px 3px;}
+    .header__nav-contacto{margin: 5px 0;font-size: 12px;line-height: 12px;border-top: 1px solid grey;width: 70px;padding: 3px;}
 }
 @media (max-width: 991px){
     .header-pagina{width: 95%;left: 2.5%;}

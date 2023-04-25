@@ -29,9 +29,9 @@ ul{list-style: none;margin: 0;padding: 0;}
 .seccion-moto__info-nombre{font-weight: 700;font-size: 32px;}
 .seccion-moto__info-precio{margin: 0.8rem 0;}
 
-.botonera__btn-wa{color: #fff;background-color: #25D366;border-radius: 18px;font-weight:600;width:max-content;height:40px; text-align: center;display: inline-block;font-size:16px;padding:10px 20px 0 20px;margin: 0.8rem 0.8rem 0 0;}
+.botonera__btn-wa{color: #fff;background-color: #25D366;border-radius: 18px;font-weight:600;width:-webkit-max-content;width:-moz-max-content;width:max-content;height:40px; text-align: center;display: inline-block;font-size:16px;padding:10px 20px 0 20px;margin: 0.8rem 0.8rem 0 0;}
 .botonera__btn-wa img, .botonera__boton img{display: inline!important; vertical-align: text-top;height: 20px;margin-right: 5px;}
-.botonera__boton{color: #fff;background-color: #FF0501;border-radius: 18px;font-weight:600;width:max-content;height:40px; text-align: center;display: inline-block;font-size:16px;padding: 0 20px;margin: 0.8rem 0.8rem 0 0;}
+.botonera__boton{color: #fff;background-color: #FF0501;border-radius: 18px;font-weight:600;width:-webkit-max-content;width:-moz-max-content;width:max-content;height:40px; text-align: center;display: inline-block;font-size:16px;padding: 0 20px;margin: 0.8rem 0.8rem 0 0;}
 
 .ficha-tecnica{padding: 0 10vw;margin-bottom: 6vw;}
 .ficha-tecnica__h2{font-weight: 600;font-size: 32px;padding-bottom: 2rem;}
@@ -49,8 +49,8 @@ position: absolute;left: 0;top: 0;}
 .clase_activo{border: #FF0501 2px solid;}
 
 .seccion-cuotas{width: 100%;height: 100%;position: fixed;top: 0;left: 0; background-color: rgba(0, 0, 0, 0.5);z-index: 2000;}
-.seccion-cuotas__contenido{width: 350px;height: 280px;position: absolute;top: 50%;left: 50%;transform: translate(-175px,-140px);z-index: 2001;background-color: #fff;border-radius: 10px;-webkit-box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.5);box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.5);text-align: center;display: flex;justify-content: space-around;align-items: center;flex-direction: column;padding: 1rem 1rem 2rem 1rem;font-size: 24px;}
-.tarjetas{height: 30px;width: 165px;justify-content: space-between;}
+.seccion-cuotas__contenido{width: 350px;height: 280px;position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-175px,-140px);-ms-transform: translate(-175px,-140px);transform: translate(-175px,-140px);z-index: 2001;background-color: #fff;border-radius: 10px;-webkit-box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.5);box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.5);text-align: center;display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-pack: distribute;justify-content: space-around;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;padding: 1rem 1rem 2rem 1rem;font-size: 24px;}
+.tarjetas{height: 30px;width: 165px;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
 .tarjetas img{height: 100%;}
 .btn-cerrar{margin-left: auto;}
 .btn-cerrar__img{width: 20px;}
@@ -59,7 +59,7 @@ position: absolute;left: 0;top: 0;}
 .seccion-cuotas__hr{height: 2.4px; background-color: #FF0501;width: 100%;margin: 0;}
 .seccion-cuotas__aclaracion{font-size: 10px;margin-bottom: 10px;margin-top: 20px;}
 
-.modal{width: 100%;height: 100%;position: fixed;top: 0;left: 0; background-color: rgba(0, 0, 0, 0.5);z-index: 2000; justify-content: center;align-items: center;}
+.modal{width: 100%;height: 100%;position: fixed;top: 0;left: 0; background-color: rgba(0, 0, 0, 0.5);z-index: 2000; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
 .seccion-video__contenedor{width:calc(60vw + 0.4rem) ;height: calc(34vw + 2.2rem);  background-color: #111111;position: relative;text-align: right;}
 .seccion-video__video{width: 60vw;height: 34vw;position: absolute;top: 2rem;left: 0.2rem; z-index: 2001;background-color: grey;}
 
@@ -71,7 +71,7 @@ position: absolute;left: 0;top: 0;}
     .main{margin-top: 53px;}
 }
 @media (max-width: 1079.98px){
-    .seccion-moto__contenido{flex-direction: column;}
+    .seccion-moto__contenido{-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
     .seccion-moto__info{width: 100%; margin-top: 3rem;}
 }
 @media (max-width: 991px){
@@ -83,8 +83,8 @@ position: absolute;left: 0;top: 0;}
     .seccion-moto__contenido{width: 100%;}
     .seccion-moto__info-nombre{font-size: 28px;}
     .seccion-moto__info{font-size: 17px;}
-    .botonera__btn-wa{font-size: 14px;width: max-content;max-width: 100%;height: max-content;font-size: 14px;padding: 7px 20px;}
-    .botonera__boton{width: max-content;max-width: 100%;height: max-content;font-size: 14px;padding: 8px 20px;border-radius: 16px;}
+    .botonera__btn-wa{font-size: 14px;width: -webkit-max-content;width: -moz-max-content;width: max-content;max-width: 100%;height: -webkit-max-content;height: -moz-max-content;height: max-content;font-size: 14px;padding: 7px 20px;}
+    .botonera__boton{width: -webkit-max-content;width: -moz-max-content;width: max-content;max-width: 100%;height: -webkit-max-content;height: -moz-max-content;height: max-content;font-size: 14px;padding: 8px 20px;border-radius: 16px;}
     .botonera__btn-wa img, .botonera__boton img{height: 16px;}
     .flecha {height: 18px;}
     .seccion-video__contenedor{width:calc(95vw + 0.4rem) ;height: calc(54vw + 2.2rem)}
@@ -96,10 +96,10 @@ position: absolute;left: 0;top: 0;}
     .seccion-moto__contenido{-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
     .seccion-moto__info{width: 100%;font-size: 14px;}
     .seccion-moto__info-nombre, .ficha-tecnica__h2{font-size: 24px;}
-    .botonera__boton{font-size: 12px; display: flex;cursor: pointer;}
+    .botonera__boton{font-size: 12px; display: -webkit-box; display: -ms-flexbox; display: flex;cursor: pointer;}
     .ficha-tecnica__contenido-ul{font-size: 14px;}
 }
 
 @media (max-width: 399.98px){
-    .seccion-cuotas__contenido{width: 280px;transform: translate(-140px,-140px)}
+    .seccion-cuotas__contenido{width: 280px;-webkit-transform: translate(-140px,-140px);-ms-transform: translate(-140px,-140px);transform: translate(-140px,-140px)}
 }

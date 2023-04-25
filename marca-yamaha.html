@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1">
+	<meta name="description" content="Moto Roma, desde 1958 vendiendo motos.">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="robots" content="index,follow">
+
+    <link rel="icon" type="image/png" href="img/compartidos/faviconMR.webp" sizes="32x32"/>
+    <link rel="preload" href="js/header.js" as="script" />
+    <link rel="preload" href="img/marcas/yamaha/yamaha520.webp" as="image" />
+
+    <link rel="stylesheet" type="text/css" href="css/marca-yamaha.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+    <title>Moto Roma - Marca Yamaha</title>
+</head>
+<body class="body">
+
+    <header id="header-pagina" class="header-pagina flex"></header>
+
+    <main class="main">
+        <h1 class="h1">MOTO ROMA - Marca Yamaha</h1>
+
+        <section class="seccion-imagen" style="background-color: #c6c4c4;height: 41.5vw;">
+            <picture>
+                <source srcset="img/marcas/yamaha/marcas-yamaha520.webp" media="(max-width:520px)">
+                <img src="img/marcas/yamaha/marcas-yamaha1500.webp" alt="Moto Roma - Marca Yamaha" title="Moto Roma - Marca Yamaha">
+            </picture>
+        </section>
+
+        <section class="seccion-link">
+            <a href="index.html" class="seccion-link__a">Home </a><span> >> </span> 
+            <a href="index.html#marcas" class="seccion-link__a">Marcas </a>
+            <span> >> Yamaha</span>
+        </section>
+
+        <section class="seccion-ordenar">
+            <div class="seccion-ordenar__boton">
+                <img src="img/compartidos/ico-sort.png" alt="Ordenar">
+                ORDENAR POR
+                <select name="" id="orden_lista" class="orden_lista">
+                    <option value="" selected>Recomendaciones</option>
+                    <option value="">Menor precio</option>
+                    <option value="">Mayor precio</option>
+                    <option value="">Nombre</option>
+                </select>
+            </div>
+
+        </section>
+
+        <section class="seccion-motos">
+            <a href="yamaha-ficha.html" class="seccion-motos__moto">
+                <img src="img/marcas/yamaha/yamaha-cryton-110-full.webp" alt="Yamaha Crypton 110 Full" title="Yamaha Crypton 110 Full" class="seccion-motos__moto-img">
+                <p class="seccion-motos__moto-descripcion">Yamaha Crypton 110 Full</p>
+                <p class="resaltado">$567.800</p>
+            </a>
+            <a href="yamaha-ficha.html" class="seccion-motos__moto">
+                <img src="img/marcas/yamaha/yamaha-ybr-125-ed.webp" alt="Yamaha YBR 125 ED" title="Yamaha YBR 125 ED" class="seccion-motos__moto-img">
+                <p class="seccion-motos__moto-descripcion">Yamaha YBR 125 ED</p>
+                <p class="resaltado">$639.800</p>
+            </a>
+            <a href="yamaha-ficha.html" class="seccion-motos__moto">
+                <img src="img/marcas/yamaha/yamaha-ybr-125-z.webp" alt="Yamaha YBR 125 Z" title="Yamaha YBR 125 Z" class="seccion-motos__moto-img">
+                <p class="seccion-motos__moto-descripcion">Yamaha YBR 125 Z</p>
+                <p class="resaltado">$629.800</p>
+            </a>
+            <a href="yamaha-ficha.html" class="seccion-motos__moto">
+                <img src="img/marcas/yamaha/yamaha-fz-16-fi.webp" alt="Yamaha Fz 16 FI" title="Yamaha Fz 16 FI" class="seccion-motos__moto-img">
+                <p class="seccion-motos__moto-descripcion">Yamaha Fz 16 FI</p>
+                <p class="resaltado">$888.800</p>
+            </a>
+            <a href="yamaha-ficha.html" class="seccion-motos__moto">
+                <img src="img/marcas/yamaha/yamaha-fz-fi-sn.webp" alt="Yamaha FZ FI SN" title="Yamaha FZ FI SN" class="seccion-motos__moto-img">
+                <p class="seccion-motos__moto-descripcion">Yamaha FZ FI SN</p>
+                <p class="resaltado">$1.080.800</p>
+            </a>
+            <a href="yamaha-ficha.html" class="seccion-motos__moto">
+                <img src="img/marcas/yamaha/yamaha-fz-25.webp" alt="Yamaha FZ 25" alt="Yamaha FZ 25" class="seccion-motos__moto-img">
+                <p class="seccion-motos__moto-descripcion">Yamaha FZ 25</p>
+                <p class="resaltado">$1.870.200</p>
+            </a>
+        </section>
+
+       
+      
+</main>
+
+    <footer id="footer-pagina" class="footer-pagina"></footer>
+
+
+    <script type="text/javascript" src="js/jQuery3.6.4.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+
+    <script>
+        window.onload = function () {
+
+            generar_header();
+            var ico_menu = document.getElementById("ico-menu");
+            ico_menu.onclick = () => {
+                var nav_bar = document.getElementsByClassName("header__nav")[0];
+                nav_bar.classList.toggle('d-block');
+            };
+            generar_footer();
+
+            window.addEventListener('resize', function() {
+                document.getElementsByClassName("header__nav")[0].classList.remove('d-block');
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>

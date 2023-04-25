@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1">
+	<meta name="description" content="Moto Roma, desde 1958 vendiendo motos.">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="robots" content="index,follow">
+
+    <link rel="icon" type="image/png" href="img/compartidos/faviconMR.png" sizes="32x32"/>
+    <link rel="preload" href="js/header.js" as="script" />
+    <link rel="preload" href="img/modelos/enduro/enduro520.webp" as="image" />
+
+    <link rel="stylesheet" type="text/css" href="css/modelos-enduro.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+    <title>Moto Roma - Enduro</title>
+</head>
+<body class="body">
+
+    <header id="header-pagina" class="header-pagina flex"></header>
+
+    <main class="main">
+        <h1 class="h1">MOTO ROMA - Enduro</h1>
+
+        <section class="seccion-imagen" style="background-color: #c6c4c4;height: 41.5vw;">
+            <picture>
+                <source srcset="img/modelos/enduro/enduro520.webp" media="(max-width:520px)">
+                <img src="img/modelos/enduro/enduro1500.webp" alt="Moto Roma - Modelos Enduro">
+            </picture>
+        </section>
+
+        <section class="seccion-link">
+            <a href="index.html" class="seccion-link__a">Home </a><span> >> </span> 
+            <a href="index.html#modelos.html" class="seccion-link__a">Modelos </a>
+            <span> >> Enduro</span>
+        </section>
+
+        <section class="seccion-ordenar">
+            <button class="seccion-ordenar__boton">
+                <img src="img/compartidos/ico-sort.png" alt="Ordenar">
+                ORDENAR POR
+            </button>
+        </section>
+
+        <section class="seccion-motos">
+            <a href="moto-ficha.html" class="seccion-motos__moto">
+                <img src="img/modelos/enduro/honda-XR-150(300px).webp" alt="Honda XR 150" title="moto Integral HALCON H5" class="seccion-motos__moto-img">
+                <p class="seccion-motos__moto-descripcion">Honda XR 150</p>
+                <p class="resaltado">$868.800</p>
+            </a>
+            <a href="moto-ficha.html" class="seccion-motos__moto">
+                <img src="img/modelos/enduro/honda-XR-190(300).webp" alt="Honda XR 190" title="Honda XR 190" class="seccion-motos__moto-img">
+                <p class="seccion-motos__moto-descripcion">Honda XR 190</p>
+                <p class="resaltado">$1.028.800</p>
+            </a>
+            <a href="moto-ficha.html" class="seccion-motos__moto">
+                <img src="img/modelos/enduro/honda-xr-250(300).webp" alt="Honda XR 250" title="Honda XR 250" class="seccion-motos__moto-img">
+                <p class="seccion-motos__moto-descripcion">Honda XR 250</p>
+                <p class="resaltado">$1.818.800</p>
+            </a>
+            <a href="moto-ficha.html" class="seccion-motos__moto">
+                <img src="img/modelos/enduro/gilera-sahel-150(300).webp" alt="Gilera SAHEL 150" title="Gilera SAHEL 150" class="seccion-motos__moto-img">
+                <p class="seccion-motos__moto-descripcion">Gilera SAHEL 150</p>
+                <p class="resaltado">$423.800</p>
+            </a>
+            <a href="moto-ficha.html" class="seccion-motos__moto">
+                <img src="img/modelos/enduro/gilera-smx-200(300).webp" alt="Gilera SMX 200" title="Gilera SMX 200" class="seccion-motos__moto-img">
+                <p class="seccion-motos__moto-descripcion">Gilera SMX 200</p>
+                <p class="resaltado">$xxxxx</p>
+            </a>
+            <a href="moto-ficha.html" class="seccion-motos__moto">
+                <img src="img/modelos/enduro/gilera-smx-200-adventure(300).webp" alt="Gilera SMX 200 Adventure" alt="Gilera SMX 200 Adventure" class="seccion-motos__moto-img">
+                <p class="seccion-motos__moto-descripcion">Gilera SMX 200 Adventure</p>
+                <p class="resaltado">$xxxxxx</p>
+            </a>
+        </section>
+
+       
+      
+</main>
+
+    <footer id="footer-pagina" class="footer-pagina"></footer>
+
+
+    <script type="text/javascript" src="js/jQuery3.6.4.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+
+    <script>
+        window.onload = function () {
+
+            generar_header();
+            var ico_menu = document.getElementById("ico-menu");
+            ico_menu.onclick = () => {
+                var nav_bar = document.getElementsByClassName("header__nav")[0];
+                nav_bar.classList.toggle('d-block');
+            };
+            generar_footer();
+
+            window.addEventListener('resize', function() {
+                document.getElementsByClassName("header__nav")[0].classList.remove('d-block');
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>

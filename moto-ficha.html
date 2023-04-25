@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1">
+	<meta name="description" content="Moto Roma, desde 1958 vendiendo motos.">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="robots" content="index,follow">
+
+    <link rel="icon" type="image/png" href="img/compartidos/faviconMR.png" sizes="32x32"/>
+    <link rel="preload" href="js/header.js" as="script" />
+    <link rel="preload" href="img/modelos/enduro/enduro520.webp" as="image" />
+
+    <link rel="stylesheet" type="text/css" href="css/moto-ficha.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+    <title>Moto Roma - Ficha motos</title>
+</head>
+<body class="body">
+
+    <header id="header-pagina" class="header-pagina flex"></header>
+
+    <main class="main">
+        <h1 class="h1">MOTO ROMA - Ficha motos</h1>
+
+        <section class="seccion-imagen" style="background-color: #c6c4c4;height: 41.5vw;">
+            <picture>
+                <source srcset="img/modelos/enduro/enduro520.webp" media="(max-width:520px)">
+                <img src="img/modelos/enduro/enduro1500.webp" alt="Moto Roma - Accesorios">
+            </picture>
+        </section>
+
+        <section class="seccion-link">
+            <a href="index.html" class="seccion-link__a">Home </a><span> >> </span>
+            <a href="index.html#modelos" class="seccion-link__a">Modelos </a><span> >> </span>
+            <a href="modelos-enduro.html" class="seccion-link__a">Enduro </a><span> >> Honda XR 250</span>
+        </section>
+
+        <section class="seccion-moto">
+            <div class="seccion-moto__contenido flex">
+                <div class="seccion-moto__imagenes">
+                    <img id="imagen_moto" src="img/modelos/enduro/honda-xr-250-ficha.webp" alt="Honda XR 250" title="Honda XR 250" class="seccion-moto__img">
+
+                    <div class="seccion__slider">
+                        <div id="flecha-slider-izq" class="flecha-slider-izq">
+                            <img class="flecha" src="img/compartidos/flecha-izq.webp" alt="Avanzar slider">
+                        </div>
+        
+                        <div id="contenedor" class="contenedor">
+                            <div id="galeria" class="galeria" >
+                                                <!-- <div class="slider-contenido">
+                                                    <img src="img/modelos/enduro/yamaha-fz-fi-sn-miniatura-bl.webp" alt="">
+                                                </div> -->
+                                                <!-- <div class="slider-contenido">
+                                                    <img src="img/modelos/enduro/yamaha-fz-fi-sn-miniatura-celeste.webp" alt="">
+                                                </div> -->
+                                                <!-- <div class="slider-contenido">
+                                                    <img src="img/modelos/enduro/yamaha-fz-fi-sn-miniatura-rj.webp" alt="">
+                                                </div> -->
+                                                
+
+                                <button class="slider-contenido" onclick="mostrar_moto('img/modelos/enduro/honda-xr-250-miniatura-bl.webp',this);">
+                                    <img src="img/modelos/enduro/honda-xr-250-miniatura-bl.webp" alt="Honda XR 250 blanca">
+                                </button>
+                                <button class="slider-contenido" onclick="mostrar_moto('img/modelos/enduro/honda-xr-250-miniatura-ng.webp',this);">
+                                        <img src="img/modelos/enduro/honda-xr-250-miniatura-ng.webp" alt="Honda XR 250 negra">
+                                </button>
+                                <button class="slider-contenido" onclick="mostrar_moto('img/modelos/enduro/honda-xr-250-miniatura-rj.webp',this)">
+                                    <img src="img/modelos/enduro/honda-xr-250-miniatura-rj.webp" alt="Honda XR 250 roja">
+                                </button>
+
+                            </div>
+                        </div>
+                        <div id="flecha-slider-der" class="flecha-slider-der">
+                            <img class="flecha" src="img/compartidos/flecha-der.webp" alt="Retroceder slider">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seccion-moto__info">
+                    <h2 class="seccion-moto__info-nombre">Honda XR 250</h2>
+                    <p class="seccion-moto__info-precio">PRECIO <span class="resaltado">$1.818.800</span></p>
+                    <p class="seccion-moto__info-precio">PATENTADA <span class="resaltado">$1.899.864</span></p>
+                    <p class="seccion-moto__info-precio">Seguro c/Robo Anual <span class="resaltado">12 Ctas de $10.549</span></p>
+                    <p class="seccion-moto__info-precio">ATM by Tibest c/ reposicion de la Unidad 0km.</p>
+
+                    <div class="seccion-moto__botonera">
+                        <a href="https://wa.me/+5491134727866" class="botonera__btn-wa" target="_blank">
+                            <img src="img/compartidos/icono-wa.webp" alt="Abrir Whatsapp en otra ventana">
+                            CONSULTAR
+                        </a>
+
+                        <button class="botonera__boton" onclick="$('#seccion-video').show()">
+                            <img src="img/compartidos/ico-video.webp" alt="Abrir Whatsapp en otra ventana">
+                            VER VIDEO
+                        </button>
+                        <button class="botonera__boton">
+                            <img src="img/compartidos/ico-dni.webp" alt="Abrir Whatsapp en otra ventana">
+                            SOLICITA UN CRÉDITO CON TU DNI
+                        </button>
+                        <button class="botonera__boton" onclick="$('#seccion-cuotas').show()">
+                            <img src="img/compartidos/ico-tarjeta-credito.webp" alt="Abrir Whatsapp en otra ventana">
+                            COMPRALA EN CUOTAS CON TARJETA DE CRÉDITO
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <section class="ficha-tecnica">
+        <h2 class="ficha-tecnica__h2">Ficha técnica</h2>
+            <div class="ficha-tecnica__contenido">
+                <ul class="ficha-tecnica__contenido-ul">
+                    <li>Motor Tipo Monocilíndrico, 4T, SOHC, Refrigerado por aire</li>
+                    <li>Cilindrada 149 cc</li>
+                    <li>Diámetro x carrera 57,3 x 57,9 mm</li>
+                    <li>Relación compresión 9,5:1</li>
+                    <li>Sistema de Lubricación Cárter húmedo</li>
+                    <li>Alimentación Inyección electrónica</li>
+                    <li>Encendido TCI</li>
+                    <li>Arranque Eléctrico</li>
+                    <li>Transmisión 5 velocidades</li>
+                    <li>Transmisión Final Cadena</li>
+                    <li>Embrague Multidisco en baño de aceite</li>
+                    <li>Chasis Tipo Tipo Diamante</li>
+                    <li>Freno Delantero Disco simple de 267 x 4 mm</li>
+                    <li>Freno Trasero Tambor de 130 mm</li>
+                </ul>
+    
+                <ul class="ficha-tecnica__contenido-ul">
+                    <li>Neumático Delantero 100/80-R17</li>
+                    <li>Neumático Trasero 140/60-R17</li>
+                    <li>Suspensión Delantera Horquilla Telescópica</li>
+                    <li>Recorrido Delantero 130 mm</li>
+                    <li>Suspensión Trasera Basculante</li>
+                    <li>Recorrido Trasero 120 mm</li>
+                    <li>Dimensiones Longitud Total 2073 mm</li>
+                    <li>Ancho Total 770 mmAlto total 1050 mm</li>
+                    <li>Distancia Entre Ejes 1330 mm</li>
+                    <li>Distancia Mínima del Suelo 160 mm</li>
+                    <li>Peso en orden de marcha 131 kg</li>
+                    <li>Capacidad del depósito de combustible 12 Lts</li>
+                    <li>Capacidad del depósito de aceite 1,1 Lts</li>
+                </ul>
+            </div> 
+        
+       </section>
+
+       <section id="seccion-cuotas" class="modal" style="display: none;">
+            <div class="seccion-cuotas__contenido">
+                <button class="btn-cerrar" onclick="$('#seccion-cuotas').hide()">
+                    <img src="img/compartidos/btn-cerrar.png" alt="Cerrar la ventana cuotas" class="btn-cerrar__img">
+                </button>
+                <p class="seccion-cuotas__p">Cuotas / Valor cuotas</p>
+                <p class="seccion-cuotas__importes">
+                    <strong class="resaltado">12 cuotas </strong>
+                    <span>de $228.886</span>
+                </p>
+                <hr class="seccion-cuotas__hr">
+                <p class="seccion-cuotas__importes">
+                    <strong class="resaltado">18 cuotas </strong>
+                    <span>de $179.859</span>
+                </p>
+                <p class="seccion-cuotas__aclaracion">Aceptamos todos los medios de pago</p>
+                <div class="tarjetas flex">
+                    <img src="img/compartidos/ico-visa.webp" alt="Tarjeta Visa">
+                    <img src="img/compartidos/ico-mastercard.webp" alt="Tarjeta Mastercard">
+                    <img src="img/compartidos/ico-amex.webp" alt="Tarjeta American Express">
+                </div>
+            </div>
+       </section>
+
+       <section id="seccion-video" class="modal flex" style="display: none;">
+            <div class="seccion-video__contenedor ">
+                <button class="btn-cerrar" onclick="$('#seccion-video').hide()">
+                    <img src="img/compartidos/btn-cerrar.png" alt="Cerrar la ventana cuotas" class="btn-cerrar__img">
+                </button>
+                <iframe width="560" height="315" class="seccion-video__video" src="https://www.youtube.com/embed/IhA0dkcN_Fs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+       </section>
+      
+</main>
+
+    <footer id="footer-pagina" class="footer-pagina"></footer>
+
+
+    <script type="text/javascript" src="js/jQuery3.6.4.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/slider-motos.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+
+    <script>
+                    
+        function mostrar_moto(moto,elegido) {
+            $('#imagen_moto').attr('src', moto);
+            $('.clase_activo').removeClass('clase_activo');
+            $(elegido).addClass('clase_activo');
+        }
+
+        window.onload = function () {
+
+            generar_header();
+            var ico_menu = document.getElementById("ico-menu");
+            ico_menu.onclick = () => {
+                var nav_bar = document.getElementsByClassName("header__nav")[0];
+                nav_bar.classList.toggle('d-block');
+            };
+            configurar_moto();
+            generar_footer();
+
+            document.getElementById('flecha-slider-der').addEventListener("click",moto_avanzar1);
+            // document.getElementById('flecha-slider-izq').addEventListener("click", function() {
+            //     // detener_moto();
+            //     // moto_indice = 
+            //     moto_retroceder1(moto_galeria,moto_indice,moto_width,moto_margen,moto_contenido,moto_desplaza,"moto__marcador-activo",moto_cantidad,"ver-imagen");
+            //     // avanzar_moto();
+            // });
+            document.getElementById('flecha-slider-izq').addEventListener("click", moto_retroceder);
+
+
+            window.addEventListener('resize', function() {
+                document.getElementsByClassName("header__nav")[0].classList.remove('d-block');
+                // detener_moto();
+                configurar_moto();
+            });
+
+                          
+        }
+
+    </script>
+
+</body>
+</html>

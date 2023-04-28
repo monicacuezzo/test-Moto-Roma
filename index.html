@@ -245,6 +245,12 @@
 
         window.addEventListener('resize', function() {
             document.getElementsByClassName("header__nav")[0].classList.remove('d-block');
+
+            detener_slider1();
+            configurar_slider1();
+
+            detener_blog();
+            configurar_blog();
         });
 
     </script>

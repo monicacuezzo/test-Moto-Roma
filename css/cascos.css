@@ -70,7 +70,7 @@ ul{list-style: none;margin: 0;padding: 0;}
     .seccion-casco__info{font-size: 20px;}
 
     .seccion-casco__ficha{width:80vw;}
-    .ficha-contenido{flex-direction: column;margin: auto;width: max-content;}
+    .ficha-contenido{-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;margin: auto;width: -webkit-max-content;width: -moz-max-content;width: max-content;}
 }
 @media (max-width: 519.98px){
     .seccion-ordenar{padding: 1rem 10vw 2rem 10vw;}

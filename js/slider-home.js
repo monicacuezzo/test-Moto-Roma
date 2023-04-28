@@ -220,7 +220,9 @@ window.onload = function () {
         avanzar_slider1()
     });
 
-    $('.imagen_slider_a').click(function(target){
+
+    $('body').on('click', '.imagen_slider_a', function(){
+    // $('.imagen_slider_a').click(function(target){
         // target.preventDefault();
         
         console.log("click dot slider1");
@@ -251,7 +253,9 @@ window.onload = function () {
         avanzar_blog()
     });
 
-    $('.li_blog_a').click(function(event){
+
+    $('body').on('click', '.li_blog_a', function(){
+    // $('.li_blog_a').click(function(event){
         // event.preventDefault();
                 
         console.log("click dot blog");

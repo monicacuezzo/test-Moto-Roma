@@ -80,6 +80,8 @@ button{cursor: pointer;}
 @media (max-width: 991px){
     .main{width: 95%;}
     .ficha-tecnica__contenido-ul{width: calc(100% - 2rem);}
+    .flecha-slider-izq{left: -10px;}
+    .flecha-slider-der{right: -10px;}
 }
 @media (max-width: 767.98px){
     .main{padding-bottom: 1rem;}

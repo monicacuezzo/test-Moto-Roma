@@ -222,6 +222,9 @@ window.onload = function () {
 
     $('.imagen_slider_a').click(function(target){
         // target.preventDefault();
+        
+        console.log("click dot slider1");
+
         var li_slider = document.getElementsByClassName('imagen_slider');
         detener_slider1();
         for (let index = 0; index < slider1_contenido.length; index++) {
@@ -250,6 +253,10 @@ window.onload = function () {
 
     $('.li_blog_a').click(function(event){
         // event.preventDefault();
+                
+        console.log("click dot blog");
+
+
         var li_blog = document.getElementsByClassName('li_blog');
         detener_blog();
         for (let index = 0; index < blog_contenido.length; index++) {
@@ -279,13 +286,13 @@ window.onload = function () {
     
 }
 
-window.addEventListener('resize', function() {
-    detener_slider1();
-    configurar_slider1();
+// window.addEventListener('resize', function() {
+//     detener_slider1();
+//     configurar_slider1();
 
-    detener_blog();
-    configurar_blog();
-});
+//     detener_blog();
+//     configurar_blog();
+// });
 
 
 

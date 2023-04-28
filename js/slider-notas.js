@@ -2,7 +2,6 @@ function generar(width,dots,contenido,li,li_nombre,indice,galeria,cantidad,despl
         // if (width <= 0 || isNaN(width)) {
         //     return;
         // }
-        // console.log("generar "+width+" * "+contenido.length+" indice:"+indice)
         
         for (let index = 0; index < contenido.length; index++) {
             contenido[index].style.width = (width) + "px";
@@ -121,7 +120,6 @@ avanzar_blog = () => {
 };
 
 detener_blog = () => {
-    console.log("detener")
     clearInterval(desplazar_blog);
 };
 

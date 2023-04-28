@@ -1,4 +1,7 @@
 function generar(width,dots,contenido,li,li_nombre,indice,galeria,cantidad,desplaza,clase_activo) {
+    if (!contenido || moto_contenido.length <= 0) {
+        return;
+    }
     for (let index = 0; index < contenido.length; index++) {
         contenido[index].style.width = (width) + "px";
         contenido[index].setAttribute("id", li_nombre+index );
@@ -12,6 +15,10 @@ function generar(width,dots,contenido,li,li_nombre,indice,galeria,cantidad,despl
 
 
 function desplazar_galeria(galeria,indice,width,margen,contenido,desplaza,clase_activo,cantidad,li_nombre) {
+    if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0){
+        return
+    }
+
     if (ultima_moto < moto_contenido.length-1) {
         let posicion = parseFloat(galeria.style.left.slice(0, -2))
         galeria.style.left =  (posicion-width)+"px"; 
@@ -23,9 +30,12 @@ function desplazar_galeria(galeria,indice,width,margen,contenido,desplaza,clase_
 }
 
 function moto_retroceder1(galeria,indice,width,margen,contenido,desplaza,clase_activo,cantidad,li_nombre) {
+    if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0){
+        return
+    }
+
     if (primera_moto > 0) {
         let posicion = parseFloat(galeria.style.left.slice(0, -2))
-        // console.log("retroceder LEFT: "+posicion+ "*" +(posicion+width))
         galeria.style.left =  (posicion+width)+"px"; 
         galeria.style.transition = "left 1s";
         ultima_moto--;
@@ -61,8 +71,7 @@ function configurar_moto() {
     moto_desplaza = 1;
     ultima_moto = moto_contenido.length - 1;
 
-    console.log(moto_contenido+"*"+moto_contenido.length)
-    if (isNaN(moto_contenido.length)) {
+    if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0){
         return
     }
 
@@ -71,20 +80,21 @@ function configurar_moto() {
 
 
 function moto_avanzar1(){
-    moto_contenido[primera_moto].classList.remove("clase_activo");
+    if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0){
+        return
+    }
 
     desplazar_galeria(moto_galeria,moto_indice,moto_width,moto_margen,moto_contenido,moto_desplaza,"moto__marcador-activo",moto_cantidad,"ver-imagen");
- 
-    moto_contenido[primera_moto].classList.add("clase_activo");
 }; 
 
 
 function moto_retroceder(){
-    moto_contenido[primera_moto].classList.remove("clase_activo");
-
-    moto_retroceder1(moto_galeria,moto_indice,moto_width,moto_margen,moto_contenido,moto_desplaza,"moto__marcador-activo",moto_cantidad,"ver-imagen");
-
-    moto_contenido[primera_moto].classList.add("clase_activo");
+    if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0){
+        return
+    }
+    if (primera_moto > 0) {
+        moto_retroceder1(moto_galeria,moto_indice,moto_width,moto_margen,moto_contenido,moto_desplaza,"moto__marcador-activo",moto_cantidad,"ver-imagen");
+    }
 }; 
 
 

@@ -59,7 +59,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 
 .section-banner__texto{position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 20; font-weight: 500;font-size: 2.8vw;padding-left:calc(50% + 2vw) ;color: #fff; padding-top: 5vw;}
 .section-banner__texto span{white-space: nowrap;display: block;line-height: 3vw; padding-top: 0.3vw;}
-.section-banner__texto-boton{color: #fff;background-color:#3ebd4f /*#25D366*/;border-radius: 2.3vw;font-weight:500;font-size:1.25vw ;width:12vw;height:3vw; text-align: center;padding-top:0.7vw;margin-left: auto;margin-right: 3vw;}
+.section-banner__texto-boton{color: #fff;background-color:#0ea916 /*#25D366*/;border-radius: 2.3vw;font-weight:600;font-size:1.25vw ;width:12vw;height:3vw; text-align: center;padding-top:0.7vw;margin-left: auto;margin-right: 3vw;}
 .section-banner__texto-boton img{display: inline!important;width:1.3vw;margin-right: 0.4vw;vertical-align: top;}
 
 .seccion-marcas{background-color: #fff;text-align: center;}
@@ -81,7 +81,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 .seccion-consejos__consejos-texto {width: 50%;padding: 6vw 2.5vw 3vw 3vw;text-align: left;}
 .h3{font-weight: 500;font-size: 2.1vw;padding-bottom: 2.2vw;}
 .contenido{font-weight: 400;font-size: 1.4vw;}
-.seccion-consejos__consejos-boton{color: #fff;background-color: #FF0501;border-radius: 2vw;font-weight:500;font-size:1.3vw;width:12vw;height:3.1vw; text-align: center;padding-top:0.75vw;margin: 2.8vw 0 0 auto;}
+.seccion-consejos__consejos-boton{color: #fff;background-color: #EE0300;border-radius: 2vw;font-weight:600;font-size:1.3vw;width:12vw;height:3.1vw; text-align: center;padding-top:0.75vw;margin: 2.8vw 0 0 auto;}
 .seccion-consejos__consejos-boton img{width: 2.1vw;vertical-align: middle;margin-right: 0.3vw;display: inline!important;}
 
 .flecha-slider-izq{position: absolute; top: 0;left: -2.5vw;z-index: 30;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;height: 100%;padding-right: 1vw;}

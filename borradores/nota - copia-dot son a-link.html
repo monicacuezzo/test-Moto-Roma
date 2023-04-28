@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1">
+	<meta name="description" content="Moto Roma, desde 1958 vendiendo motos.">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="robots" content="index,follow">
+
+    <link rel="preload" href="js/header.js" as="script" />
+    <link rel="preload" href="js/header.css" as="style" />
+    <link rel="preload" href="img/notas/notas.webp" as="image" />
+    
+    <link rel="icon" type="image/png" href="img/compartidos/faviconMR.png" sizes="32x32"/>
+    <link rel="stylesheet" type="text/css" href="css/nota.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+    <title>Moto Roma - Notas</title>
+</head>
+<body class="body">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            generar_header();
+        })
+    </script>
+
+    <header id="header-pagina" class="header-pagina flex"></header>
+
+    <main class="main">
+        <h1 class="h1">MOTO ROMA - Notas</h1>
+
+        <section class="seccion-imagen"></section>
+
+        <section class="seccion-link">
+            <a href="index.html" class="seccion-link__a">Home </a><span> >> </span> 
+            <a href="index.html" class="seccion-link__a">Notas </a><span> >> </span>
+            <span>Cómo secar correctamente nuestro equipamiento luego de un día de lluvia</span>
+        </section>
+
+        <section class="seccion-contenido">
+            <h2 class="seccion-contenido__h2">
+                <span>Cómo secar correctamente nuestro equipamiento </span> 
+                <span class="seccion-contenido__span">luego de un día de lluvia </span>
+            </h2>
+            <p class="parrafo">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec nibh non magna facilisis volutpat a id lectus. Phasellus ornare tristique aliquam. Integer nulla lectus, lobortis quis hendrerit quis, ornare vel tellus. Maecenas tortor neque, rutrum eu lacus sit amet, viverra consequat metus. Aliquam vitae lacinia nulla. Etiam tincidunt sapien id justo porta tincidunt. Morbi non consectetur nibh. Mauris a sodales nibh. Etiam varius dui vitae tortor molestie consequat. Etiam quis finibus felis. Quisque a hendrerit ligula. Quisque magna tellus, tincidunt id accumsan sed, malesuada sit amet nunc. Nulla urna ex, volutpat id malesuada et, congue id nisl. Quisque a varius quam.
+                Ut viverra luctus lorem, at rhoncus ligula faucibus in. Sed dignissim velit et ex dapibus rutrum. Phasellus purus purus, suscipit vestibulum eros non, cursus feugiat quam. Maecenas convallis felis ornare enim convallis molestie. Praesent vehicula urna eget commodo gravida. Nullam ligula dolor, lobortis eu enim sit amet, iaculis dapibus urna. Integer suscipit congue iaculis. Phasellus efficitur sem sit amet arcu consectetur dignissim. Pellentesque nec sem sit amet arcu commodo volutpat.
+            </p>
+            <section class="seccion-contenido__imagen"></section>
+            <p class="parrafo">
+                Integer eget faucibus nisi. Aliquam erat volutpat. Ut eget aliquet dolor. Duis sed laoreet massa, et tempus urna. Duis id consectetur orci, a aliquam purus. Pellentesque ut urna molestie, tempus urna nec, porttitor lacus. Sed accumsan velit vitae egestas lacinia. Sed non neque vitae dolor pharetra euismod. Nullam faucibus dolor vitae finibus facilisis. Nunc ac lorem sed odio pharetra commodo.
+                Vestibulum gravida aliquet nisl ac congue. Nunc sed nunc quis quam porta tristique. Integer molestie sem sed imperdiet convallis. Vivamus vehicula, mauris at tristique varius, lacus tellus cursus massa, at congue libero elit et erat. Integer hendrerit dictum erat ac gravida. Sed faucibus imperdiet nisi ut sodales. Duis mattis justo ut laoreet dapibus. Aenean id libero in augue tristique auctor nec id velit. Maecenas lobortis, nunc vulputate iaculis mattis, arcu sapien tempor elit, sit amet varius libero est ut erat. Aenean nec nisl ac tortor condimentum commodo. Praesent venenatis tortor ex, ut blandit velit iaculis vitae. Etiam eu diam rhoncus, dapibus ligula sed, fermentum elit. Nunc finibus, nisi nec malesuada pretium, tellus ex scelerisque augue, sed vehicula tellus nisl sed elit.
+                Donec auctor nunc vitae nisl luctus tristique. Morbi vulputate nisi velit, vitae volutpat augue euismod nec. Ut quis augue a metus dignissim elementum eget in odio. In laoreet, odio ut molestie posuere, sapien purus dapibus tortor, in euismod nunc lectus at magna. Integer sit amet urna nec ante bibendum maximus. Phasellus ac purus euismod, vestibulum est sollicitudin, vehicula urna. In accumsan lorem sed ipsum ultrices, eu elementum est sollicitudin. Nullam vitae consequat lorem, eget pulvinar odio.
+            </p>
+        </section>
+
+        <section class="seccion-consejos">
+            <h2 class="titulo-seccion">Otras notas que pueden <span class="resaltado">interesarte</span></h2>
+            <div class="seccion-consejos__blog">
+                    <div class="seccion-consejos__slider">
+                        <div id="flecha-slider-izq" class="flecha-slider-izq">
+                            <img class="flecha" src="img/compartidos/flecha-izq.webp" alt="Avanzar slider">
+                        </div>
+
+                        <div id="blog__contenedor" class="blog__contenedor">
+                            <div id="blog__galeria" class="blog__galeria" >
+                                    <div class="seccion-consejos__slider-blog">
+                                        <img src="img/notas/blog3.webp" alt="Blog">
+                                        <div class="blog-contenido">
+                                            <p class="blog-titulo resaltado">MOTO ROMA BLOG</p>
+                                            <p class="blog-subtitulo">Guía completa sobre las herramientas que deberías tener </p>
+                                            <p class="blog-texto">Ahorrar dinero, tener (un poco más) de control de la moto, ser capaz de lidiar con una avería en la ruta... Hay muchas buenas razones para iniciarse en la mecánica de motos...</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="seccion-consejos__slider-blog">
+                                        <img src="img/notas/blog2.webp" alt="Blog">
+                                        <div class="blog-contenido">
+                                            <p class="blog-titulo resaltado">MOTO ROMA BLOG</p>
+                                            <p class="blog-subtitulo">5 consejos para iniciar a tu hijo en el motocross con total seguridad </p>
+                                            <p class="blog-texto">La nostalgia de tu primera toma de contacto con el motocross y el deseo de transmitir esa pasión a tu hijo o hija ¡Te entendemos perfectamente! Sin embargo...</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="seccion-consejos__slider-blog">
+                                        <img src="img/notas/blog3.webp" alt="Blog">
+                                        <div class="blog-contenido">
+                                            <p class="blog-titulo resaltado">MOTO ROMA BLOG</p>
+                                            <p class="blog-subtitulo">Guía completa sobre las herramientas que deberías tener</p>
+                                            <p class="blog-texto">Ahorrar dinero, tener (un poco más) de control de la moto, ser capaz de lidiar con una avería en la ruta... Hay muchas buenas razones para iniciarse en la mecánica de motos...</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="seccion-consejos__slider-blog">
+                                        <img src="img/notas/blog2.webp" alt="Blog">
+                                        <div class="blog-contenido">
+                                            <p class="blog-titulo resaltado">MOTO ROMA BLOG</p>
+                                            <p class="blog-subtitulo">5 consejos para iniciar a tu hijo en el motocross con total seguridad </p>
+                                            <p class="blog-texto">La nostalgia de tu primera toma de contacto con el motocross y el deseo de transmitir esa pasión a tu hijo o hija ¡Te entendemos perfectamente! Sin embargo...</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div id="flecha-slider-der" class="flecha-slider-der">
+                            <img class="flecha" src="img/compartidos/flecha-der.webp" alt="Retroceder slider">
+                        </div>
+                    </div>
+     
+                    <ul id="blog__marcadores-slide" class="blog__marcadores-slide"></ul>
+            </div>
+    </section>
+
+      
+</main>
+
+    <footer id="footer-pagina" class="footer-pagina"></footer>
+
+
+    <script type="text/javascript" src="js/jQuery3.6.4.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/slider-notas.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+
+
+    <script>
+        window.onload = function () {
+
+            // generar_header();
+            var ico_menu = document.getElementById("ico-menu");
+            ico_menu.onclick = () => {
+                var nav_bar = document.getElementsByClassName("header__nav")[0];
+                nav_bar.classList.toggle('d-block');
+            };
+            generar_footer();
+            configurar_blog();
+
+            blog_contenedor.addEventListener("mouseover", detener_blog);
+            blog_contenedor.addEventListener("mouseout", avanzar_blog);
+
+            
+            $('.ver-imagen a').click(function(target){
+                target.preventDefault();
+                // link_blog();
+                var li_blog = document.getElementsByClassName('ver-imagen');
+                detener_blog();
+                for (let index = 0; index < blog_contenido.length; index++) {
+                    if (blog_contenido[0].getAttribute("id") == $(this).attr('href')) {
+                        li_blog[blog_indice].classList.remove("blog__marcador-activo");
+                        var id = blog_contenido[0].getAttribute("id").match(/\d/g);
+                        id = id.join("");
+                        blog_indice = id;
+                        li_blog[blog_indice].classList.add("blog__marcador-activo");
+                        index = blog_contenido.length;
+                }else{
+                        blog_galeria.insertAdjacentElement("beforeEnd",blog_contenido[0]);
+                    }
+                }
+                avanzar_blog();
+            });  
+
+            
+            document.getElementById('flecha-slider-der').addEventListener("click",blog_avanzar1);
+            document.getElementById('flecha-slider-izq').addEventListener("click", function() {
+                detener_blog();
+                blog_indice = blog_retroceder1(blog_galeria,blog_indice,blog_width,blog_margen,blog_contenido,blog_desplaza,"blog__marcador-activo",blog_cantidad,"ver-imagen");
+                avanzar_blog();
+            });
+
+        }
+
+        window.addEventListener('resize', function() {
+                document.getElementsByClassName("header__nav")[0].classList.remove('d-block');
+                detener_blog();
+                configurar_blog();
+        });
+
+    </script>
+
+</body>
+</html>

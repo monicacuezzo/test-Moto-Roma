@@ -32,6 +32,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 .botonera__btn-wa{color: #fff;background-color: #25D366;border-radius: 18px;font-weight:600;width:-webkit-max-content;width:-moz-max-content;width:max-content;height:40px; text-align: center;display: inline-block;font-size:16px;padding:10px 20px 0 20px;margin: 0.8rem 0.8rem 0 0;}
 .botonera__btn-wa img, .botonera__boton img{display: inline!important; vertical-align: text-top;height: 20px;margin-right: 5px;}
 .botonera__boton{color: #fff;background-color: #FF0501;border-radius: 18px;font-weight:600;width:-webkit-max-content;width:-moz-max-content;width:max-content;height:40px; text-align: center;display: inline-block;font-size:16px;padding: 0 20px;margin: 0.8rem 0.8rem 0 0;}
+a.botonera__boton{padding-top: 10px;}
 
 .ficha-tecnica{padding: 0 10vw;margin-bottom: 6vw;}
 .ficha-tecnica__h2{font-weight: 600;font-size: 32px;padding-bottom: 2rem;}

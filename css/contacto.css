@@ -14,9 +14,7 @@ ul{list-style: none;margin: 0;padding: 0;}
  
 .main{width: 85%;margin:0 auto;position: relative;background-color: #fff;padding-bottom: 4rem;margin-top: 75px; }
 
-.seccion-imagen{width: 100%;height: 41.5vw; 
-    /* background: url('../img/contacto.webp') no-repeat; background-size: cover;background-position: center center; */
-}
+.seccion-imagen{width: 100%;height: 41.5vw;}
 .seccion-imagen picture, .seccion-imagen picture source, .seccion-imagen picture img{width: 100%;height: 100%;}
 
 .seccion-link{width: 100%;font-size: 12px;font-weight: 500;color: #111111;padding: 10px 0 0 6vw;}
@@ -25,7 +23,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 .seccion-telefonos{width: 100%;padding: 6vw 6vw 10vw 6vw;}
 .seccion-telefonos__parrafo{width: 100%;border-bottom: 2px #FF0501 solid;padding: 1rem 0 1rem 2rem;font-weight: 500;font-size: 18px;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
 .seccion-telefonos__parrafo-link{color: #FF0501;display: inline-block;font-weight: 400;}
-.seccion-telefonos__boton{color: #FF0501;border: 2px solid #FF0501; font-weight:500;text-align: center;margin-left: auto;display: inline-block;border-radius: 20px;font-weight:500;font-size:14px;width: 150px;height: 34px; text-align: center;padding-top:0;}
+.seccion-telefonos__boton{color: #FF0501;border: 2px solid #FF0501; font-weight:500;text-align: center;margin-left: auto;display: inline-block;border-radius: 20px;font-weight:500;font-size:14px;width: 150px;height: 34px; text-align: center;padding-top:7px;}
 .seccion-telefonos__boton-wa,.seccion-telefonos__boton-wa-2{color: #fff;background-color: #25D366;border-radius: 20px;font-weight:600;font-size:16px;width: 145px;height: 34px; text-align: center;padding-top:7px;margin-left: auto;display: inline-block;}
 .seccion-telefonos__boton-wa-2{margin-left: 0.7vw;}
 .seccion-telefonos__boton-wa img,.seccion-telefonos__boton-wa-2 img{display: inline!important;width:1.6vw;min-width: 13px;max-width: 17px; margin-right: 2px;vertical-align: top;}
@@ -42,8 +40,8 @@ ul{list-style: none;margin: 0;padding: 0;}
     .seccion-telefonos__boton,.seccion-telefonos__parrafo a.seccion-telefonos__boton-wa,.seccion-telefonos__parrafo a.seccion-telefonos__boton-wa-2{margin: 14px 0;}
 }
 @media (max-width: 767.98px){
-    .seccion-telefonos__boton{font-size: 12px;padding-top: 1px;border-radius: 20px;width: 122px;height: 25px;}
-    .seccion-telefonos__boton-wa,.seccion-telefonos__boton-wa-2{font-size: 12px;padding-top: 6px;border-radius: 15px;width: 120px;height: 25px;}
+    .seccion-telefonos__boton{font-size: 12px;padding-top: 4px;border-radius: 20px;width: 122px;height: 25px;}
+    .seccion-telefonos__boton-wa,.seccion-telefonos__boton-wa-2{font-size: 12px;padding-top: 6px;border-radius: 15px;width: 120px;height: 27px;}
     .seccion-telefonos__boton-wa img,.seccion-telefonos__boton-wa-2 img{width: 13px;}
     .seccion-telefonos__parrafo{font-size: 16px;}
 }

@@ -15,9 +15,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 .main{width: 85%;margin:0 auto;position: relative;background-color: #fff;padding-bottom: 4rem;margin-top: 75px; }
 .resaltado{color: #FF0501;letter-spacing: 0}
 
-.seccion-imagen{width: 100%;height: 41.5vw; 
-    /* background: url('../img/notas/notas.webp') no-repeat; background-size: cover;background-position: center center; */
-}
+.seccion-imagen{width: 100%;height: 41.5vw; }
 .seccion-imagen picture, .seccion-imagen picture source, .seccion-imagen picture img{width: 100%;height: 100%;}
 
 .seccion-link{width: 100%;font-size: 12px;font-weight: 400;color: #111111;padding: 10px 8vw 0 8vw;}
@@ -28,7 +26,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 .seccion-contenido__span{white-space: nowrap;}
 .parrafo{width: 100%;margin-top: 2rem;font-size: 16px;line-height: 22px;}
 
-.seccion-contenido__imagen{width: 100%;height: 34vw; /*background: url('../img/notas/notas2.webp') no-repeat;*/ background-size: cover;/*background-position: center center;*/margin-top: 2rem;}
+.seccion-contenido__imagen{width: 100%;height: 34vw; background-size: cover; margin-top: 2rem;}
 
 .titulo-seccion{font-weight: 600;font-size:30px;color: #111111;padding: 2rem 0;}
 

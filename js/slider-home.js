@@ -31,7 +31,8 @@ function desplazar_galeria(galeria,indice,width,margen,contenido,desplaza,clase_
         if (cantidad == 1) {
            galeria.style.transform = "translate("+(-((width+(margen))*desplaza))+"px)";
         }else{
-            galeria.style.transform = "translate("+(-((width)*desplaza))+"px)";
+            // galeria.style.transform = "translate("+(-((width)*desplaza))+"px)"; esto si
+            galeria.style.transform = "translate("+(-((width+(margen))*desplaza))+"px)";
         }
         galeria.style.transition = "transform 1s";
         setTimeout(() => {
@@ -159,10 +160,11 @@ function configurar_blog() {
     blog_contenido = document.getElementsByClassName('seccion-consejos__slider-blog');
     blog_dots = document.getElementById('blog__marcadores-slide');
     // blog_li = document.getElementsByClassName("blog_li");
-    blog_margen = (screen.width < 520) ? 20 : (blog_contenedor.getBoundingClientRect().width * 0.01)+3;
+    
+    blog_margen = (screen.width < 520) ? 20 : 16;
     blog_cantidad = (screen.width < 520) ? 1 : 2;
-    // blog_width = Math.floor(document.getElementById('contenedor').clientWidth / blog_cantidad) - blog_margen;
-    blog_width = (screen.width < 520) ? ((document.getElementById('blog__contenedor').getBoundingClientRect().width / blog_cantidad) - blog_margen) : (document.getElementById('blog__contenedor').getBoundingClientRect().width / blog_cantidad);  
+        
+    blog_width = (screen.width < 520) ? ((document.getElementById('blog__contenedor').getBoundingClientRect().width / blog_cantidad) - blog_margen) : ((document.getElementById('blog__contenedor').getBoundingClientRect().width / blog_cantidad) - blog_margen);
 
     blog_indice = 0;
     blog_desplaza = 1;
@@ -222,10 +224,6 @@ window.onload = function () {
 
 
     $('body').on('click', '.imagen_slider_a', function(){
-    // $('.imagen_slider_a').click(function(target){
-        // target.preventDefault();
-        
-        console.log("click dot slider1");
 
         var li_slider = document.getElementsByClassName('imagen_slider');
         detener_slider1();
@@ -255,11 +253,6 @@ window.onload = function () {
 
 
     $('body').on('click', '.li_blog_a', function(){
-    // $('.li_blog_a').click(function(event){
-        // event.preventDefault();
-                
-        console.log("click dot blog");
-
 
         var li_blog = document.getElementsByClassName('li_blog');
         detener_blog();
@@ -289,14 +282,6 @@ window.onload = function () {
     });
     
 }
-
-// window.addEventListener('resize', function() {
-//     detener_slider1();
-//     configurar_slider1();
-
-//     detener_blog();
-//     configurar_blog();
-// });
 
 
 

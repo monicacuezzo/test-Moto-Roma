@@ -15,17 +15,15 @@
     <link rel="stylesheet" type="text/css" href="css/nota.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <script type="text/javascript" src="js/header.js"></script>
 
     <title>Moto Roma - Notas</title>
 </head>
 <body class="body">
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            generar_header();
-        })
-    </script>
-
     <header id="header-pagina" class="header-pagina flex"></header>
+    <script>
+        generar_header();
+    </script>
 
     <main class="main">
         <h1 class="h1">MOTO ROMA - Notas</h1>
@@ -123,7 +121,6 @@
 
 
     <script type="text/javascript" src="js/jQuery3.6.4.js"></script>
-    <script type="text/javascript" src="js/header.js"></script>
     <script type="text/javascript" src="js/slider-notas.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
 
@@ -131,7 +128,6 @@
     <script>
         window.onload = function () {
 
-            // generar_header();
             var ico_menu = document.getElementById("ico-menu");
             ico_menu.onclick = () => {
                 var nav_bar = document.getElementsByClassName("header__nav")[0];

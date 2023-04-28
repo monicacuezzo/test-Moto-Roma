@@ -15,12 +15,16 @@
     <link rel="stylesheet" type="text/css" href="css/moto-ficha.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <script type="text/javascript" src="js/header.js"></script>
 
     <title>Moto Roma - Ficha motos</title>
 </head>
 <body class="body">
 
     <header id="header-pagina" class="header-pagina flex"></header>
+    <script>
+        generar_header();
+    </script>
 
     <main class="main">
         <h1 class="h1">MOTO ROMA - Ficha motos</h1>
@@ -55,9 +59,11 @@
                                     <img src="img/modelos/enduro/honda-xr-250-miniatura-bl.webp" alt="Honda XR 250 blanca">
                                 </button>
                                 <button class="slider-contenido" onclick="mostrar_moto('img/modelos/enduro/honda-xr-250-miniatura-ng.webp',this);">
+                                    <!-- IMPORTANTE: en este botón poner url de la imagen grande de la ficha NO la miniatura -->
                                         <img src="img/modelos/enduro/honda-xr-250-miniatura-ng.webp" alt="Honda XR 250 negra">
                                 </button>
                                 <button class="slider-contenido" onclick="mostrar_moto('img/modelos/enduro/honda-xr-250-miniatura-rj.webp',this)">
+                                    <!-- IMPORTANTE: en este botón poner url de la imagen grande de la ficha NO la miniatura -->
                                     <img src="img/modelos/enduro/honda-xr-250-miniatura-rj.webp" alt="Honda XR 250 roja">
                                 </button>
 
@@ -179,7 +185,6 @@
 
 
     <script type="text/javascript" src="js/jQuery3.6.4.js"></script>
-    <script type="text/javascript" src="js/header.js"></script>
     <script type="text/javascript" src="js/slider-motos.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
 
@@ -193,7 +198,6 @@
 
         window.onload = function () {
 
-            generar_header();
             var ico_menu = document.getElementById("ico-menu");
             ico_menu.onclick = () => {
                 var nav_bar = document.getElementsByClassName("header__nav")[0];

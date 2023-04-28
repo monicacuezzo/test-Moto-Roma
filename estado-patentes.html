@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1">
+	<meta name="description" content="Moto Roma, desde 1958 vendiendo motos.">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="robots" content="index,follow">
+
+    <link rel="icon" type="image/png" href="img/compartidos/faviconMR.png" sizes="32x32"/>
+    <link rel="preload" href="js/header.js" as="script" />
+
+    <link rel="stylesheet" type="text/css" href="css/estado.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+    <title>Moto Roma - Verificar estado</title>
+</head>
+<body class="body">
+
+    <header id="header-pagina" class="header-pagina flex"></header>
+
+    <main class="main">
+        <h1 class="h1">MOTO ROMA - Verificar estado Patentes</h1>
+
+        <section class="seccion-link">
+            <a href="index.html" class="seccion-link__a">Home </a><span> >> Verificar estado Patentes</span>
+        </section>
+
+        <section class="seccion-contenido">
+            <!-- insertar aquí el contenido -->
+        </section>
+      
+    </main>
+
+    <footer id="footer-pagina" class="footer-pagina"></footer>
+
+
+    <script type="text/javascript" src="js/jQuery3.6.4.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+
+    <script>
+        window.onload = function () {
+
+            generar_header();
+            var ico_menu = document.getElementById("ico-menu");
+            ico_menu.onclick = () => {
+                var nav_bar = document.getElementsByClassName("header__nav")[0];
+                nav_bar.classList.toggle('d-block');
+            };
+            generar_footer();
+
+            window.addEventListener('resize', function() {
+                document.getElementsByClassName("header__nav")[0].classList.remove('d-block');
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>

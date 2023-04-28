@@ -51,10 +51,10 @@
                         <div id="contenedor" class="contenedor">
                             <div id="galeria" class="galeria" >
                                                
-                            <button class="slider-contenido" onclick="mostrar_moto('img/marcas/yamaha/yamaha-fz-fi-sn-ficha.webp',this);">
+                                <button class="slider-contenido" onclick="mostrar_moto('img/marcas/yamaha/yamaha-fz-fi-sn-ficha.webp',this);">
                                     <img src="img/marcas/yamaha/yamaha-fz-fi-sn-miniatura-celeste.webp" alt="Honda XR 250 negra">
-                            </button>
-                            <button class="slider-contenido" onclick="mostrar_moto('img/marcas/yamaha/yamaha-fz-fi-sn-miniatura-bl.webp',this);">
+                                </button>
+                                <button class="slider-contenido" onclick="mostrar_moto('img/marcas/yamaha/yamaha-fz-fi-sn-miniatura-bl.webp',this);">
                                     <img src="img/marcas/yamaha/yamaha-fz-fi-sn-miniatura-bl.webp" alt="Honda XR 250 blanca">
                                 </button>
                                 <button class="slider-contenido" onclick="mostrar_moto('img/marcas/yamaha/yamaha-fz-fi-sn-miniatura-rj.webp',this)">
@@ -77,7 +77,7 @@
                     <p class="seccion-moto__info-precio">ATM by Tibest c/reposición de la Unidad 0km.</p>
 
                     <div class="seccion-moto__botonera">
-                        <a href="https://wa.me/+5491134727866" class="botonera__btn-wa" target="_blank">
+                        <a href="https://wa.me/+5491124846478" class="botonera__btn-wa" target="_blank">
                             <img src="img/compartidos/icono-wa.webp" alt="Abrir Whatsapp en otra ventana">
                             CONSULTAR
                         </a>
@@ -86,10 +86,10 @@
                             <img src="img/compartidos/ico-video.webp" alt="Abrir Whatsapp en otra ventana">
                             VER VIDEO
                         </button>
-                        <button class="botonera__boton">
+                        <a class="botonera__boton" href="https://wa.me/+5491124846478" target="_blank">
                             <img src="img/compartidos/ico-dni.webp" alt="Abrir Whatsapp en otra ventana">
                             SOLICITA UN CRÉDITO CON TU DNI
-                        </button>
+                        </a>
                         <button class="botonera__boton" onclick="$('#seccion-cuotas').show()">
                             <img src="img/compartidos/ico-tarjeta-credito.webp" alt="Abrir Whatsapp en otra ventana">
                             COMPRALA EN CUOTAS CON TARJETA DE CRÉDITO
@@ -202,18 +202,11 @@
             generar_footer();
 
             document.getElementById('flecha-slider-der').addEventListener("click",moto_avanzar1);
-            // document.getElementById('flecha-slider-izq').addEventListener("click", function() {
-            //     // detener_moto();
-            //     // moto_indice = 
-            //     moto_retroceder1(moto_galeria,moto_indice,moto_width,moto_margen,moto_contenido,moto_desplaza,"moto__marcador-activo",moto_cantidad,"ver-imagen");
-            //     // avanzar_moto();
-            // });
             document.getElementById('flecha-slider-izq').addEventListener("click", moto_retroceder);
 
 
             window.addEventListener('resize', function() {
                 document.getElementsByClassName("header__nav")[0].classList.remove('d-block');
-                // detener_moto();
                 configurar_moto();
             });
 

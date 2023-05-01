@@ -6,15 +6,27 @@ function generar(width, dots, contenido, li, li_nombre, indice, galeria, cantida
     "use strict";
     if (width <= 0 || isNaN(width) || isNaN(contenido.length) || !contenido || contenido.length <= 0) {
         return;
-    }        
-    for (let index = 0; index < contenido.length; index++) {
-        contenido[index].style.width = (width) + "px";
-        contenido[index].setAttribute("id", li_nombre+index );
-    }
-        
-    dots.innerHTML = "";
-    for (let index = 0; index < (contenido.length / desplaza); index++) {
-        dots.innerHTML = dots.innerHTML + '<li class="'+li_nombre+'"><div class="'+li_nombre+'_a" id="'+li_nombre+(index * desplaza)+'"><div class="dot"></div></div></li>';
+    }      
+    
+    if (desplaza == 1) {
+        dots.innerHTML = "";
+        for (let index = 0; index < contenido.length; index++) {
+            contenido[index].style.width = (width) + "px";
+            contenido[index].setAttribute("id", li_nombre+index );
+
+            dots.innerHTML = dots.innerHTML + '<li class="'+li_nombre+'"><div class="'+li_nombre+'_a" id="'+li_nombre+(index * desplaza)+'"><div class="dot"></div></div></li>';
+        }
+            
+    }else{
+        for (let index = 0; index < contenido.length; index++) {
+            contenido[index].style.width = (width) + "px";
+            contenido[index].setAttribute("id", li_nombre+index );
+        }
+            
+        dots.innerHTML = "";
+        for (let index = 0; index < (contenido.length / desplaza); index++) {
+            dots.innerHTML = dots.innerHTML + '<li class="'+li_nombre+'"><div class="'+li_nombre+'_a" id="'+li_nombre+(index * desplaza)+'"><div class="dot"></div></div></li>';
+        }
     }
     li = document.getElementsByClassName(li_nombre);
     li[indice].classList.add(clase_activo);

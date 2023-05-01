@@ -150,16 +150,15 @@
                 var nav_bar = document.getElementsByClassName("header__nav")[0];
                 nav_bar.classList.toggle('d-block');
             };
-            generar_footer();
             configurar_blog();
+            generar_footer();
 
             blog_contenedor.addEventListener("mouseover", detener_blog);
             blog_contenedor.addEventListener("mouseout", avanzar_blog);
 
             
-            $('.ver-imagen_a').click(function(target){
-                // target.preventDefault();
-                // link_blog();
+            $('body').on('click', '.ver-imagen_a', function(){
+            // $('.ver-imagen_a').click(function(target){
                 var li_blog = document.getElementsByClassName('ver-imagen');
                 detener_blog();
                 for (let index = 0; index < blog_contenido.length; index++) {

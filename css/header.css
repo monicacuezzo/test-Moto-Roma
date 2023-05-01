@@ -3,6 +3,7 @@
 .header__nav{display:-webkit-box;display:-ms-flexbox;display:flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;width: 60%; max-width: 700px;min-width: 500px;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
 .header__nav-link{color: #fff;font-weight:500;font-size: 1vw;line-height: 1.7vw;}
 .header__nav-link:hover{color: #FF0501;}
+.header__nav-link:visited{color: #fff;}
 .header__nav-contacto{display: block;color: #111111;background-color: #fff;border-radius: 50px;font-weight:500;font-size: 1.05vw;width: 6.2vw;text-align: center;padding: 3px 3px 4px;}
 .header__nav-contacto:hover{color: #FF0501;background-color: rgba(255, 255, 255, 0.6);}
 .header__principal-ico-menu{display: none;}

@@ -207,15 +207,6 @@ function blog_avanzar1(){
 }; 
 
 
-// window.addEventListener("DOMContentLoaded", (event) => {
-//     configurar_slider1();
-//     slider1_contenedor.style.height = slider1_galeria.style.height;
-//     configurar_blog();
-   
-// });
-
-
-
 window.onload = function () {
 
     configurar_slider1();

@@ -34,6 +34,7 @@ function generar(width, dots, contenido, li, li_nombre, indice, galeria, cantida
     li[indice].classList.add(clase_activo);
     dots.style.display = (li.length < 2 || contenido.length == cantidad) ? 'none' : '';
     galeria.style.display = "";
+    contenedor.style.height = galeria.style.height;
 }
 
 
@@ -224,7 +225,7 @@ function blog_avanzar1(){
 window.onload = function () {
 
     configurar_slider1();
-    slider1_contenedor.style.height = slider1_galeria.style.height;
+    // slider1_contenedor.style.height = slider1_galeria.style.height;
     configurar_blog();
   
     slider1_contenedor.addEventListener("mouseover", function() {

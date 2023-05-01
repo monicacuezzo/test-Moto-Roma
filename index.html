@@ -8,8 +8,8 @@
 	<meta name="HandheldFriendly" content="true">
 	<meta name="robots" content="index,follow">
 
-    <link rel="icon" type="image/png" href="img/compartidos/faviconMR.png" sizes="32x32"/>
-    <link rel="preload" href="js/slider-home.js" as="script" />
+    <link rel="icon" type="image/png" href="img/compartidos/faviconMR.png" sizes="32x32">
+    <link rel="preload" href="js/slider-home.js" as="script">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
 
@@ -23,7 +23,7 @@
             <img id="ico-menu" src="img/compartidos/ico-menu.webp" alt="Menú" width="20" height="15" class="header__principal-ico-menu">
         </div>
         <nav class="header__nav">
-            <a href="#modelos" class="header__nav-link">Modelos</a>
+            <a href="#modelos" class="header__nav-link" id="nav_modelos">Modelos</a>
             <a href="patentes.html" class="header__nav-link">Patentes</a>
             <a href="https://wa.me/+5491126903989" class="header__nav-link" target="_blank">Seguros</a>
             <a href="servicio-tecnico.html" class="header__nav-link">Servicio Técnico</a>
@@ -34,34 +34,34 @@
 
     <main class="main">
         <h1 class="h1">MOTO ROMA</h1>
-        <section class="seccion-slider1">
+        <div class="seccion-slider1">
 
             <div id="contenedor" class="contenedor" style="background-color: #111111;height: 44vw;">
                 <div id="slider1__sombra" class="sombra"></div>
                 <div id="galeria" class="galeria" style="display: none;">
                      <div class="item">
                         <picture>
-                            <source srcset="img/home/vintage-motorcycle-cafe-racer-style-520px.webp" media="(max-width:520px)" alt="vintage-motorcycle-cafe-racer-style">
+                            <source srcset="img/home/vintage-motorcycle-cafe-racer-style-520px.webp" media="(max-width:520px)">
                             <img src="img/home/vintage-motorcycle-cafe-racer-style-1500px.webp" alt="vintage-motorcycle-cafe-racer-style" width="1500" height="800">
                         </picture>
                     </div>
 
                     <div class="item">
                         <picture>
-                            <source srcset="img/home/HOME_1-520px.webp" media="(max-width:520px)" alt="moto Calle">
+                            <source srcset="img/home/HOME_1-520px.webp" media="(max-width:520px)">
                             <img src="img/home/HOME_1-1500px.webp" alt="moto Calle" width="1500" height="800">
                         </picture>
                     </div>
 
                     <div class="item">
                         <picture>
-                            <source srcset="img/home/HOME_2-520px.webp" media="(max-width:520px)" alt="moto Scooter">
+                            <source srcset="img/home/HOME_2-520px.webp" media="(max-width:520px)">
                             <img src="img/home/HOME_2-1500px.webp" alt="moto Scooter" width="1500" height="800">
                         </picture>
                     </div>
                     <div class="item">
                         <picture>
-                            <source srcset="img/home/HOME_3-520px.webp" media="(max-width:520px)" alt="moto Enduro">
+                            <source srcset="img/home/HOME_3-520px.webp" media="(max-width:520px)">
                             <img src="img/home/HOME_3-1500px.webp" alt="moto Enduro" width="1500" height="800">
                         </picture>
                     </div>
@@ -71,14 +71,14 @@
             <div class="seccion-slider1__marcadores" >
                 <ul class="flex" id="slider1__dots"></ul>
             </div>
-        </section>
+        </div>
         <section class="seccion-estilos" id="modelos">
             <h2 class="titulo-seccion">Elegí tu <span class="resaltado">estilo</span></h2>
             <div class="seccion-estilos__estilos">
                 <a class="contenedor-img" title="Ver modelos Econo" href="modelos-enduro.html">
                     <div class="sombra"></div>
                     <picture>
-                        <source srcset="img/home/ECONO-200px.webp" media="(max-width:520px)" class="seccion-estilos__estilos-img" alt="Ver modelos Econo">
+                        <source srcset="img/home/ECONO-200px.webp" media="(max-width:520px)" class="seccion-estilos__estilos-img">
                         <img src="img/home/ECONO-640px.webp" class="seccion-estilos__estilos-img" alt="Ver modelos Econo" width="640" height="328">
                     </picture>
 
@@ -87,7 +87,7 @@
                 <a class="contenedor-img" title="Ver modelos Scooter" href="modelos-enduro.html">
                     <div class="sombra"></div>
                     <picture>
-                        <source srcset="img/home/SCOOTER-200px.webp" media="(max-width:520px)" class="seccion-estilos__estilos-img" alt="Ver modelos Scooter">
+                        <source srcset="img/home/SCOOTER-200px.webp" media="(max-width:520px)" class="seccion-estilos__estilos-img">
                         <img src="img/home/SCOOTER-640px.webp" class="seccion-estilos__estilos-img" alt="Ver modelos Scooter" width="640" height="328">
                     </picture>
                     <div class="estilos-nombre">SCOOTER</div>
@@ -95,7 +95,7 @@
                 <a class="contenedor-img" title="Ver modelos Calle" href="modelos-enduro.html">
                     <div class="sombra"></div>
                     <picture>
-                        <source srcset="img/home/CALLE-200px.webp" media="(max-width:520px)" class="seccion-estilos__estilos-img" alt="Ver modelos Calle">
+                        <source srcset="img/home/CALLE-200px.webp" media="(max-width:520px)" class="seccion-estilos__estilos-img">
                         <img src="img/home/CALLE-640px.webp" class="seccion-estilos__estilos-img" alt="Ver modelos Calle" width="640" height="328">
                     </picture>
                     <div class="estilos-nombre resaltado">CALLE</div>
@@ -103,7 +103,7 @@
                 <a class="contenedor-img" href="modelos-enduro.html" title="Ver modelos Enduro">
                     <div class="sombra"></div>
                     <picture>
-                        <source srcset="img/home/ENDURO-200px.webp" media="(max-width:520px)" class="seccion-estilos__estilos-img" alt="Ver modelos Enduro">
+                        <source srcset="img/home/ENDURO-200px.webp" media="(max-width:520px)" class="seccion-estilos__estilos-img">
                         <img src="img/home/ENDURO-640px.webp" class="seccion-estilos__estilos-img" alt="Ver modelos Enduro" width="640" height="328">
                     </picture>
                     <div class="estilos-nombre resaltado">ENDURO</div>
@@ -113,14 +113,14 @@
 
         <section class="section-banner">
             <picture>
-                <source srcset="img/home/simular-credito-520px.webp" media="(max-width:520px)"  alt="Simular Crédito">
+                <source srcset="img/home/simular-credito-520px.webp" media="(max-width:520px)">
                 <img src="img/home/simular-credito.webp" alt="Simular Crédito" title="Banner Simular Crédito" width="1500" height="300">
             </picture>
             
             <div class="section-banner__texto">
-                <p>Simula un crédito <span>con tu DNI</span></p>
+                <h2>Simula un crédito <span>con tu DNI</span></h2>
                 <a href="https://wa.me/+5491124846478" target="_blank" class="section-banner__texto-boton">
-                <img src="img/compartidos/icono-wa.webp" alt="Abrir Whatsapp en otra ventana" width="17" height="17">
+                <img src="img/compartidos/icono-wa.webp" alt="Abrir Whatsapp en otra ventana" title="Abrir Whatsapp en otra ventana" width="17" height="17">
                     CONSULTAR
                 </a>
             </div>
@@ -133,8 +133,8 @@
                 <a href="marca-yamaha.html">  <img src="img/home/logo-yamaha.webp" alt="Logo Yamaha" width="150" height="150"></a>
                 <a href="marca-yamaha.html">  <img src="img/home/logo-bajaj.webp" alt="Logo Bajaj" width="150" height="150"></a>
                 <a href="marca-yamaha.html">  <img src="img/home/logo-zanella.webp" alt="Logo Zanella" width="150" height="150"></a>
-                <a href="marca-yamaha.html">  <img src="img/home/logo-gilera.webp" alt="Logo Gilera" width="150" height="150"></a>
-                <img src="img/home/logo-motomel.webp" alt="Logo Motomel" width="150" height="150"></a>
+                <a href="marca-yamaha.html">  <img src="img/home/logo-gilera.webp" alt="Logo Gilera" width="150" height="150"> </a>
+                <a href="marca-yamaha.html"> <img src="img/home/logo-motomel.webp" alt="Logo Motomel" width="150" height="150"></a>
                 <a href="marca-yamaha.html">  <img src="img/home/logo-corven.webp" alt="Logo Corven" width="150" height="150"></a>
                 <a href="marca-yamaha.html">  <img src="img/home/logo-mondial.webp" alt="Logo Mondial" width="150" height="150"></a>
                 <a href="marca-yamaha.html">  <img src="img/home/logo-keller.webp" alt="Logo Keller" width="150" height="150"></a>
@@ -148,7 +148,7 @@
             <a href="accesorios.html" class="seccion-accesorios__contenedor-img">
                 <div class="sombra"></div>
                 <picture>
-                    <source srcset="img/home/accesorios-520px.webp" media="(max-width:520px)" class="seccion-estilos__estilos-img" class="seccion-accesorios__accesorios-img" alt="Ir a página de Accesorios">
+                    <source srcset="img/home/accesorios-520px.webp" media="(max-width:520px)" class="seccion-accesorios__accesorios-img">
                     <img src="img/home/accesorios1360px.webp" class="seccion-accesorios__accesorios-img" alt="Ir a página de Accesorios" width="1360" height="630">
                 </picture>
 
@@ -253,11 +253,24 @@
             configurar_blog();
         });
 
+        window.onscroll = function (){
+            var modelos = document.getElementById("modelos");
+            var distance = modelos.getBoundingClientRect();
+            if (distance.top < 100) {
+                document.getElementById("nav_modelos").classList.add("resaltado");
+            }else{
+                document.getElementById("nav_modelos").classList.remove("resaltado");
+            }
+            if (distance.bottom < 100) {
+                document.getElementById("nav_modelos").classList.remove("resaltado");
+            }
+        };
+
     </script>
 
-    <script type="text/javascript" src="js/jQuery3.6.4.js"></script>
-    <script type="text/javascript" src="js/slider-home.js"></script>
-    <script type="text/javascript" src="js/footer.js"></script>
+    <script src="js/jQuery3.6.4.js"></script>
+    <script src="js/slider-home.js"></script>
+    <script src="js/footer.js"></script>
     
     <script>        
         generar_footer();

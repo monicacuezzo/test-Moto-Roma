@@ -8,14 +8,14 @@
 	<meta name="HandheldFriendly" content="true">
 	<meta name="robots" content="index,follow">
 
-    <link rel="icon" type="image/png" href="img/compartidos/faviconMR.png" sizes="32x32"/>
-    <link rel="preload" href="js/header.js" as="script" />
-    <link rel="preload" href="img/marcas/yamaha/yamaha520.webp" as="image" />
+    <link rel="icon" type="image/png" href="img/compartidos/faviconMR.png" sizes="32x32">
+    <link rel="preload" href="js/header.js" as="script">
+    <link rel="preload" href="img/marcas/yamaha/yamaha520.webp" as="image">
 
     <link rel="stylesheet" type="text/css" href="css/yamaha-ficha.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <script type="text/javascript" src="js/header.js"></script>
+    <script src="js/header.js"></script>
 
     <title>Moto Roma - Ficha Yamaha</title>
 </head>
@@ -29,20 +29,20 @@
     <main class="main">
         <h1 class="h1">MOTO ROMA - Ficha Yamaha</h1>
 
-        <section class="seccion-imagen" style="background-color: #c6c4c4;height: 41.5vw;">
+        <div class="seccion-imagen" style="background-color: #c6c4c4;height: 41.5vw;">
             <picture>
                 <source srcset="img/marcas/yamaha/marcas-yamaha520.webp" media="(max-width:520px)">
                 <img src="img/marcas/yamaha/marcas-yamaha1500.webp" alt="Moto Roma - Accesorios">
             </picture>
-        </section>
+        </div>
 
-        <section class="seccion-link">
+        <div class="seccion-link">
             <a href="index.html" class="seccion-link__a">Home </a><span> >> </span>
             <a href="index.html#marcas" class="seccion-link__a">Marcas </a><span> >> </span>
             <a href="marca-yamaha.html" class="seccion-link__a">Yamaha </a><span> >> Yamaha FZ FI SN</span>
-        </section>
+        </div>
 
-        <section class="seccion-moto">
+        <div class="seccion-moto">
             <div class="seccion-moto__contenido flex">
                 <div class="seccion-moto__imagenes">
                     <img id="imagen_moto" src="img/marcas/yamaha/yamaha-fz-fi-sn-ficha.webp" alt="Yamaha FZ FI SN" title="Yamaha FZ FI SN" class="seccion-moto__img">
@@ -85,7 +85,7 @@
 
                     <div class="seccion-moto__botonera">
                         <a href="https://wa.me/+5491124846478" class="botonera__btn-wa" target="_blank">
-                            <img src="img/compartidos/icono-wa.webp" alt="Abrir Whatsapp en otra ventana">
+                            <img src="img/compartidos/icono-wa.webp" alt="Abrir Whatsapp en otra ventana" title="Abrir Whatsapp en otra ventana">
                             CONSULTAR
                         </a>
 
@@ -105,7 +105,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
        <section class="ficha-tecnica">
         <h2 class="ficha-tecnica__h2">Ficha técnica</h2>
@@ -146,7 +146,7 @@
         
        </section>
 
-       <section id="seccion-cuotas" class="modal" style="display: none;">
+       <div id="seccion-cuotas" class="modal" style="display: none;">
             <div class="seccion-cuotas__contenido">
                 <button class="btn-cerrar" onclick="$('#seccion-cuotas').hide()">
                     <img src="img/compartidos/btn-cerrar.png" alt="Cerrar la ventana cuotas" class="btn-cerrar__img">
@@ -168,25 +168,25 @@
                     <img src="img/compartidos/ico-amex.webp" alt="Tarjeta American Express">
                 </div>
             </div>
-       </section>
+       </div>
 
-       <section id="seccion-video" class="modal flex" style="display: none;">
+       <div id="seccion-video" class="modal flex" style="display: none;">
             <div class="seccion-video__contenedor ">
                 <button class="btn-cerrar" onclick="$('#seccion-video').hide()">
                     <img src="img/compartidos/btn-cerrar.png" alt="Cerrar la ventana cuotas" class="btn-cerrar__img">
                 </button>
-                <iframe width="560" height="315" class="seccion-video__video" src="https://www.youtube.com/embed/IhA0dkcN_Fs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" class="seccion-video__video" src="https://www.youtube.com/embed/IhA0dkcN_Fs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-       </section>
+       </div>
       
-</main>
+    </main>
 
     <footer id="footer-pagina" class="footer-pagina"></footer>
 
 
-    <script type="text/javascript" src="js/jQuery3.6.4.js"></script>
-    <script type="text/javascript" src="js/slider-motos.js"></script>
-    <script type="text/javascript" src="js/footer.js"></script>
+    <script src="js/jQuery3.6.4.js"></script>
+    <script src="js/slider-motos.js"></script>
+    <script src="js/footer.js"></script>
 
     <script>
                     

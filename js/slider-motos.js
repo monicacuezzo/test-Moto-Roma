@@ -1,5 +1,5 @@
-function generar(width,dots,contenido,li,li_nombre,indice,galeria,cantidad,desplaza,clase_activo) {
-    if (!contenido || moto_contenido.length <= 0) {
+function generar(width, dots, contenido, li, li_nombre, indice, galeria, cantidad, desplaza, clase_activo) {
+    if (!contenido || contenido.length <= 0) {
         return;
     }
     for (let index = 0; index < contenido.length; index++) {
@@ -17,13 +17,13 @@ function generar(width,dots,contenido,li,li_nombre,indice,galeria,cantidad,despl
 }
 
 
-function desplazar_galeria(galeria,indice,width,margen,contenido,desplaza,clase_activo,cantidad,li_nombre) {
+function desplazar_galeria(galeria, indice, width, margen, contenido, desplaza, clase_activo, cantidad, li_nombre) {
     if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0){
-        return
+        return;
     }
 
     if (ultima_moto < moto_contenido.length-1) {
-        let posicion = parseFloat(galeria.style.left.slice(0, -2))
+        let posicion = parseFloat(galeria.style.left.slice(0, -2));
         galeria.style.left =  (posicion-width)+"px"; 
         galeria.style.transition = "left 1s";
         ultima_moto++;
@@ -32,13 +32,13 @@ function desplazar_galeria(galeria,indice,width,margen,contenido,desplaza,clase_
      
 }
 
-function moto_retroceder1(galeria,indice,width,margen,contenido,desplaza,clase_activo,cantidad,li_nombre) {
+function moto_retroceder1(galeria, indice, width, margen, contenido, desplaza, clase_activo, cantidad, li_nombre) {
     if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0){
-        return
+        return;
     }
 
     if (primera_moto > 0) {
-        let posicion = parseFloat(galeria.style.left.slice(0, -2))
+        let posicion = parseFloat(galeria.style.left.slice(0, -2));
         galeria.style.left =  (posicion+width)+"px"; 
         galeria.style.transition = "left 1s";
         ultima_moto--;
@@ -75,13 +75,13 @@ function configurar_moto() {
     ultima_moto = moto_contenido.length - 1;
 
     if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0){
-        return
+        return;
     }
 
-    generar(moto_width,moto_dots,moto_contenido,moto_li,"ver-imagen",moto_indice,moto_galeria,moto_cantidad, moto_desplaza,"moto__marcador-activo");
+    generar(moto_width, moto_dots, moto_contenido, moto_li, "ver-imagen", moto_indice, moto_galeria, moto_cantidad, moto_desplaza, "moto__marcador-activo");
 }
 
-function generar2(width,dots,contenido,li,li_nombre,indice,galeria,cantidad,desplaza,clase_activo) {
+function generar2(width, dots, contenido, li, li_nombre, indice, galeria, cantidad, desplaza, clase_activo) {
     for (let index = 0; index < contenido.length; index++) {
         contenido[index].style.width = (width) + "px";
         contenido[index].setAttribute("id", li_nombre+index );
@@ -96,29 +96,29 @@ function reconfigurar_moto() {
     // ultima_moto = moto_contenido.length - 1;
 
     if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0){
-        return
+        return;
     }
 
-    generar2(moto_width,moto_dots,moto_contenido,moto_li,"ver-imagen",moto_indice,moto_galeria,moto_cantidad, moto_desplaza,"moto__marcador-activo");
+    generar2(moto_width, moto_dots, moto_contenido, moto_li, "ver-imagen", moto_indice, moto_galeria, moto_cantidad, moto_desplaza, "moto__marcador-activo");
 }
 
 function moto_avanzar1(){
     if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0){
-        return
+        return;
     }
 
-    desplazar_galeria(moto_galeria,moto_indice,moto_width,moto_margen,moto_contenido,moto_desplaza,"moto__marcador-activo",moto_cantidad,"ver-imagen");
-}; 
+    desplazar_galeria(moto_galeria ,moto_indice, moto_width, moto_margen, moto_contenido, moto_desplaza, "moto__marcador-activo", moto_cantidad, "ver-imagen");
+}
 
 
 function moto_retroceder(){
     if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0){
-        return
+        return;
     }
     if (primera_moto > 0) {
-        moto_retroceder1(moto_galeria,moto_indice,moto_width,moto_margen,moto_contenido,moto_desplaza,"moto__marcador-activo",moto_cantidad,"ver-imagen");
+        moto_retroceder1(moto_galeria, moto_indice, moto_width, moto_margen, moto_contenido, moto_desplaza, "moto__marcador-activo", moto_cantidad, "ver-imagen");
     }
-}; 
+}
 
 
 

@@ -2,30 +2,30 @@ var iniciar_destination;
 var detener_slider1;
 var avanzar_slider1;
 
-function generar(width,dots,contenido,li,li_nombre,indice,galeria,cantidad,desplaza,clase_activo) {
-        if (width <= 0 || isNaN(width) || isNaN(contenido.length) || !contenido || contenido.length <= 0) {
-            return;
-        }
-        
-        for (let index = 0; index < contenido.length; index++) {
-            contenido[index].style.width = (width) + "px";
-            contenido[index].setAttribute("id", li_nombre+index );
-        }
-        
-        dots.innerHTML = "";
-        for (let index = 0; index < (contenido.length / desplaza); index++) {
-            dots.innerHTML = dots.innerHTML + '<li class="'+li_nombre+'"><div class="'+li_nombre+'_a" id="'+li_nombre+(index * desplaza)+'"><div class="dot"></div></div></li>';
-        }
-        li = document.getElementsByClassName(li_nombre);
-        li[indice].classList.add(clase_activo);
-        dots.style.display = (li.length < 2 || contenido.length == cantidad) ? 'none' : '';
-        galeria.style.display = "";
+function generar(width, dots, contenido, li, li_nombre, indice, galeria, cantidad, desplaza, clase_activo) {
+    "use strict";
+    if (width <= 0 || isNaN(width) || isNaN(contenido.length) || !contenido || contenido.length <= 0) {
+        return;
+    }        
+    for (let index = 0; index < contenido.length; index++) {
+        contenido[index].style.width = (width) + "px";
+        contenido[index].setAttribute("id", li_nombre+index );
     }
+        
+    dots.innerHTML = "";
+    for (let index = 0; index < (contenido.length / desplaza); index++) {
+        dots.innerHTML = dots.innerHTML + '<li class="'+li_nombre+'"><div class="'+li_nombre+'_a" id="'+li_nombre+(index * desplaza)+'"><div class="dot"></div></div></li>';
+    }
+    li = document.getElementsByClassName(li_nombre);
+    li[indice].classList.add(clase_activo);
+    dots.style.display = (li.length < 2 || contenido.length == cantidad) ? 'none' : '';
+    galeria.style.display = "";
+}
 
 
-function desplazar_galeria(galeria,indice,width,margen,contenido,desplaza,clase_activo,cantidad,li_nombre) {
+function desplazar_galeria(galeria, indice, width, margen, contenido, desplaza, clase_activo, cantidad,li_nombre) {
         if (isNaN(contenido.length) || !contenido || contenido.length <= 0){
-            return
+            return;
         }
 
         if (cantidad == 1) {
@@ -50,9 +50,9 @@ function desplazar_galeria(galeria,indice,width,margen,contenido,desplaza,clase_
         return indice;
 }
 
-function blog_retroceder1(galeria,indice,width,margen,contenido,desplaza,clase_activo,cantidad,li_nombre) {
+function blog_retroceder1(galeria, indice, width, margen, contenido, desplaza, clase_activo, cantidad, li_nombre) {
     if (isNaN(contenido.length) || !contenido || contenido.length <= 0){
-        return
+        return;
     }
 
      galeria.insertAdjacentElement("afterbegin",contenido[contenido.length-1]);
@@ -64,9 +64,9 @@ function blog_retroceder1(galeria,indice,width,margen,contenido,desplaza,clase_a
     return indice;
 }
 
-function desplazar1(galeria,indice,width,margen,contenido,desplaza,clase_activo,cantidad,li_nombre) {
+function desplazar1(galeria, indice, width, margen, contenido, desplaza, clase_activo, cantidad, li_nombre) {
     if (isNaN(contenido.length) || !contenido || contenido.length <= 0){
-        return
+        return;
     }
 
     if (cantidad == 1) {
@@ -119,18 +119,18 @@ function configurar_slider1() {
     slider1_indice = 0;
     slider1_desplaza = 1;
 
-    generar(slider1_width,slider1_dots,slider1_contenido,slider1_li,"imagen_slider",slider1_indice,slider1_galeria,slider1_cantidad, slider1_desplaza,"seccion-slider1__marcador-activo");
+    generar(slider1_width, slider1_dots, slider1_contenido, slider1_li, "imagen_slider", slider1_indice, slider1_galeria, slider1_cantidad,  slider1_desplaza, "seccion-slider1__marcador-activo");
 
     desplazar_slider1 = setInterval(function(){
         if (slider1_galeria.clientWidth > document.getElementById('contenedor').clientWidth) {
-            slider1_indice = desplazar_galeria(slider1_galeria,slider1_indice,slider1_width,slider1_margen,slider1_contenido,slider1_desplaza,"seccion-slider1__marcador-activo",slider1_cantidad,"imagen_slider");
+            slider1_indice = desplazar_galeria(slider1_galeria, slider1_indice, slider1_width, slider1_margen, slider1_contenido, slider1_desplaza, "seccion-slider1__marcador-activo", slider1_cantidad, "imagen_slider");
         }
     },3000);
 
     avanzar_slider1 = () => {
         desplazar_slider1 = setInterval(function(){
             if (slider1_galeria.clientWidth > document.getElementById('contenedor').clientWidth) {
-                slider1_indice = desplazar_galeria(slider1_galeria,slider1_indice,slider1_width,slider1_margen,slider1_contenido,slider1_desplaza,"seccion-slider1__marcador-activo",slider1_cantidad,"imagen_slider");
+                slider1_indice = desplazar_galeria(slider1_galeria, slider1_indice, slider1_width, slider1_margen, slider1_contenido, slider1_desplaza, "seccion-slider1__marcador-activo", slider1_cantidad, "imagen_slider");
             }
         },3000);
     };
@@ -169,7 +169,7 @@ function configurar_blog() {
     blog_indice = 0;
     blog_desplaza = 1;
 
-    generar(blog_width,blog_dots,blog_contenido,blog_li,"li_blog",blog_indice,blog_galeria,blog_cantidad, blog_desplaza,"blog__marcador-activo");
+    generar(blog_width, blog_dots, blog_contenido, blog_li, "li_blog", blog_indice, blog_galeria, blog_cantidad, blog_desplaza, "blog__marcador-activo");
 
     galeria.style.transform = "translate("+(+(blog_margen/2))+"px)";
 
@@ -179,14 +179,14 @@ function configurar_blog() {
 
     desplazar_blog = setInterval(function(){
         if (blog_galeria.clientWidth > document.getElementById('blog__contenedor').clientWidth) {
-            blog_indice = desplazar_galeria(blog_galeria,blog_indice,blog_width,blog_margen,blog_contenido,blog_desplaza,"blog__marcador-activo",blog_cantidad,"li_blog");
+            blog_indice = desplazar_galeria(blog_galeria, blog_indice, blog_width, blog_margen, blog_contenido, blog_desplaza, "blog__marcador-activo", blog_cantidad, "li_blog");
         }
     },3000);
 
     avanzar_blog = () => {
         desplazar_blog = setInterval(function(){
             if (blog_galeria.clientWidth > document.getElementById('blog__contenedor').clientWidth) {
-                blog_indice = desplazar_galeria(blog_galeria,blog_indice,blog_width,blog_margen,blog_contenido,blog_desplaza,"blog__marcador-activo",blog_cantidad,"li_blog");
+                blog_indice = desplazar_galeria(blog_galeria, blog_indice, blog_width, blog_margen, blog_contenido, blog_desplaza, "blog__marcador-activo", blog_cantidad, "li_blog");
             }
         },3000);
     };
@@ -202,18 +202,22 @@ function blog_avanzar1(){
     }
 
     detener_blog();
-    blog_indice = desplazar1(blog_galeria,blog_indice,blog_width,blog_margen,blog_contenido,blog_desplaza,"blog__marcador-activo",blog_cantidad,"li_blog");
+    blog_indice = desplazar1(blog_galeria, blog_indice, blog_width, blog_margen, blog_contenido, blog_desplaza, "blog__marcador-activo", blog_cantidad, "li_blog");
     avanzar_blog();
 }; 
+
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    configurar_slider1();
+    slider1_contenedor.style.height = slider1_galeria.style.height;
+    configurar_blog();
+   
+});
 
 
 
 window.onload = function () {
 
-    configurar_slider1();
-    slider1_contenedor.style.height = slider1_galeria.style.height;
-    configurar_blog();
-   
    
     slider1_contenedor.addEventListener("mouseover", function() {
         detener_slider1();
@@ -277,7 +281,7 @@ window.onload = function () {
     });
     document.getElementById('flecha-slider-izq').addEventListener("click", function() {
         detener_blog();
-        blog_indice = blog_retroceder1(blog_galeria,blog_indice,blog_width,blog_margen,blog_contenido,blog_desplaza,"blog__marcador-activo",blog_cantidad,"li_blog");
+        blog_indice = blog_retroceder1(blog_galeria, blog_indice, blog_width, blog_margen, blog_contenido, blog_desplaza, "blog__marcador-activo", blog_cantidad, "li_blog");
         avanzar_blog();
     });
     

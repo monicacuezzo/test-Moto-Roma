@@ -1,4 +1,4 @@
-function generar(width,dots,contenido,li,li_nombre,indice,galeria,cantidad,desplaza,clase_activo) {
+function generar(width, dots, contenido, li, li_nombre, indice, galeria, cantidad, desplaza, clase_activo) {
         // if (width <= 0 || isNaN(width)) {
         //     return;
         // }
@@ -19,7 +19,7 @@ function generar(width,dots,contenido,li,li_nombre,indice,galeria,cantidad,despl
     }
 
 
-function desplazar_galeria(galeria,indice,width,margen,contenido,desplaza,clase_activo,cantidad,li_nombre) {
+function desplazar_galeria(galeria, indice, width, margen, contenido, desplaza, clase_activo, cantidad, li_nombre) {
         // if (width <= 0 || isNaN(width) || !contenido) {
         //     return;
         // }
@@ -44,7 +44,7 @@ function desplazar_galeria(galeria,indice,width,margen,contenido,desplaza,clase_
         return indice;
 }
 
-function blog_retroceder1(galeria,indice,width,margen,contenido,desplaza,clase_activo,cantidad,li_nombre) {
+function blog_retroceder1(galeria, indice, width, margen, contenido, desplaza, clase_activo, cantidad, li_nombre) {
      galeria.insertAdjacentElement("afterbegin",contenido[contenido.length-1]);
     var li = document.getElementsByClassName(li_nombre);
     li[indice].classList.remove(clase_activo);
@@ -54,7 +54,7 @@ function blog_retroceder1(galeria,indice,width,margen,contenido,desplaza,clase_a
     return indice;
 }
 
-function desplazar1(galeria,indice,width,margen,contenido,desplaza,clase_activo,cantidad,li_nombre) {
+function desplazar1(galeria, indice, width, margen, contenido, desplaza, clase_activo, cantidad, li_nombre) {
     if (cantidad == 1) {
         galeria.style.transform = "translate("+(-((width+(margen))*desplaza))+"px)";
     }else{
@@ -100,13 +100,13 @@ function configurar_blog() {
     blog_indice = 0;
     blog_desplaza = 1;
 
-    generar(blog_width,blog_dots,blog_contenido,blog_li,"ver-imagen",blog_indice,blog_galeria,blog_cantidad, blog_desplaza,"blog__marcador-activo");
+    generar(blog_width, blog_dots, blog_contenido, blog_li, "ver-imagen", blog_indice, blog_galeria, blog_cantidad, blog_desplaza, "blog__marcador-activo");
 
     blog_galeria.style.transform = "translate("+(+(blog_margen/2))+"px)";
 
     desplazar_blog = setInterval(function(){
         if (blog_galeria.clientWidth > document.getElementById('blog__contenedor').clientWidth) {
-            blog_indice = desplazar_galeria(blog_galeria,blog_indice,blog_width,blog_margen,blog_contenido,blog_desplaza,"blog__marcador-activo",blog_cantidad,"ver-imagen");
+            blog_indice = desplazar_galeria(blog_galeria, blog_indice, blog_width, blog_margen, blog_contenido, blog_desplaza, "blog__marcador-activo", blog_cantidad, "ver-imagen");
         }
     },3000);
 }
@@ -114,7 +114,7 @@ function configurar_blog() {
 avanzar_blog = () => {
     desplazar_blog = setInterval(function(){
         if (blog_galeria.clientWidth > document.getElementById('blog__contenedor').clientWidth) {
-            blog_indice = desplazar_galeria(blog_galeria,blog_indice,blog_width,blog_margen,blog_contenido,blog_desplaza,"blog__marcador-activo",blog_cantidad,"ver-imagen");
+            blog_indice = desplazar_galeria(blog_galeria, blog_indice, blog_width, blog_margen, blog_contenido, blog_desplaza, "blog__marcador-activo", blog_cantidad, "ver-imagen");
         }
     },3000);
 };
@@ -125,8 +125,7 @@ detener_blog = () => {
 
 function blog_avanzar1(){
     detener_blog();
-    blog_indice = desplazar1(blog_galeria,blog_indice,blog_width,blog_margen,blog_contenido,blog_desplaza,"blog__marcador-activo",blog_cantidad,"ver-imagen");
+    blog_indice = desplazar1(blog_galeria, blog_indice, blog_width, blog_margen, blog_contenido, blog_desplaza, "blog__marcador-activo", blog_cantidad, "ver-imagen");
     avanzar_blog();
-}; 
+}
 
- 

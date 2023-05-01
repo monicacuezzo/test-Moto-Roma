@@ -34,7 +34,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 .main{width: 85%;margin:0 auto;position: relative;}
 .sombra{position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 10;background:  -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(0, 0, 0, 0.8)), color-stop(56%, rgba(217, 217, 217, 0)));background:  -o-linear-gradient(rgba(0, 0, 0, 0.8) 10%, rgba(217, 217, 217, 0) 56%);background:  linear-gradient(rgba(0, 0, 0, 0.8) 10%, rgba(217, 217, 217, 0) 56%);-webkit-transform: rotate(-180deg);-ms-transform: rotate(-180deg);transform: rotate(-180deg);}
 .titulo-seccion{font-weight: 600;font-size:3.4vw ;color: #111111;padding: 4.4vw 0;}
-.texto-unido{white-space: nowrap;}
+.texto-unido{white-space: nowrap;text-shadow: 0px 0px 0px #000;}
 
 .seccion-slider1,.section-banner{width: 100%;padding: 0;position: relative;}
 .seccion-slider1 img,.section-banner img{width: 100%;display: block;}
@@ -59,7 +59,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 
 .section-banner__texto{position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 20; font-weight: 500;font-size: 2.8vw;padding-left:calc(50% + 2vw) ;color: #fff; padding-top: 5vw;}
 .section-banner__texto span{white-space: nowrap;display: block;line-height: 3vw; padding-top: 0.3vw;}
-.section-banner__texto-boton{color: #fff;background-color: #0D870F /*#0E9A13 /*#0ea916 /*#25D366*/;border-radius: 2.3vw;font-weight:600;font-size:1.25vw ;width:12vw;height:3vw; text-align: center;padding-top:0.7vw;margin-left: auto;margin-right: 3vw;}
+.section-banner__texto-boton{color: #fff;background-color:#0ea916;border-radius: 2.3vw;font-weight:600;font-size:1.25vw ;width:12vw;height:3vw; text-align: center;padding-top:0.7vw;margin-left: auto;margin-right: 3vw;}
 .section-banner__texto-boton img{display: inline!important;width:1.3vw;margin-right: 0.4vw;vertical-align: top;}
 
 .seccion-marcas{background-color: #fff;text-align: center;}
@@ -81,7 +81,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 .seccion-consejos__consejos-texto {width: 50%;padding: 6vw 2.5vw 3vw 3vw;text-align: left;}
 .h3{font-weight: 500;font-size: 2.1vw;padding-bottom: 2.2vw;}
 .contenido{font-weight: 400;font-size: 1.4vw;}
-.seccion-consejos__consejos-boton{color: #fff;background-color: #EE0300;border-radius: 2vw;font-weight:600;font-size:1.3vw;width:12vw;height:3.1vw; text-align: center;padding-top:0.75vw;margin: 2.8vw 0 0 auto;}
+.seccion-consejos__consejos-boton{color: #fff;background-color: #FA0400;border-radius: 2vw;font-weight:600;font-size:1.3vw;width:12vw;height:3.1vw; text-align: center;padding-top:0.75vw;margin: 2.8vw 0 0 auto;}
 .seccion-consejos__consejos-boton img{width: 2.1vw;vertical-align: middle;margin-right: 0.3vw;display: inline!important;}
 
 .flecha-slider-izq{position: absolute; top: 0;left: -2.5vw;z-index: 30;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;height: 100%;padding-right: 1vw;}
@@ -103,7 +103,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 .li_blog_a{display:inline-block;margin:8px;background-color:#999999;width:14px;height:14px;border-radius:50%;cursor: pointer;}
 .blog__marcador-activo .li_blog_a{background-color:#111111} 
 
-.resaltado{color:#FF0404 /*EB0300 /*#EE0300 /*#FF0501*/;/*text-shadow: 1px 1px 1px #FF0501;*/ /*-webkit-text-stroke: #FF0501 1px;*/} /*#EE0300  FA0400*/
+.resaltado{color:#FF0501 /*FF0404 EB0300 /*#EE0300 /*#FF0501*/;text-shadow: 0px 0px 0px #FF0501; /*-webkit-text-stroke: #FF0501 1px;*/} /*#EE0300  FA0400*/
 
 @media (max-width: 1179.98px){
     .header{display: block;padding-top: 10px;height: -webkit-max-content;height: -moz-max-content;height: max-content; }

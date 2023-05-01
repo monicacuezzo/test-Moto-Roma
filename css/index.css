@@ -59,7 +59,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 
 .section-banner__texto{position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 20; font-weight: 500;font-size: 2.8vw;padding-left:calc(50% + 2vw) ;color: #fff; padding-top: 5vw;}
 .section-banner__texto span{white-space: nowrap;display: block;line-height: 3vw; padding-top: 0.3vw;}
-.section-banner__texto-boton{color: #fff;background-color: #0E9A13 /*#0ea916 /*#25D366*/;border-radius: 2.3vw;font-weight:600;font-size:1.25vw ;width:12vw;height:3vw; text-align: center;padding-top:0.7vw;margin-left: auto;margin-right: 3vw;}
+.section-banner__texto-boton{color: #fff;background-color: #0D9111 /*#0E9A13 /*#0ea916 /*#25D366*/;border-radius: 2.3vw;font-weight:600;font-size:1.25vw ;width:12vw;height:3vw; text-align: center;padding-top:0.7vw;margin-left: auto;margin-right: 3vw;}
 .section-banner__texto-boton img{display: inline!important;width:1.3vw;margin-right: 0.4vw;vertical-align: top;}
 
 .seccion-marcas{background-color: #fff;text-align: center;}

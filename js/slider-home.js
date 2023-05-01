@@ -10,12 +10,14 @@ function generar(width, dots, contenido, li, li_nombre, indice, galeria, cantida
     
     if (desplaza == 1) {
         dots.innerHTML = "";
+        var contenido_dots = "";
         for (let index = 0; index < contenido.length; index++) {
             contenido[index].style.width = (width) + "px";
             contenido[index].setAttribute("id", li_nombre+index );
 
-            dots.innerHTML = dots.innerHTML + '<li class="'+li_nombre+'"><div class="'+li_nombre+'_a" id="'+li_nombre+(index * desplaza)+'"><div class="dot"></div></div></li>';
+            contenido_dots = contenido_dots + '<li class="'+li_nombre+'"><div class="'+li_nombre+'_a" id="'+li_nombre+(index * desplaza)+'"><div class="dot"></div></div></li>';
         }
+        dots.innerHTML = contenido_dots;
             
     }else{
         for (let index = 0; index < contenido.length; index++) {

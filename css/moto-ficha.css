@@ -42,11 +42,11 @@ a.botonera__boton{padding-top: 10px;}
 .flecha-slider-izq{position: absolute; top: 0;left:0%;z-index: 30;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;height: 100%;}
 .flecha-slider-der{position: absolute; top: 0;right:0%;height: 100%;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
 .flecha{height: 1.5vw;cursor: pointer;}
-.seccion__slider{width: 102%; margin: auto;display: -webkit-box;display: -ms-flexbox;display: flex;position: relative;}
-.contenedor{position: relative; padding: 1rem 0 1rem 0;overflow: hidden;width:90%;margin: auto;}
+.seccion__slider{width: 102%; height: 9.5vw; margin: auto;display: -webkit-box;display: -ms-flexbox;display: flex;position: relative; margin: 1rem 0;}
+.contenedor{position: relative; ;overflow: hidden;width:90%;margin: auto; height: 9.5vw;}
 .galeria{display: -webkit-box;display: -ms-flexbox;display: flex;width: -webkit-max-content;width: -moz-max-content;width: max-content;
 position: absolute;left: 0;top: 0;}
-.slider-contenido img{width: 100%;}
+.slider-contenido__img{width: 100%; height: 9.5vw;}
 .clase_activo{border: #FF0501 2px solid;}
 button{cursor: pointer;}
 
@@ -97,6 +97,7 @@ button{cursor: pointer;}
     .flecha {height: 18px;}
     .seccion-video__contenedor{width:calc(95vw + 0.4rem) ;height: calc(54vw + 2.2rem)}
     .seccion-video__video{width: 95vw;height: 54vw;}
+    .seccion__slider, .contenedor, .slider-contenido__img{height: 11vw;}
 }
 
 @media (max-width: 519.98px){
@@ -106,6 +107,8 @@ button{cursor: pointer;}
     .seccion-moto__info-nombre, .ficha-tecnica__h2{font-size: 24px;}
     .botonera__boton{font-size: 12px; display: -webkit-box; display: -ms-flexbox; display: flex;cursor: pointer;}
     .ficha-tecnica__contenido-ul{font-size: 14px;}
+    .seccion__slider, .contenedor, .slider-contenido__img{height: 20vw;}
+    .slider-contenido__img{height: 16vw;}
 }
 
 @media (max-width: 399.98px){

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1">
+	<meta name="description" content="Moto Roma, desde 1958 vendiendo motos.">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="robots" content="index,follow">
+
+    <link rel="icon" type="image/png" href="img/compartidos/faviconMR.png" sizes="32x32">
+    <link rel="preload" href="js/header.js" as="script">
+    <link rel="preload" href="img/accesorios/accesorios520.webp" as="image">
+
+    <link rel="stylesheet" type="text/css" href="css/cascos.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <script src="js/header.js"></script>
+
+    <title>Moto Roma - Cascos</title>
+</head>
+<body class="body">
+
+    <header id="header-pagina" class="header-pagina flex"></header>
+    <script>
+        generar_header();
+    </script>
+
+    <main class="main">
+        <h1 class="h1">MOTO ROMA - Cascos</h1>
+
+        <div class="seccion-imagen" style="background-color: #c6c4c4;height: 41.5vw;">
+            <picture>
+                <source srcset="img/accesorios/accesorios520.webp" media="(max-width:520px)">
+                <img src="img/accesorios/accesorios1500.webp" alt="Moto Roma - Accesorios">
+            </picture>
+        </div>
+
+        <div class="seccion-link">
+            <a href="index.html" class="seccion-link__a">Home </a><span> >> </span> 
+            <a href="accesorios.html" class="seccion-link__a">Accesorios </a><span> >> Cascos</span>
+        </div>
+
+        <div class="seccion-ordenar">
+            <div class="seccion-ordenar__boton">
+                <img src="img/compartidos/ico-sort.png" alt="Ordenar">
+                ORDENAR POR
+                <select name="" id="orden_lista" class="orden_lista">
+                    <option value="" selected>Recomendaciones</option>
+                    <option value="">Menor precio</option>
+                    <option value="">Mayor precio</option>
+                    <option value="">Nombre</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="seccion-cascos">
+            <button onclick="$('#ficha-casco').show()" class="seccion-cascos__casco">
+                <img src="img/accesorios/cascos/integral-halcon-H5.webp" alt="Casco Integral HALCON H5" title="Casco Integral HALCON H5" class="seccion-cascos__casco-img">
+                <span class="seccion-cascos__casco-descripcion">Casco Integral HALCON Casco Integral HALCON H5</span>
+                <span class="resaltado">$6.000</span>
+            </button>
+            <a href="casco-ficha.html" class="seccion-cascos__casco">
+                <img src="img/accesorios/cascos/integral-halcon-H5-kid.webp" alt="Casco Integral HALCON H5 KID" title="Casco Integral HALCON H5 KID" class="seccion-cascos__casco-img">
+                <p class="seccion-cascos__casco-descripcion">Casco Integral HALCON H5 KID</p>
+                <p class="resaltado">$5.000</p>
+            </a>
+            <a href="casco-ficha.html" class="seccion-cascos__casco">
+                <img src="img/accesorios/cascos/integral-halcon-H57.webp" alt="Casco Integral HALCON H57" title="Casco Integral HALCON H57" class="seccion-cascos__casco-img">
+                <p class="seccion-cascos__casco-descripcion">Casco Integral HALCON H57</p>
+                <p class="resaltado">$8.000</p>
+            </a>
+            <a href="casco-ficha.html" class="seccion-cascos__casco">
+                <img src="img/accesorios/cascos/integral-hawk-RS1.webp" alt="Casco Integral HAWK RS1" title="Casco Integral HAWK RS1" class="seccion-cascos__casco-img">
+                <p class="seccion-cascos__casco-descripcion">Casco Integral HAWK RS1</p>
+                <p class="resaltado">$15.000</p>
+            </a>
+            <a href="casco-ficha.html" class="seccion-cascos__casco">
+                <img src="img/accesorios/cascos/casco5.webp" alt="Casco" title="Casco" class="seccion-cascos__casco-img">
+                <p class="seccion-cascos__casco-descripcion">Casco 5</p>
+                <p class="resaltado">$5.000</p>
+            </a>
+            <a href="casco-ficha.html" class="seccion-cascos__casco">
+                <img src="img/accesorios/cascos/casco6.webp" alt="Casco" class="seccion-cascos__casco-img">
+                <p class="seccion-cascos__casco-descripcion">Casco 6</p>
+                <p class="resaltado">$5.000</p>
+            </a>
+        </div>
+
+        <div id="ficha-casco" class="modal flex" style="display: none;">
+            <div class="seccion-casco__ficha">
+                <button class="btn-cerrar" onclick="$('#ficha-casco').hide()">
+                    <img src="img/compartidos/btn-cerrar.png" alt="Cerrar la ventana cuotas" class="btn-cerrar__img">
+                </button>
+                <div class="ficha-contenido flex">
+                    <img src="img/accesorios/cascos/integral-hawk-RS1-alpha-ficha.webp" alt="Casco Integral HALCON H5" title="Casco Integral HALCON H5" class="seccion-casco__img">
+                    <div class="seccion-casco__info">
+                        <p class="seccion-casco__info-tipo">Casco Integral </p>
+                        <p class="seccion-casco__info-nombre">HAWK RS1 ALPHA</p>
+                        <p class="seccion-casco__info-precio">PRECIO <span class="resaltado">$6.000</span></p>
+                        <a href="https://wa.me/+5491124846478" class="seccion-casco__info-boton-wa" target="_blank">
+                            <img src="img/compartidos/icono-wa.webp" alt="Abrir Whatsapp en otra ventana">
+                            CONSULTAR
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+      
+</main>
+
+    <footer id="footer-pagina" class="footer-pagina"></footer>
+
+
+    <script src="js/jQuery3.6.4.js"></script>
+    <script src="js/footer.js"></script>
+
+    <script>
+        window.onload = function () {
+
+            var ico_menu = document.getElementById("ico-menu");
+            ico_menu.onclick = () => {
+                var nav_bar = document.getElementsByClassName("header__nav")[0];
+                nav_bar.classList.toggle('d-block');
+            };
+            generar_footer();
+
+            window.addEventListener('resize', function() {
+                document.getElementsByClassName("header__nav")[0].classList.remove('d-block');
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>

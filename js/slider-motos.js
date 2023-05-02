@@ -1,10 +1,11 @@
-function generar(width, dots, contenido, li, li_nombre, indice, galeria, cantidad, desplaza, clase_activo) {
-    if (!contenido || contenido.length <= 0) {
+function generar(width, dots, contenido, li, li_nombre, indice, galeria, cantidad, desplaza, clase_activo, img) {
+    if (!contenido || contenido.length <= 0 || !img || img.length <= 0) {
         return;
     }
     for (let index = 0; index < contenido.length; index++) {
         contenido[index].style.width = (width) + "px";
         contenido[index].setAttribute("id", li_nombre+index );
+        img[index].style.height = "auto";
     }
     ultima_moto = (moto_contenido.length < 3) ? ultima_moto = moto_contenido.length - 1 : 2;
     if (document.getElementsByClassName("clase_activo").length > 0) {
@@ -18,7 +19,7 @@ function generar(width, dots, contenido, li, li_nombre, indice, galeria, cantida
 
 
 function desplazar_galeria(galeria, indice, width, margen, contenido, desplaza, clase_activo, cantidad, li_nombre) {
-    if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0){
+    if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0 || !moto_img || moto_img.length <= 0){
         return;
     }
 
@@ -33,7 +34,7 @@ function desplazar_galeria(galeria, indice, width, margen, contenido, desplaza, 
 }
 
 function moto_retroceder1(galeria, indice, width, margen, contenido, desplaza, clase_activo, cantidad, li_nombre) {
-    if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0){
+    if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0 || !moto_img || moto_img.length <= 0){
         return;
     }
 
@@ -62,11 +63,13 @@ var moto_cantidad;
 var moto_desplaza;
 var ultima_moto;
 var primera_moto = 0;
+var moto_img;
 
 function configurar_moto() {
     moto_contenedor = document.getElementById('contenedor');
     moto_galeria = document.getElementById('galeria');
     moto_contenido = document.getElementsByClassName('slider-contenido');
+    moto_img = document.getElementsByClassName('slider-contenido__img');
     moto_margen = 0;
     moto_cantidad = 3;
     moto_width = (document.getElementById('contenedor').getBoundingClientRect().width / 3); 
@@ -74,11 +77,11 @@ function configurar_moto() {
     moto_desplaza = 1;
     ultima_moto = moto_contenido.length - 1;
 
-    if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0){
+    if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0 || !moto_img || moto_img.length <= 0){
         return;
     }
 
-    generar(moto_width, moto_dots, moto_contenido, moto_li, "ver-imagen", moto_indice, moto_galeria, moto_cantidad, moto_desplaza, "moto__marcador-activo");
+    generar(moto_width, moto_dots, moto_contenido, moto_li, "ver-imagen", moto_indice, moto_galeria, moto_cantidad, moto_desplaza, "moto__marcador-activo", moto_img);
 }
 
 function generar2(width, dots, contenido, li, li_nombre, indice, galeria, cantidad, desplaza, clase_activo) {
@@ -92,10 +95,8 @@ function generar2(width, dots, contenido, li, li_nombre, indice, galeria, cantid
 
 function reconfigurar_moto() {
     moto_width = (document.getElementById('contenedor').getBoundingClientRect().width / 3); 
-    // moto_indice = 0;
-    // ultima_moto = moto_contenido.length - 1;
 
-    if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0){
+    if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0 || !moto_img || moto_img.length <= 0){
         return;
     }
 
@@ -103,7 +104,7 @@ function reconfigurar_moto() {
 }
 
 function moto_avanzar1(){
-    if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0){
+    if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0 || !moto_img || moto_img.length <= 0){
         return;
     }
 
@@ -112,7 +113,7 @@ function moto_avanzar1(){
 
 
 function moto_retroceder(){
-    if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0){
+    if (isNaN(moto_contenido.length) || !moto_contenido || moto_contenido.length <= 0 || !moto_img || moto_img.length <= 0){
         return;
     }
     if (primera_moto > 0) {

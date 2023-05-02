@@ -7,6 +7,7 @@ function generar(width, dots, contenido, li, li_nombre, indice, galeria, cantida
             contenido[index].setAttribute("id", li_nombre+index );
             if (img && img.length > 0) {
                 if (img[index]) {
+                    img[index].style.width = "100%";
                     img[index].style.height = "auto";
                 }
             }

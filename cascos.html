@@ -72,32 +72,32 @@
         </div>
 
         <div class="seccion-cascos">
-            <button onclick="$('#ficha-casco').show()" class="seccion-cascos__casco">
+            <button onclick="mostrar_casco('img/accesorios/cascos/integral-halcon-H5.webp', 'Casco Integral', 'HALCON H5', '$6.000');" class="seccion-cascos__casco">
                 <img src="img/accesorios/cascos/integral-halcon-H5.webp" alt="Casco Integral HALCON H5" title="Casco Integral HALCON H5" class="seccion-cascos__casco-img">
                 <span class="seccion-cascos__casco-descripcion">Casco Integral HALCON H5</span>
                 <span class="resaltado">$6.000</span>
             </button>
-            <button onclick="$('#ficha-casco').show()" class="seccion-cascos__casco">
+            <button onclick="mostrar_casco('img/accesorios/cascos/integral-halcon-H5-kid.webp', 'Casco Integral', 'HALCON H5 KID', '$5.000');" class="seccion-cascos__casco">
                 <img src="img/accesorios/cascos/integral-halcon-H5-kid.webp" alt="Casco Integral HALCON H5 KID" title="Casco Integral HALCON H5 KID" class="seccion-cascos__casco-img">
                 <span class="seccion-cascos__casco-descripcion">Casco Integral HALCON H5 KID</span>
                 <span class="resaltado">$5.000</span>
             </button>
-            <button onclick="$('#ficha-casco').show()" class="seccion-cascos__casco">
+            <button onclick="mostrar_casco('img/accesorios/cascos/integral-halcon-H57.webp', 'Casco Integral', 'HALCON H57', '$8.000');" class="seccion-cascos__casco">
                 <img src="img/accesorios/cascos/integral-halcon-H57.webp" alt="Casco Integral HALCON H57" title="Casco Integral HALCON H57" class="seccion-cascos__casco-img">
                 <span class="seccion-cascos__casco-descripcion">Casco Integral HALCON H57</span>
                 <span class="resaltado">$8.000</span>
             </button>
-            <button onclick="$('#ficha-casco').show()" class="seccion-cascos__casco">
+            <button onclick="mostrar_casco('img/accesorios/cascos/integral-hawk-RS1.webp', 'Casco Integral', 'HAWK RS1', '$15.000');" class="seccion-cascos__casco">
                 <img src="img/accesorios/cascos/integral-hawk-RS1.webp" alt="Casco Integral HAWK RS1" title="Casco Integral HAWK RS1" class="seccion-cascos__casco-img">
                 <span class="seccion-cascos__casco-descripcion">Casco Integral HAWK RS1</span>
                 <span class="resaltado">$15.000</span>
             </button>
-            <button onclick="$('#ficha-casco').show()"  class="seccion-cascos__casco">
+            <button onclick="mostrar_casco('img/accesorios/cascos/casco5.webp', 'Casco Integral', 'CASCO 5', '$5.000');"  class="seccion-cascos__casco">
                 <img src="img/accesorios/cascos/casco5.webp" alt="Casco" title="Casco" class="seccion-cascos__casco-img">
                 <span class="seccion-cascos__casco-descripcion">Casco 5</span>
                 <span class="resaltado">$5.000</span>
             </button>
-            <button onclick="$('#ficha-casco').show()"  class="seccion-cascos__casco">
+            <button onclick="mostrar_casco('img/accesorios/cascos/casco6.webp', 'Casco Integral', 'CASCO 6', '$5.000');"  class="seccion-cascos__casco">
                 <img src="img/accesorios/cascos/casco6.webp" alt="Casco" class="seccion-cascos__casco-img">
                 <span class="seccion-cascos__casco-descripcion">Casco 6</span>
                 <span class="resaltado">$5.000</span>
@@ -110,11 +110,11 @@
                     <img src="img/compartidos/btn-cerrar.png" alt="Cerrar la ventana cuotas" class="btn-cerrar__img">
                 </button>
                 <div class="ficha-contenido flex">
-                    <img src="img/accesorios/cascos/integral-hawk-RS1-alpha-ficha.webp" alt="Casco Integral HALCON H5" title="Casco Integral HALCON H5" class="seccion-casco__img">
+                    <img id="ficha__img" src="" alt="Foto Casco" class="seccion-casco__img">
                     <div class="seccion-casco__info">
-                        <p class="seccion-casco__info-tipo">Casco Integral </p>
-                        <p class="seccion-casco__info-nombre">HAWK RS1 ALPHA</p>
-                        <p class="seccion-casco__info-precio">PRECIO <span class="resaltado">$6.000</span></p>
+                        <p id="ficha__tipo" class="seccion-casco__info-tipo"> </p>
+                        <p id="ficha__nombre" class="seccion-casco__info-nombre"> </p>
+                        <p class="seccion-casco__info-precio">PRECIO <span id="ficha__precio" class="resaltado"> </span></p>
                         <a href="https://wa.me/+5491124846478" class="seccion-casco__info-boton-wa" target="_blank">
                             <img src="img/compartidos/icono-wa.webp" alt="Abrir Whatsapp en otra ventana">
                             CONSULTAR
@@ -147,6 +147,14 @@
                 document.getElementsByClassName("header__nav")[0].classList.remove('d-block');
             });
 
+        }
+
+        function mostrar_casco(img, tipo, nombre, precio){
+            $("#ficha__img").attr('src',img);
+            $("#ficha__tipo").html(tipo);
+            $("#ficha__nombre").html(nombre);
+            $("#ficha__precio").html(precio);
+            $('#ficha-casco').show();
         }
 
     </script>

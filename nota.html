@@ -86,7 +86,9 @@
                         <div id="blog__contenedor" class="blog__contenedor">
                             <div id="blog__galeria" class="blog__galeria" >
                                     <div class="seccion-consejos__slider-blog">
-                                        <img src="img/notas/blog3.webp" alt="Blog" title="Imagen Blog">
+                                        <div class="blog-img">
+                                            <img src="img/notas/blog3.webp" alt="Blog" title="Imagen Blog" class="blog-img__img">
+                                        </div>
                                         <div class="blog-contenido">
                                             <p class="blog-titulo resaltado">MOTO ROMA BLOG</p>
                                             <p class="blog-subtitulo">Guía completa sobre las herramientas que deberías tener </p>
@@ -95,7 +97,9 @@
                                     </div>
                 
                                     <div class="seccion-consejos__slider-blog">
-                                        <img src="img/notas/blog2.webp" alt="Blog" title="Imagen Blog">
+                                        <div class="blog-img">
+                                            <img src="img/notas/blog2.webp" alt="Blog" title="Imagen Blog" class="blog-img__img">
+                                        </div>
                                         <div class="blog-contenido">
                                             <p class="blog-titulo resaltado">MOTO ROMA BLOG</p>
                                             <p class="blog-subtitulo">5 consejos para iniciar a tu hijo en el motocross con total seguridad </p>
@@ -104,7 +108,9 @@
                                     </div>
     
                                     <div class="seccion-consejos__slider-blog">
-                                        <img src="img/notas/blog3.webp" alt="Blog" title="Imagen Blog">
+                                        <div class="blog-img">
+                                            <img src="img/notas/blog3.webp" alt="Blog" title="Imagen Blog" class="blog-img__img">
+                                        </div>
                                         <div class="blog-contenido">
                                             <p class="blog-titulo resaltado">MOTO ROMA BLOG</p>
                                             <p class="blog-subtitulo">Guía completa sobre las herramientas que deberías tener</p>
@@ -113,7 +119,10 @@
                                     </div>
                 
                                     <div class="seccion-consejos__slider-blog">
-                                        <img src="img/notas/blog2.webp" alt="Blog" title="Imagen Blog">
+                                        <div class="blog-img">
+                                            <img src="img/notas/blog2.webp" alt="Blog" title="Imagen Blog" class="blog-img__img">
+                                        </div>
+                                        
                                         <div class="blog-contenido">
                                             <p class="blog-titulo resaltado">MOTO ROMA BLOG</p>
                                             <p class="blog-subtitulo">5 consejos para iniciar a tu hijo en el motocross con total seguridad </p>
@@ -158,7 +167,6 @@
 
             
             $('body').on('click', '.ver-imagen_a', function(){
-            // $('.ver-imagen_a').click(function(target){
                 var li_blog = document.getElementsByClassName('ver-imagen');
                 detener_blog();
                 for (let index = 0; index < blog_contenido.length; index++) {
@@ -179,9 +187,11 @@
             
             document.getElementById('flecha-slider-der').addEventListener("click",blog_avanzar1);
             document.getElementById('flecha-slider-izq').addEventListener("click", function() {
-                detener_blog();
-                blog_indice = blog_retroceder1(blog_galeria,blog_indice,blog_width,blog_margen,blog_contenido,blog_desplaza,"blog__marcador-activo",blog_cantidad,"ver-imagen");
-                avanzar_blog();
+                if (blog_contenido && blog_contenido.length > 0 ){
+                    detener_blog();
+                    blog_indice = blog_retroceder1(blog_galeria,blog_indice,blog_width,blog_margen,blog_contenido,blog_desplaza,"blog__marcador-activo",blog_cantidad,"ver-imagen");
+                    avanzar_blog();
+                }
             });
 
         }

@@ -17,6 +17,7 @@ function generar(width, dots, contenido, li, li_nombre, indice, galeria, cantida
 
             if (img && img.length > 0) {
                 if (img[index]) {
+                    console.log("hay imagen")
                     img[index].style.width = "100%";
                     img[index].style.height = "auto";
                 }
@@ -133,7 +134,8 @@ function configurar_slider1() {
     slider1_contenedor = document.getElementById('contenedor');
     slider1_galeria = document.getElementById('galeria');
     slider1_contenido = document.getElementsByClassName('item');
-    slider1_img = document.getElementsByClassName('blog-img__img');
+    slider1_img = document.getElementsByClassName('slider1-img__img');
+    console.log("IMAGEN SLIDER1"+slider1_img.length)
     slider1_dots = document.getElementById('slider1__dots');
     // slider1_li = document.getElementsByClassName("slider1__li");
     slider1_margen = 0;

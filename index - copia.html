@@ -265,6 +265,11 @@
             nav_bar.classList.toggle('d-block');
         };
 
+        document.addEventListener("DOMContentLoaded", () => {
+            configurar_slider1();
+            configurar_blog();
+        })
+
         window.addEventListener('resize', function() {
             document.getElementsByClassName("header__nav")[0].classList.remove('d-block');
 

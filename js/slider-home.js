@@ -2,7 +2,7 @@ var iniciar_destination;
 var detener_slider1;
 var avanzar_slider1;
 
-function generar(width, dots, contenido, li, li_nombre, indice, galeria, cantidad, desplaza, clase_activo) {
+function generar(width, dots, contenido, li, li_nombre, indice, galeria, cantidad, desplaza, clase_activo, img) {
     "use strict";
     if (width <= 0 || isNaN(width) || isNaN(contenido.length) || !contenido || contenido.length <= 0) {
         return;
@@ -14,6 +14,14 @@ function generar(width, dots, contenido, li, li_nombre, indice, galeria, cantida
         for (let index = 0; index < contenido.length; index++) {
             contenido[index].style.width = (width) + "px";
             contenido[index].setAttribute("id", li_nombre+index );
+
+            if (img && img.length > 0) {
+                if (img[index]) {
+                    console.log("hay imagen")
+                    img[index].style.width = "100%";
+                    img[index].style.height = "auto";
+                }
+            }
 
             contenido_dots = contenido_dots + '<li class="'+li_nombre+'"><div class="'+li_nombre+'_a" id="'+li_nombre+(index * desplaza)+'"><div class="dot"></div></div></li>';
         }
@@ -43,12 +51,7 @@ function desplazar_galeria(galeria, indice, width, margen, contenido, desplaza, 
             return;
         }
 
-        if (cantidad == 1) {
-           galeria.style.transform = "translate("+(-((width+(margen))*desplaza))+"px)";
-        }else{
-            // galeria.style.transform = "translate("+(-((width)*desplaza))+"px)"; esto si
-            galeria.style.transform = "translate("+(-((width+(margen))*desplaza))+"px)";
-        }
+        galeria.style.transform = "translate("+(-((width+(margen))*desplaza))+"px)";
         galeria.style.transition = "transform 1s";
         setTimeout(() => {
             galeria.style.transition = "none";
@@ -89,14 +92,11 @@ function desplazar1(galeria, indice, width, margen, contenido, desplaza, clase_a
     }else{
         galeria.style.transform = "translate("+(-((width)*desplaza))+"px)";
     }
-    // galeria.style.transition = "transform 1s";
-    // setTimeout(() => {
-        galeria.style.transition = "none";
-        galeria.style.transform = "translate(0px)";
-        for (let index = 1; index <= desplaza; index++) {
-            galeria.insertAdjacentElement("beforeEnd",contenido[0]);
-        }
-    // }, 2000);
+    galeria.style.transition = "none";
+    galeria.style.transform = "translate(0px)";
+    for (let index = 1; index <= desplaza; index++) {
+        galeria.insertAdjacentElement("beforeEnd",contenido[0]);
+    }
     var li = document.getElementsByClassName(li_nombre);
     li[indice].classList.remove(clase_activo);
     indice++;
@@ -111,6 +111,7 @@ function desplazar1(galeria, indice, width, margen, contenido, desplaza, clase_a
 var slider1_contenedor;
 var slider1_galeria;
 var slider1_contenido;
+var slider_img;
 var slider1_dots;
 var slider1_li;
 var li_slider1;
@@ -125,16 +126,16 @@ function configurar_slider1() {
     slider1_contenedor = document.getElementById('contenedor');
     slider1_galeria = document.getElementById('galeria');
     slider1_contenido = document.getElementsByClassName('item');
+    slider1_img = document.getElementsByClassName('slider1-img__img');
+    console.log("IMAGEN SLIDER1"+slider1_img.length)
     slider1_dots = document.getElementById('slider1__dots');
-    // slider1_li = document.getElementsByClassName("slider1__li");
     slider1_margen = 0;
     slider1_cantidad = 1;
-    // slider1_width = Math.floor(document.getElementById('contenedor').clientWidth / slider1_cantidad) - slider1_margen;
     slider1_width = (document.getElementById('contenedor').getBoundingClientRect().width / slider1_cantidad) - slider1_margen;
     slider1_indice = 0;
     slider1_desplaza = 1;
 
-    generar(slider1_width, slider1_dots, slider1_contenido, slider1_li, "imagen_slider", slider1_indice, slider1_galeria, slider1_cantidad,  slider1_desplaza, "seccion-slider1__marcador-activo");
+    generar(slider1_width, slider1_dots, slider1_contenido, slider1_li, "imagen_slider", slider1_indice, slider1_galeria, slider1_cantidad,  slider1_desplaza, "seccion-slider1__marcador-activo", slider1_img);
 
     desplazar_slider1 = setInterval(function(){
         if (slider1_galeria.clientWidth > document.getElementById('contenedor').clientWidth) {
@@ -159,6 +160,7 @@ function configurar_slider1() {
 var blog_contenedor;
 var blog_galeria;
 var blog_contenido;
+var blog_img;
 var blog_dots;
 var blog_li;
 var li_blog;
@@ -173,8 +175,8 @@ function configurar_blog() {
     blog_contenedor = document.getElementById('blog__contenedor');
     blog_galeria = document.getElementById('blog__galeria');
     blog_contenido = document.getElementsByClassName('seccion-consejos__slider-blog');
+    blog_img = document.getElementsByClassName('blog-img__img');
     blog_dots = document.getElementById('blog__marcadores-slide');
-    // blog_li = document.getElementsByClassName("blog_li");
     
     blog_margen = (screen.width < 520) ? 20 : 16;
     blog_cantidad = (screen.width < 520) ? 1 : 2;
@@ -184,7 +186,7 @@ function configurar_blog() {
     blog_indice = 0;
     blog_desplaza = 1;
 
-    generar(blog_width, blog_dots, blog_contenido, blog_li, "li_blog", blog_indice, blog_galeria, blog_cantidad, blog_desplaza, "blog__marcador-activo");
+    generar(blog_width, blog_dots, blog_contenido, blog_li, "li_blog", blog_indice, blog_galeria, blog_cantidad, blog_desplaza, "blog__marcador-activo", blog_img);
 
     galeria.style.transform = "translate("+(+(blog_margen/2))+"px)";
 
@@ -222,10 +224,10 @@ function blog_avanzar1(){
 }; 
 
 
+
 window.onload = function () {
 
     configurar_slider1();
-    // slider1_contenedor.style.height = slider1_galeria.style.height;
     configurar_blog();
   
     slider1_contenedor.addEventListener("mouseover", function() {

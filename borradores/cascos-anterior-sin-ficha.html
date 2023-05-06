@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1">
+	<meta name="description" content="Moto Roma, desde 1958 vendiendo motos.">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="robots" content="index,follow">
+
+    <link rel="preload" href="js/header.js" as="script">
+    <link rel="preload" href="img/accesorios/accesorios520.webp" as="image">
+
+    <link rel="stylesheet" type="text/css" href="css/cascos.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <script src="js/header.js"></script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/compartidos/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/compartidos/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/compartidos/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/compartidos/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/compartidos/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/compartidos/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/compartidos/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/compartidos/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/compartidos/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/compartidos/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/compartidos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/compartidos/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/compartidos/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/compartidos/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/compartidos/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Moto Roma - Cascos</title>
+</head>
+<body class="body">
+
+    <header id="header-pagina" class="header-pagina flex"></header>
+    <script>
+        generar_header();
+    </script>
+
+    <main class="main">
+        <h1 class="h1">MOTO ROMA - Cascos</h1>
+
+        <div class="seccion-imagen" style="background-color: #c6c4c4;height: 41.5vw;">
+            <picture>
+                <source srcset="img/accesorios/accesorios520.webp" media="(max-width:520px)">
+                <img src="img/accesorios/accesorios1500.webp" alt="Moto Roma - Accesorios">
+            </picture>
+        </div>
+
+        <div class="seccion-link">
+            <a href="index.html" class="seccion-link__a">Home </a><span> >> </span> 
+            <a href="accesorios.html" class="seccion-link__a">Accesorios </a><span> >> Cascos</span>
+        </div>
+
+        <div class="seccion-ordenar">
+            <div class="seccion-ordenar__boton">
+                <img src="img/compartidos/ico-sort.png" alt="Ordenar">
+                ORDENAR POR
+                <select name="" id="orden_lista" class="orden_lista">
+                    <option value="" selected>Recomendaciones</option>
+                    <option value="">Menor precio</option>
+                    <option value="">Mayor precio</option>
+                    <option value="">Nombre</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="seccion-cascos">
+            <button onclick="mostrar_casco('img/accesorios/cascos/integral-halcon-H5.webp', 'Casco Integral', 'HALCON H5', '$6.000');" class="seccion-cascos__casco">
+                <img src="img/accesorios/cascos/integral-halcon-H5.webp" alt="Casco Integral HALCON H5" title="Casco Integral HALCON H5" class="seccion-cascos__casco-img">
+                <span class="seccion-cascos__casco-descripcion">Casco Integral HALCON H5</span>
+                <span class="resaltado">$6.000</span>
+            </button>
+            <button onclick="mostrar_casco('img/accesorios/cascos/integral-halcon-H5-kid.webp', 'Casco Integral', 'HALCON H5 KID', '$5.000');" class="seccion-cascos__casco">
+                <img src="img/accesorios/cascos/integral-halcon-H5-kid.webp" alt="Casco Integral HALCON H5 KID" title="Casco Integral HALCON H5 KID" class="seccion-cascos__casco-img">
+                <span class="seccion-cascos__casco-descripcion">Casco Integral HALCON H5 KID</span>
+                <span class="resaltado">$5.000</span>
+            </button>
+            <button onclick="mostrar_casco('img/accesorios/cascos/integral-halcon-H57.webp', 'Casco Integral', 'HALCON H57', '$8.000');" class="seccion-cascos__casco">
+                <img src="img/accesorios/cascos/integral-halcon-H57.webp" alt="Casco Integral HALCON H57" title="Casco Integral HALCON H57" class="seccion-cascos__casco-img">
+                <span class="seccion-cascos__casco-descripcion">Casco Integral HALCON H57</span>
+                <span class="resaltado">$8.000</span>
+            </button>
+            <button onclick="mostrar_casco('img/accesorios/cascos/integral-hawk-RS1.webp', 'Casco Integral', 'HAWK RS1', '$15.000');" class="seccion-cascos__casco">
+                <img src="img/accesorios/cascos/integral-hawk-RS1.webp" alt="Casco Integral HAWK RS1" title="Casco Integral HAWK RS1" class="seccion-cascos__casco-img">
+                <span class="seccion-cascos__casco-descripcion">Casco Integral HAWK RS1</span>
+                <span class="resaltado">$15.000</span>
+            </button>
+            <button onclick="mostrar_casco('img/accesorios/cascos/casco5.webp', 'Casco Integral', 'CASCO 5', '$5.000');"  class="seccion-cascos__casco">
+                <img src="img/accesorios/cascos/casco5.webp" alt="Casco" title="Casco" class="seccion-cascos__casco-img">
+                <span class="seccion-cascos__casco-descripcion">Casco 5</span>
+                <span class="resaltado">$5.000</span>
+            </button>
+            <button onclick="mostrar_casco('img/accesorios/cascos/casco6.webp', 'Casco Integral', 'CASCO 6', '$5.000');"  class="seccion-cascos__casco">
+                <img src="img/accesorios/cascos/casco6.webp" alt="Casco" class="seccion-cascos__casco-img">
+                <span class="seccion-cascos__casco-descripcion">Casco 6</span>
+                <span class="resaltado">$5.000</span>
+            </button>
+        </div>
+
+        <div id="ficha-casco" class="modal flex" style="display: none;">
+            <div class="seccion-casco__ficha">
+                <button class="btn-cerrar" onclick="$('#ficha-casco').hide()">
+                    <img src="img/compartidos/btn-cerrar.png" alt="Cerrar la ventana cuotas" class="btn-cerrar__img">
+                </button>
+                <div class="ficha-contenido flex">
+                    <img id="ficha__img" src="" alt="Foto Casco" class="seccion-casco__img">
+                    <div class="seccion-casco__info">
+                        <p id="ficha__tipo" class="seccion-casco__info-tipo"> </p>
+                        <p id="ficha__nombre" class="seccion-casco__info-nombre"> </p>
+                        <p class="seccion-casco__info-precio">PRECIO <span id="ficha__precio" class="resaltado"> </span></p>
+                        <a href="https://wa.me/+5491124846478" class="seccion-casco__info-boton-wa" target="_blank">
+                            <img src="img/compartidos/icono-wa.webp" alt="Abrir Whatsapp en otra ventana">
+                            CONSULTAR
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+      
+</main>
+
+    <footer id="footer-pagina" class="footer-pagina"></footer>
+
+
+    <script src="js/jQuery3.6.4.js"></script>
+    <script src="js/footer.js"></script>
+
+    <script>
+        window.onload = function () {
+
+            var ico_menu = document.getElementById("ico-menu");
+            ico_menu.onclick = () => {
+                var nav_bar = document.getElementsByClassName("header__nav")[0];
+                nav_bar.classList.toggle('d-block');
+            };
+            generar_footer();
+
+            window.addEventListener('resize', function() {
+                document.getElementsByClassName("header__nav")[0].classList.remove('d-block');
+            });
+
+        }
+
+        function mostrar_casco(img, tipo, nombre, precio){
+            $("#ficha__img").attr('src',img);
+            $("#ficha__tipo").html(tipo);
+            $("#ficha__nombre").html(nombre);
+            $("#ficha__precio").html(precio);
+            $('#ficha-casco').show();
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-html, body { overscroll-behavior: none;}
+html, body { -ms-scroll-chaining: none; overscroll-behavior: none;}
 
 *{margin: 0;padding: 0;-webkit-box-sizing: border-box;box-sizing: border-box;}
 html{-webkit-box-sizing:border-box;box-sizing:border-box;margin: 0;padding: 0;scroll-behavior:smooth}

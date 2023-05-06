@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{margin: 0;padding: 0;-webkit-box-sizing: border-box;box-sizing: border-box;}
+html{-webkit-box-sizing:border-box;box-sizing:border-box;margin: 0;padding: 0;scroll-behavior:smooth}
+body,section,div,nav,p,h1,h2,h3,h4,h5,h6,button,a,select,input{font-family:Roboto,sans-serif;}
+select, a, button, input{-webkit-appearance: none;-moz-appearance: none;appearance: none;border: 0;text-transform: uppercase; font-family:Roboto,sans-serif;}
+a{-webkit-appearance: none;-moz-appearance: none;appearance: none; background:transparent;border:none;outline:0;-webkit-box-shadow:none;box-shadow:none;-webkit-box-sizing: border-box;box-sizing: border-box;cursor: pointer;text-decoration: none;text-transform: none;display: block;}
+button{-webkit-appearance: none;-moz-appearance: none;appearance: none; border: none; background: transparent;outline: 0;-webkit-box-shadow: none;box-shadow: none;}
+img{display: block;}
+.flex{display: -webkit-box;display: -ms-flexbox;display: flex;}
+.body{width: 100vw; background-color: #1E1E1E;color:#111111;overflow:overlay}
+ul{list-style: none;margin: 0;padding: 0;}
+.h1{width: 0;height: 0;font-size: 1px;color: transparent;}
+ 
+.main{width: 85%;margin:0 auto;position: relative;background-color: #fff;padding-bottom: 4rem;margin-top: 75px; }
+.resaltado{color: #FF0501;letter-spacing: 0}
+
+.seccion-imagen{width: 100%;height: 41.5vw;  }
+.seccion-imagen picture, .seccion-imagen picture source, .seccion-imagen picture img{width: 100%;height: 100%;}
+.seccion-link{width: 100%;font-size: 12px;font-weight: 500;color: #111111;padding: 10px 0 0 6vw;}
+.seccion-link__a{display: inline-block;color: #FF0501;}
+
+.seccion-ordenar{width: 100%;text-align: end;padding: 2rem 10vw 3rem 10vw;}
+.seccion-ordenar__boton{color: #fff;background-color: #FF0501;width: -webkit-max-content;width: -moz-max-content;width: max-content;margin-left: auto; height: 35px; border-radius: 25px;font-size: 13px;padding: 8px 20px;}
+.seccion-ordenar__boton>*{display: inline-block;}
+.seccion-ordenar__boton img{width: 16px;}
+.orden_lista{-webkit-appearance: none;-moz-appearance: none;appearance: none;background-image: url(../img/compartidos/down-selector.png);background-size: 13px 8px; background-repeat: no-repeat;background-position: right 0 center;font-family:Roboto,sans-serif;border: none; color: #fff;background-color: #FF0501;font-size: 13px;padding: 2px 20px 3px 10px; }
+.orden_lista:focus{color: #fff; outline: none;}
+.orden_lista option{font-family:Roboto,sans-serif;background-color: grey;}
+
+
+
+.seccion-motos{margin: 0vw 10vw 0vw 10vw;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap;text-align: center;}
+.seccion-motos__moto{width: 48%;height: -webkit-max-content;height: -moz-max-content;height: max-content;background: #FFFFFF;-webkit-box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.5);box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.5);border-radius: 2.3vw;margin-bottom: 2rem; text-align: center;font-weight: 700;font-size: 24px;color: #111111;padding: 1rem;}
+.seccion-motos__moto:hover{-webkit-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.9);box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.9);}
+.seccion-motos__moto-img{height: 15vw;min-height: 100px;margin: 0 auto;}
+.seccion-motos__moto-descripcion{font-size: 20px;}
+
+@media (max-width: 1179.98px){
+    .main{margin-top: 53px;}
+}
+@media (max-width: 991px){
+    .main{width: 95%;}
+    .seccion-motos__moto{font-size: 20px;}
+    .seccion-motos__moto-descripcion{font-size: 18px;}
+    .seccion-moto__info-boton-wa{font-size: 18px;width: 170px;height: 35px;}
+    .seccion-moto__info-boton-wa img{width: 20px;}
+}
+@media (max-width: 767.98px){
+    .main{padding-bottom: 1rem;}
+    .seccion-ordenar__boton{font-size: 12px;}
+    .seccion-motos__moto{font-size: 18px;}
+    .seccion-motos__moto-descripcion{font-size: 16px;}
+    .seccion-moto__info{font-size: 20px;}
+}
+@media (max-width: 519.98px){
+    .seccion-ordenar{padding: 1rem 10vw 2rem 10vw;}
+    .seccion-motos__moto{font-size: 16px;padding: 1rem 0;width: 100%;}
+    .seccion-motos__moto p{padding:0 1rem}
+    .seccion-motos__moto-descripcion{font-size: 14px;}
+    .seccion-motos__moto-img{height: 150px;}
+    .seccion-moto__contenido{-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
+    .seccion-moto__info{width: 100%;font-size: 18px;}
+}
+ 
+@media (max-width: 379.98px){
+    .seccion-ordenar {
+        padding: 2rem 0;
+    }
+}
+ 

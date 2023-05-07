@@ -24,8 +24,8 @@ button, select{cursor: pointer;}
 .seccion-ordenar{width: 100%;text-align: end;padding: 2rem 10vw 3rem 10vw;}
 .seccion-ordenar__boton{color: #fff;background-color: #FF0501;width: -webkit-max-content;width: -moz-max-content;width: max-content;margin-left: auto; height: 35px; border-radius: 25px;font-size: 13px;padding: 8px 20px;}
 .seccion-ordenar__boton>*{display: inline-block;}
-.seccion-ordenar__boton img{width: 16px;}
-.orden_lista{-webkit-appearance: none;-moz-appearance: none;appearance: none;background-image: url(../img/compartidos/down-selector.png);background-size: 13px 8px; background-repeat: no-repeat;background-position: right 0 center;font-family:Roboto,sans-serif;border: none; color: #fff;background-color: #FF0501;font-size: 13px;padding: 2px 20px 3px 10px; }
+.seccion-ordenar__boton img{width: 16px;vertical-align: middle;}
+.orden_lista{-webkit-appearance: none;-moz-appearance: none;appearance: none;background-image: url(../img/compartidos/down-selector.png);background-size: 13px 8px; background-repeat: no-repeat;background-position: right 0 center;font-family:Roboto,sans-serif;border: none; color: #fff;background-color: #FF0501;font-size: 13px;padding: 3px 20px 3px 10px; }
 .orden_lista:focus{color: #fff; outline: none;}
 .orden_lista option{font-family:Roboto,sans-serif;background-color: grey;}
 
